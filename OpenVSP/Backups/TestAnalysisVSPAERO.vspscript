@@ -1,0 +1,79 @@
+void TestVSPAeroComputeGeom()
+{
+    //==== Analysis: VSPAero Compute Geometry ====//
+    string analysis_name = "VSPAEROComputeGeometry";
+    Print( analysis_name );
+
+    // Set defaults
+    SetAnalysisInputDefaults(analysis_name);
+
+    // list inputs, type, and current values
+    PrintAnalysisInputs( analysis_name );
+    Print( "" );
+
+    // Execute
+    Print( "\tExecuting..." );
+    string rid = ExecAnalysis( analysis_name );
+    Print( "COMPLETE" );
+
+    // Get & Display Results
+    PrintResults( rid );
+}
+
+void TestVSPAeroComputeGeomPanel()
+{
+    //==== Analysis: VSPAero Compute Geometry ====//
+    string analysis_name = "VSPAEROComputeGeometry";
+    Print( analysis_name );
+
+    // Set defaults
+    SetAnalysisInputDefaults(analysis_name);
+    
+    // Set to panel method
+    array< int > analysis_method = GetIntAnalysisInput(analysis_name,"AnalysisMethod");
+    analysis_method[0] = ( VSPAERO_ANALYSIS_METHOD::PANEL );
+    SetIntAnalysisInput(analysis_name, "AnalysisMethod", analysis_method);
+
+    // list inputs, type, and current values
+    PrintAnalysisInputs( analysis_name );
+    Print( "" );
+
+    // Execute
+    Print( "\tExecuting..." );
+    string rid = ExecAnalysis( analysis_name );
+    Print( "COMPLETE" );
+
+    // Get & Display Results
+    PrintResults( rid );
+}
+
+void main()
+{
+    //==== Create some test geometry ====//
+    string pod_id = AddGeom( "POD", "" );
+    string wing_id = AddGeom( "WING", "" );
+
+    SetParmVal( wing_id, "X_Rel_Location", "XForm", 2.5 );
+    SetParmVal( wing_id, "TotalArea", "WingGeom", 25 );
+
+    string subsurf_id = AddSubSurf( wing_id, SS_CONTROL, 0 );
+    
+    Update();
+    
+
+    //==== Vortex Lattice Method ====//
+    TestVSPAeroComputeGeom();
+    
+    
+    //==== Panel Method ====//
+    TestVSPAeroComputeGeomPanel();
+
+    
+    //==== Check For API Errors ====//
+    while ( GetNumTotalErrors() > 0 )
+    {
+        ErrorObj err = PopLastError();
+        Print( err.GetErrorString() );
+    }
+    ComputeCFDMesh( SET_ALL, CFD_STL_TYPE );
+}
