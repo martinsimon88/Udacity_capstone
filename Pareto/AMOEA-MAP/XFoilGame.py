@@ -165,10 +165,9 @@ class XFoilGame():
                 Lmax = L
             if (D < Dmin):
                 Dmin = D
-            C = 0.2
             DD=1/Dmin
             LL=Lmax
 
 
-        objective = LL,DD , C
+        objective = LL,DD
         return objective

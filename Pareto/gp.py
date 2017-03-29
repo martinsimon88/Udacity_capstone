@@ -13,7 +13,7 @@ f = lambda x: np.sin(0.9*x).flatten()
 # Define the kernel
 def kernel(a, b):
     """ GP squared exponential kernel """
-    kernelParameter = 10
+    kernelParameter = 1
     sqdist = np.sum(a**2,1).reshape(-1,1) + np.sum(b**2,1) - 2*np.dot(a, b.T)
     return np.exp(-.5 * (1/kernelParameter) * sqdist)
 

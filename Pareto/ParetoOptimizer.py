@@ -16,9 +16,10 @@ from deap import tools, base
 import random
 import pandas
 import numpy as np
+import XFoilGame
 
 os.chdir("/home/simonx/Documents/Udacity/ML/Projects/capstone/Pareto/Archive")
-import XFoilGame
+
 
 '''
 #Initiate XFoilGame
@@ -66,7 +67,8 @@ for i in range(0, len(txtallActions)):
 
 #Identify non-dominated points
 
-
+def pareto_dominance(x, y):
+    return tools.emo.isDominated(x.fitness.values, y.fitness.values)
 
 
 #Use RBF to find estimate the new intials Gaussian?

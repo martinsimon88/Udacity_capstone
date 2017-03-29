@@ -77,14 +77,14 @@ from AMOEA_MAP import MultiObjectives
 arg = {
         "Population size" : 32,
         "Number of variables" : 8,
-        "Number of objectives" : 3,
+        "Number of objectives" : 2,
         "Constraints": True,
         "Memory-based Adaptive Partitioning (MAP)": True,
         "Expensive optimization": True,
         "Genenration Max" : 30,
         "Max function calls": 2000,
         "Crossover" : ["SBX", 1.],
-        "Reference point for HVI(DS)" : [10,10,10],
+        "Reference point for HVI(DS)" : [10,10],
     }
 
 ### O P T I M I Z A T I O N    P R O B L E M ###################################

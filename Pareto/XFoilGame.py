@@ -34,13 +34,13 @@ class XFoilGame():
     def __init__(self):
         self.child = [0,0,0,0,0,0,0,0]
         self.step=0.05
-        self.Re = 500
+        self.Re = 300000
         self.M = 0.1
         self.NoIter = 200
         self.Ncrit = 9.0
         self.state = None
         self.foilnum = 0
-
+        print self.Re
     def Xfoil(self, name, Ncrit, Re, M, NoIter):
         def Cmd(cmd):
             ps.stdin.write(cmd + '\n')
@@ -106,7 +106,7 @@ class XFoilGame():
         gen2airfoil(testgen[1],name)
         self.Xfoil(testgen[2],self.Ncrit,self.Re, self.M, self.NoIter)
         self.writeArchiveBase(name, actions)
-        print name,self.getLDmax(name)
+        return self.getObjectiveValues(name)
 
     def reset(self):
         self.a
@@ -148,3 +148,32 @@ class XFoilGame():
             if (LD > LDmax):
                 LDmax = LD
         return LDmax
+
+    def getObjectiveValues(self, name):
+        filename = name + ".log"
+        f = open(filename, 'r')
+        flines = f.readlines()
+        Lmax = 0
+        Dmin = 10
+        for i in range(12, len(flines)):
+            # print flines[i]
+            words = string.split(flines[i])
+            L = float(words[1])
+            D =  float(words[2])
+            if (L/D > Lmax):
+                Lmax = L/D
+                DD=D
+                LL=-L
+            '''
+            if (L > Lmax):
+                Lmax = L
+            if (D < Dmin):
+                Dmin = D
+            DD=Dmin
+            LL=-Lmax
+            '''
+
+
+        objective = LL,DD
+        return objective
+
