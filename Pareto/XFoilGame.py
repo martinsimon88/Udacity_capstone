@@ -155,6 +155,9 @@ class XFoilGame():
         flines = f.readlines()
         Lmax = 0
         Dmin = 10
+
+        LL=0.0
+        DD=0.0
         for i in range(12, len(flines)):
             # print flines[i]
             words = string.split(flines[i])
@@ -164,6 +167,7 @@ class XFoilGame():
                 Lmax = L/D
                 DD=D
                 LL=-L
+
             '''
             if (L > Lmax):
                 Lmax = L
@@ -174,6 +178,6 @@ class XFoilGame():
             '''
 
 
-        objective = LL,DD
-        return objective
+
+        return LL,DD
 
