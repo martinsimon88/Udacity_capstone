@@ -1,0 +1,33 @@
+{
+    "language"        : "PYTHON",
+    "main_file"       : "branin_con",
+    "experiment-name" : "branin-constrained-example",
+    "likelihood"      : "NOISELESS",
+    "acquisition"     : "PES",
+    "variables": {
+        "X": {
+            "type": "FLOAT",
+            "size": 1,
+            "min":  -5,
+            "max":  10
+        },
+        "Y": {
+            "type": "FLOAT",
+            "size": 1,
+            "min":  0,
+            "max":  15
+        }
+    },
+    "tasks": {
+      "branin" : {
+          "type"        : "OBJECTIVE"
+      },
+      "y_at_least_x" : {
+          "type"        : "CONSTRAINT"
+      },
+      "y_at_most_10" : {
+          "type"        : "CONSTRAINT"
+      }
+    }
+}
+

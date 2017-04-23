@@ -1,0 +1,212 @@
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten] MongoDB starting : pid=9115 port=27017 dbpath=/home/simonx/Documents/Udacity/Projects/capstone/PESMOC_XFoil/datadir/ 64-bit host=simonx
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten] db version v3.4.4
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten] modules: none
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten] build environment:
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten]     distmod: ubuntu1404
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-04-22T13:41:21.292+0200 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "datadir/" }, systemLog: { destination: "file", path: "logfile" } }
+2017-04-22T13:41:21.313+0200 I STORAGE  [initandlisten] 
+2017-04-22T13:41:21.313+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-04-22T13:41:21.313+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-04-22T13:41:21.314+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=11495M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-04-22T13:41:21.375+0200 I CONTROL  [initandlisten] 
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] 
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] 
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] 
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-04-22T13:41:21.376+0200 I CONTROL  [initandlisten] 
+2017-04-22T13:41:21.391+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/simonx/Documents/Udacity/Projects/capstone/PESMOC_XFoil/datadir/diagnostic.data'
+2017-04-22T13:41:21.409+0200 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-04-22T13:41:21.409+0200 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-04-22T13:41:21.411+0200 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2017-04-22T13:41:21.411+0200 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2017-04-22T13:41:21.412+0200 I NETWORK  [thread1] waiting for connections on port 27017
+2017-04-22T13:41:21.800+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53508 #1 (1 connection now open)
+2017-04-22T13:41:21.800+0200 I NETWORK  [conn1] received client metadata from 127.0.0.1:53508 conn1: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:41:21.801+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53510 #2 (2 connections now open)
+2017-04-22T13:41:21.801+0200 I NETWORK  [conn2] received client metadata from 127.0.0.1:53510 conn2: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:41:22.236+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53512 #3 (3 connections now open)
+2017-04-22T13:41:22.236+0200 I NETWORK  [conn3] received client metadata from 127.0.0.1:53512 conn3: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:41:22.237+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53514 #4 (4 connections now open)
+2017-04-22T13:41:22.237+0200 I NETWORK  [conn4] received client metadata from 127.0.0.1:53514 conn4: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:41:24.241+0200 I -        [conn4] end connection 127.0.0.1:53514 (4 connections now open)
+2017-04-22T13:41:24.241+0200 I -        [conn3] end connection 127.0.0.1:53512 (4 connections now open)
+2017-04-22T13:42:10.364+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53518 #5 (3 connections now open)
+2017-04-22T13:42:10.364+0200 I NETWORK  [conn5] received client metadata from 127.0.0.1:53518 conn5: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:42:10.365+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53520 #6 (4 connections now open)
+2017-04-22T13:42:10.365+0200 I NETWORK  [conn6] received client metadata from 127.0.0.1:53520 conn6: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:42:21.063+0200 I -        [conn6] end connection 127.0.0.1:53520 (4 connections now open)
+2017-04-22T13:42:21.063+0200 I -        [conn5] end connection 127.0.0.1:53518 (4 connections now open)
+2017-04-22T13:43:15.807+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53524 #7 (3 connections now open)
+2017-04-22T13:43:15.807+0200 I NETWORK  [conn7] received client metadata from 127.0.0.1:53524 conn7: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:43:15.808+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53526 #8 (4 connections now open)
+2017-04-22T13:43:15.808+0200 I NETWORK  [conn8] received client metadata from 127.0.0.1:53526 conn8: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:43:18.490+0200 I -        [conn8] end connection 127.0.0.1:53526 (4 connections now open)
+2017-04-22T13:43:18.490+0200 I -        [conn7] end connection 127.0.0.1:53524 (4 connections now open)
+2017-04-22T13:45:14.283+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53528 #9 (3 connections now open)
+2017-04-22T13:45:14.284+0200 I NETWORK  [conn9] received client metadata from 127.0.0.1:53528 conn9: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:45:14.285+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53530 #10 (4 connections now open)
+2017-04-22T13:45:14.285+0200 I NETWORK  [conn10] received client metadata from 127.0.0.1:53530 conn10: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:45:17.423+0200 I -        [conn10] end connection 127.0.0.1:53530 (4 connections now open)
+2017-04-22T13:45:17.424+0200 I -        [conn9] end connection 127.0.0.1:53528 (3 connections now open)
+2017-04-22T13:46:18.382+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53534 #11 (3 connections now open)
+2017-04-22T13:46:18.382+0200 I NETWORK  [conn11] received client metadata from 127.0.0.1:53534 conn11: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:46:18.383+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53536 #12 (4 connections now open)
+2017-04-22T13:46:18.383+0200 I NETWORK  [conn12] received client metadata from 127.0.0.1:53536 conn12: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:46:21.934+0200 I -        [conn12] end connection 127.0.0.1:53536 (4 connections now open)
+2017-04-22T13:46:21.934+0200 I -        [conn11] end connection 127.0.0.1:53534 (4 connections now open)
+2017-04-22T13:47:52.314+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53544 #13 (3 connections now open)
+2017-04-22T13:47:52.314+0200 I NETWORK  [conn13] received client metadata from 127.0.0.1:53544 conn13: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:47:52.315+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53546 #14 (4 connections now open)
+2017-04-22T13:47:52.315+0200 I NETWORK  [conn14] received client metadata from 127.0.0.1:53546 conn14: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:47:56.155+0200 I -        [conn14] end connection 127.0.0.1:53546 (4 connections now open)
+2017-04-22T13:47:56.156+0200 I -        [conn13] end connection 127.0.0.1:53544 (4 connections now open)
+2017-04-22T13:49:19.294+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53548 #15 (3 connections now open)
+2017-04-22T13:49:19.295+0200 I NETWORK  [conn15] received client metadata from 127.0.0.1:53548 conn15: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:49:19.296+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53550 #16 (4 connections now open)
+2017-04-22T13:49:19.296+0200 I NETWORK  [conn16] received client metadata from 127.0.0.1:53550 conn16: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:49:24.451+0200 I -        [conn16] end connection 127.0.0.1:53550 (4 connections now open)
+2017-04-22T13:49:24.451+0200 I -        [conn15] end connection 127.0.0.1:53548 (4 connections now open)
+2017-04-22T13:50:22.270+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53552 #17 (3 connections now open)
+2017-04-22T13:50:22.270+0200 I NETWORK  [conn17] received client metadata from 127.0.0.1:53552 conn17: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:50:22.271+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53554 #18 (4 connections now open)
+2017-04-22T13:50:22.271+0200 I NETWORK  [conn18] received client metadata from 127.0.0.1:53554 conn18: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:50:24.828+0200 I -        [conn18] end connection 127.0.0.1:53554 (4 connections now open)
+2017-04-22T13:50:24.828+0200 I -        [conn17] end connection 127.0.0.1:53552 (4 connections now open)
+2017-04-22T13:51:34.331+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53556 #19 (3 connections now open)
+2017-04-22T13:51:34.331+0200 I NETWORK  [conn19] received client metadata from 127.0.0.1:53556 conn19: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:51:34.332+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53558 #20 (4 connections now open)
+2017-04-22T13:51:34.332+0200 I NETWORK  [conn20] received client metadata from 127.0.0.1:53558 conn20: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:51:37.223+0200 I -        [conn20] end connection 127.0.0.1:53558 (4 connections now open)
+2017-04-22T13:51:37.223+0200 I -        [conn19] end connection 127.0.0.1:53556 (3 connections now open)
+2017-04-22T13:52:41.762+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53560 #21 (3 connections now open)
+2017-04-22T13:52:41.763+0200 I NETWORK  [conn21] received client metadata from 127.0.0.1:53560 conn21: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:52:41.763+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53562 #22 (4 connections now open)
+2017-04-22T13:52:41.764+0200 I NETWORK  [conn22] received client metadata from 127.0.0.1:53562 conn22: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:52:45.398+0200 I -        [conn21] end connection 127.0.0.1:53560 (4 connections now open)
+2017-04-22T13:52:45.398+0200 I -        [conn22] end connection 127.0.0.1:53562 (4 connections now open)
+2017-04-22T13:54:10.278+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53566 #23 (3 connections now open)
+2017-04-22T13:54:10.278+0200 I NETWORK  [conn23] received client metadata from 127.0.0.1:53566 conn23: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:54:10.279+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53568 #24 (4 connections now open)
+2017-04-22T13:54:10.279+0200 I NETWORK  [conn24] received client metadata from 127.0.0.1:53568 conn24: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:54:14.692+0200 I -        [conn24] end connection 127.0.0.1:53568 (4 connections now open)
+2017-04-22T13:54:14.692+0200 I -        [conn23] end connection 127.0.0.1:53566 (4 connections now open)
+2017-04-22T13:55:31.474+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53570 #25 (3 connections now open)
+2017-04-22T13:55:31.474+0200 I NETWORK  [conn25] received client metadata from 127.0.0.1:53570 conn25: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:55:31.475+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53572 #26 (4 connections now open)
+2017-04-22T13:55:31.475+0200 I NETWORK  [conn26] received client metadata from 127.0.0.1:53572 conn26: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:55:36.280+0200 I -        [conn26] end connection 127.0.0.1:53572 (4 connections now open)
+2017-04-22T13:55:36.280+0200 I -        [conn25] end connection 127.0.0.1:53570 (4 connections now open)
+2017-04-22T13:56:42.908+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53574 #27 (3 connections now open)
+2017-04-22T13:56:42.908+0200 I NETWORK  [conn27] received client metadata from 127.0.0.1:53574 conn27: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:56:42.909+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53576 #28 (4 connections now open)
+2017-04-22T13:56:42.909+0200 I NETWORK  [conn28] received client metadata from 127.0.0.1:53576 conn28: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:56:45.671+0200 I -        [conn28] end connection 127.0.0.1:53576 (4 connections now open)
+2017-04-22T13:56:45.671+0200 I -        [conn27] end connection 127.0.0.1:53574 (4 connections now open)
+2017-04-22T13:57:49.931+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53578 #29 (3 connections now open)
+2017-04-22T13:57:49.931+0200 I NETWORK  [conn29] received client metadata from 127.0.0.1:53578 conn29: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:57:49.932+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53580 #30 (4 connections now open)
+2017-04-22T13:57:49.932+0200 I NETWORK  [conn30] received client metadata from 127.0.0.1:53580 conn30: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:57:53.848+0200 I -        [conn30] end connection 127.0.0.1:53580 (4 connections now open)
+2017-04-22T13:57:53.848+0200 I -        [conn29] end connection 127.0.0.1:53578 (3 connections now open)
+2017-04-22T13:58:55.331+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53584 #31 (3 connections now open)
+2017-04-22T13:58:55.332+0200 I NETWORK  [conn31] received client metadata from 127.0.0.1:53584 conn31: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:58:55.332+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53586 #32 (4 connections now open)
+2017-04-22T13:58:55.333+0200 I NETWORK  [conn32] received client metadata from 127.0.0.1:53586 conn32: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T13:58:58.617+0200 I -        [conn32] end connection 127.0.0.1:53586 (4 connections now open)
+2017-04-22T13:58:58.617+0200 I -        [conn31] end connection 127.0.0.1:53584 (3 connections now open)
+2017-04-22T14:00:10.857+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53592 #33 (3 connections now open)
+2017-04-22T14:00:10.858+0200 I NETWORK  [conn33] received client metadata from 127.0.0.1:53592 conn33: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:00:10.858+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53594 #34 (4 connections now open)
+2017-04-22T14:00:10.858+0200 I NETWORK  [conn34] received client metadata from 127.0.0.1:53594 conn34: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:00:13.313+0200 I -        [conn33] end connection 127.0.0.1:53592 (4 connections now open)
+2017-04-22T14:00:13.315+0200 I -        [conn34] end connection 127.0.0.1:53594 (3 connections now open)
+2017-04-22T14:01:17.895+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53596 #35 (3 connections now open)
+2017-04-22T14:01:17.896+0200 I NETWORK  [conn35] received client metadata from 127.0.0.1:53596 conn35: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:01:17.897+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53598 #36 (4 connections now open)
+2017-04-22T14:01:17.897+0200 I NETWORK  [conn36] received client metadata from 127.0.0.1:53598 conn36: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:01:21.374+0200 I -        [conn36] end connection 127.0.0.1:53598 (4 connections now open)
+2017-04-22T14:01:21.374+0200 I -        [conn35] end connection 127.0.0.1:53596 (4 connections now open)
+2017-04-22T14:02:47.635+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53600 #37 (3 connections now open)
+2017-04-22T14:02:47.635+0200 I NETWORK  [conn37] received client metadata from 127.0.0.1:53600 conn37: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:02:47.636+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53602 #38 (4 connections now open)
+2017-04-22T14:02:47.636+0200 I NETWORK  [conn38] received client metadata from 127.0.0.1:53602 conn38: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:02:51.166+0200 I -        [conn38] end connection 127.0.0.1:53602 (4 connections now open)
+2017-04-22T14:02:51.166+0200 I -        [conn37] end connection 127.0.0.1:53600 (4 connections now open)
+2017-04-22T14:03:48.599+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53604 #39 (3 connections now open)
+2017-04-22T14:03:48.599+0200 I NETWORK  [conn39] received client metadata from 127.0.0.1:53604 conn39: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:03:48.600+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53606 #40 (4 connections now open)
+2017-04-22T14:03:48.600+0200 I NETWORK  [conn40] received client metadata from 127.0.0.1:53606 conn40: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:03:51.757+0200 I -        [conn40] end connection 127.0.0.1:53606 (4 connections now open)
+2017-04-22T14:03:51.757+0200 I -        [conn39] end connection 127.0.0.1:53604 (4 connections now open)
+2017-04-22T14:06:08.247+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53608 #41 (3 connections now open)
+2017-04-22T14:06:08.247+0200 I NETWORK  [conn41] received client metadata from 127.0.0.1:53608 conn41: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:06:08.248+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53610 #42 (4 connections now open)
+2017-04-22T14:06:08.248+0200 I NETWORK  [conn42] received client metadata from 127.0.0.1:53610 conn42: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:06:14.202+0200 I -        [conn41] end connection 127.0.0.1:53608 (4 connections now open)
+2017-04-22T14:06:14.204+0200 I -        [conn42] end connection 127.0.0.1:53610 (3 connections now open)
+2017-04-22T14:07:48.454+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53614 #43 (3 connections now open)
+2017-04-22T14:07:48.455+0200 I NETWORK  [conn43] received client metadata from 127.0.0.1:53614 conn43: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:07:48.456+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53616 #44 (4 connections now open)
+2017-04-22T14:07:48.456+0200 I NETWORK  [conn44] received client metadata from 127.0.0.1:53616 conn44: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:07:52.124+0200 I -        [conn43] end connection 127.0.0.1:53614 (4 connections now open)
+2017-04-22T14:07:52.124+0200 I -        [conn44] end connection 127.0.0.1:53616 (4 connections now open)
+2017-04-22T14:09:08.999+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53618 #45 (3 connections now open)
+2017-04-22T14:09:09.000+0200 I NETWORK  [conn45] received client metadata from 127.0.0.1:53618 conn45: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:09:09.000+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53620 #46 (4 connections now open)
+2017-04-22T14:09:09.000+0200 I NETWORK  [conn46] received client metadata from 127.0.0.1:53620 conn46: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:09:12.555+0200 I -        [conn46] end connection 127.0.0.1:53620 (4 connections now open)
+2017-04-22T14:09:12.556+0200 I -        [conn45] end connection 127.0.0.1:53618 (3 connections now open)
+2017-04-22T14:10:19.716+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53622 #47 (3 connections now open)
+2017-04-22T14:10:19.716+0200 I NETWORK  [conn47] received client metadata from 127.0.0.1:53622 conn47: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:10:19.717+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53624 #48 (4 connections now open)
+2017-04-22T14:10:19.717+0200 I NETWORK  [conn48] received client metadata from 127.0.0.1:53624 conn48: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:10:23.349+0200 I -        [conn48] end connection 127.0.0.1:53624 (4 connections now open)
+2017-04-22T14:10:23.349+0200 I -        [conn47] end connection 127.0.0.1:53622 (3 connections now open)
+2017-04-22T14:11:40.850+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53628 #49 (3 connections now open)
+2017-04-22T14:11:40.851+0200 I NETWORK  [conn49] received client metadata from 127.0.0.1:53628 conn49: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:11:40.851+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53630 #50 (4 connections now open)
+2017-04-22T14:11:40.852+0200 I NETWORK  [conn50] received client metadata from 127.0.0.1:53630 conn50: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:11:43.578+0200 I -        [conn49] end connection 127.0.0.1:53628 (4 connections now open)
+2017-04-22T14:11:43.578+0200 I -        [conn50] end connection 127.0.0.1:53630 (4 connections now open)
+2017-04-22T14:12:57.253+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53632 #51 (3 connections now open)
+2017-04-22T14:12:57.253+0200 I NETWORK  [conn51] received client metadata from 127.0.0.1:53632 conn51: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:12:57.254+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53634 #52 (4 connections now open)
+2017-04-22T14:12:57.254+0200 I NETWORK  [conn52] received client metadata from 127.0.0.1:53634 conn52: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:13:05.195+0200 I -        [conn52] end connection 127.0.0.1:53634 (4 connections now open)
+2017-04-22T14:13:05.195+0200 I -        [conn51] end connection 127.0.0.1:53632 (4 connections now open)
+2017-04-22T14:14:11.085+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53636 #53 (3 connections now open)
+2017-04-22T14:14:11.085+0200 I NETWORK  [conn53] received client metadata from 127.0.0.1:53636 conn53: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:14:11.086+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53638 #54 (4 connections now open)
+2017-04-22T14:14:11.086+0200 I NETWORK  [conn54] received client metadata from 127.0.0.1:53638 conn54: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:14:13.937+0200 I -        [conn53] end connection 127.0.0.1:53636 (4 connections now open)
+2017-04-22T14:14:13.938+0200 I -        [conn54] end connection 127.0.0.1:53638 (3 connections now open)
+2017-04-22T14:15:35.264+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53640 #55 (3 connections now open)
+2017-04-22T14:15:35.264+0200 I NETWORK  [conn55] received client metadata from 127.0.0.1:53640 conn55: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:15:35.265+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53642 #56 (4 connections now open)
+2017-04-22T14:15:35.265+0200 I NETWORK  [conn56] received client metadata from 127.0.0.1:53642 conn56: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:15:42.048+0200 I -        [conn55] end connection 127.0.0.1:53640 (4 connections now open)
+2017-04-22T14:15:42.051+0200 I -        [conn56] end connection 127.0.0.1:53642 (3 connections now open)
+2017-04-22T14:17:06.663+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53646 #57 (3 connections now open)
+2017-04-22T14:17:06.663+0200 I NETWORK  [conn57] received client metadata from 127.0.0.1:53646 conn57: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:17:06.664+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53648 #58 (4 connections now open)
+2017-04-22T14:17:06.664+0200 I NETWORK  [conn58] received client metadata from 127.0.0.1:53648 conn58: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:17:11.987+0200 I -        [conn58] end connection 127.0.0.1:53648 (4 connections now open)
+2017-04-22T14:17:11.987+0200 I -        [conn57] end connection 127.0.0.1:53646 (4 connections now open)
+2017-04-22T14:18:30.150+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53650 #59 (3 connections now open)
+2017-04-22T14:18:30.150+0200 I NETWORK  [conn59] received client metadata from 127.0.0.1:53650 conn59: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T14:18:30.151+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:53652 #60 (4 connections now open)
+2017-04-22T14:18:30.151+0200 I NETWORK  [conn60] received client metadata from 127.0.0.1:53652 conn60: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-22T19:10:43.374+0200 I -        [conn60] end connection 127.0.0.1:53652 (4 connections now open)
+2017-04-22T19:10:43.374+0200 I -        [conn59] end connection 127.0.0.1:53650 (3 connections now open)
+2017-04-22T19:10:43.815+0200 I -        [conn2] end connection 127.0.0.1:53510 (2 connections now open)
+2017-04-22T19:10:43.815+0200 I -        [conn1] end connection 127.0.0.1:53508 (2 connections now open)

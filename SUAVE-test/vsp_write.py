@@ -7,8 +7,8 @@
 #  Imports
 # ----------------------------------------------------------------------
 
-import SUAVE
-from SUAVE.Core import Units, Data
+#import SUAVE
+#from SUAVE.Core import Units, Data
 
 try:
     import vsp_g as vsp
@@ -355,3 +355,5 @@ def write(vehicle,tag):
     vsp.WriteVSPFile(tag + ".vsp3")
     
     return area_tags
+
+write("vehicle","tag")

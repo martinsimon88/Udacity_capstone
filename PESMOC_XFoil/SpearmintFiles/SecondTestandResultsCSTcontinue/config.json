@@ -1,0 +1,79 @@
+{
+    "language"        : "PYTHON",
+    "random_seed"     : 1,
+    "main_file"       : "evaluationFunctionXFoil",
+    "grid_size"       : 1000,
+    "max_finished_jobs"       : 100,
+    "experiment-name" : "XFoil",
+    "moo_use_grid_only_to_solve_problem" : true,
+    "moo_grid_size_to_solve_problem" : 1000,
+    "pesm_use_grid_only_to_solve_problem" : true,
+    "likelihood"      : "GAUSSIAN",
+    "acquisition"     : "PESM",
+    "pesm_pareto_set_size"      : 50,
+    "pesm_not_constrain_predictions"     : false,
+    "variables": {
+        "LEU": {
+            "type": "FLOAT",
+            "size": 1,
+            "min":  0.1,
+            "max":  0.5
+        },
+        "LED": {
+            "type": "FLOAT",
+            "size": 1,
+            "min":  0.1,
+            "max":  0.5
+        },
+        "C25": {
+            "type": "FLOAT",
+            "size": 1,
+            "min":  0.1,
+            "max":  0.5
+        },
+        "C50": {
+            "type": "FLOAT",
+            "size": 1,
+            "min":  0.1,
+            "max":  0.5
+        },
+        "C75": {
+            "type": "FLOAT",
+            "size": 1,
+            "min":  -0.5,
+            "max":  0.02
+        },
+        "T25": {
+            "type": "FLOAT",
+            "size": 1,
+            "min":  -0.5,
+            "max":  0.4
+        },
+        "T50": {
+            "type": "FLOAT",
+            "size": 1,
+            "min":  -0.5,
+            "max":  0.4
+        },
+        "T75": {
+            "type": "FLOAT",
+            "size": 1,
+            "min": -0.5,
+            "max":  0.02
+        }
+
+    },
+    "tasks": {
+      "LL" : {
+          "type"        : "OBJECTIVE",
+	  "fit_mean"    : false,
+	  "group"    : 0
+      },
+      "DD" : {
+          "type"        : "OBJECTIVE",
+	  "fit_mean"    : false,
+	  "group"    : 0
+      }
+    }
+}
+
