@@ -15,6 +15,7 @@ __author__ = 'ryanbarr'
 import numpy as np
 from math import pi, cos, sin, factorial
 import matplotlib.pylab as plt
+import pylab
 import os, sys, shutil, copy
 import subprocess as sp
 
@@ -204,27 +205,45 @@ class CST_shape(object):
         ax7.xaxis.set_ticks_position('bottom')
         plt.show()
 
+    def saveplot(self, name):
+        x_coor = self.coord[0]
+        y_coor = self.coord[1]
+        fig7 = plt.figure()
+        ax7 = plt.subplot(111)
+        ax7.plot(x_coor, y_coor)
+        plt.xlabel('x/c')
+        plt.ylabel('y/c')
+        plt.ylim(ymin=-0.5, ymax=0.5)
+        ax7.spines['right'].set_visible(False)
+        ax7.spines['top'].set_visible(False)
+        ax7.yaxis.set_ticks_position('left')
+        ax7.xaxis.set_ticks_position('bottom')
+        pylab.savefig(name+'.png')
+
+
     def initialize(self, name, actions):
         #print actions, name, len(actions)
-        wu = [float(actions[0]), float(actions[1])]
-        wl = [float(actions[2]), float(actions[3])]
-        #wu = [float(actions[0]), float(actions[1]), float(actions[2]), float(actions[3])] # Upper surface
-        #print wu
-        #wl = [float(actions[4]), float(actions[5]), float(actions[6]), float(float(actions[7]))]  # Lower surface
+        wu = [float(actions[0]), float(actions[1]), float(actions[2]), float(actions[3])] # Upper surface
+        wl = [float(actions[4]), float(actions[5]), float(actions[6]), float(actions[7])] # Lower surface
+
         dz = 0
         N = 200
 
         airfoil_CST = CST_shape(wl, wu, dz, N)
         airfoil_CST.airfoil_coor(name)
-        #airfoil_CST.plotting()
-
+        airfoil_CST.saveplot(name)
+'''
 if __name__ == '__main__':
-    wu = [0.5,0.5,0.2, 0]           # Upper surface
-    wl = [-0.01,-0.5,-0.1,0]    # Lower surface
+    wu = [0.5, 1, 1, 1]        # Upper surface   min [0.1, 0.1, 0, 0.1] max [0.5, 1, 1, 1]
+    wl = [-0.5, 0, 0, 0]                  # min[-0.5, -[0.1], -[0.1], -[0.1]]  max [-0.1,-[1],-[1],-[1]]
+    #input = [-0.2, 0.1, 0.1, 0.1, -0.1]  #min -0.1, 0.1,0.1, -0.1
+    #wl = [input[0],wu[1]-input[1],wu[2]-input[2],input[3]]    # Lower surface
     dz = 0
     N = 200
+
+
 
     airfoil_CST = CST_shape(wl, wu, dz, N)
     airfoil_CST.airfoil_coor("name")
     airfoil_CST.plotting()
-
+'''

@@ -25,6 +25,7 @@ xfoilpath = r'xfoil'
 #  C50 = Camber at 50%              T50 = Camber at 50%
 #  C75 = Camber at 75%              T75 = Camber at 75%
 #              LEU   LED     C25   C50    C75      T25   T50   T75
+#also max and min is for testing BezierN
 genmaxs = [10, 10, 10, 10, 10, 10, 10, 10]
 genmins = [-10, -10, -10, -10, -10, -10, -10, -10]
 
@@ -36,14 +37,15 @@ class XFoilGame():
         self.child = [0,0,0,0,0,0,0,0]
         self.step=0.05
         self.Re = 300000
-        self.M = 0.1
+        self.M1 = 0.04
+        self.M2 = 0.1
         self.NoIter = 200
         self.Ncrit = 9.0
         self.state = None
         self.foilnum = 0
-        self.airfoilModel = 'BezierN' #'CST' #'BezierN'
+        self.airfoilModel = 'CST' #'CST' #'BezierN'
 
-    def Xfoil(self, name, Ncrit, Re, M, NoIter):
+    def Xfoil(self, name, Ncrit, Re, M1, M2, NoIter):
         def Cmd(cmd):
             ps.stdin.write(cmd + '\n')
 
@@ -63,9 +65,37 @@ class XFoilGame():
         Cmd('N ' + str(Ncrit))
         Cmd(' ')
         Cmd('visc ' + str(Re))
-        Cmd('M ' + str(M))
+        Cmd('M ' + str(M1))
         Cmd('PACC')
-        Cmd(name + '.log')  # output file
+        Cmd(name + str(M1) + '.log')  # output file
+        Cmd(' ')  # no dump file
+        Cmd('aseq 2 15 0.5')
+        Cmd(' ')  # escape OPER
+        Cmd('quit')  # exit
+        resp = ps.stdout.read()
+
+
+        def Cmd(cmd):
+            ps.stdin.write(cmd + '\n')
+
+        try:
+            os.remove(name + '.log')
+        except:
+            pass
+        # print ("no such file")
+        # run xfoil
+        ps = sp.Popen(xfoilpath, stdin=sp.PIPE, stderr=sp.PIPE, stdout=sp.PIPE)
+        ps.stderr.close()
+        Cmd('load ' + name + '.dat')
+        Cmd('OPER')
+        Cmd('ITER')
+        Cmd('Vpar' + str(NoIter))
+        Cmd('N ' + str(Ncrit))
+        Cmd(' ')
+        Cmd('visc ' + str(Re))
+        Cmd('M ' + str(M1))
+        Cmd('PACC')
+        Cmd(name + str(M2) + '.log')  # output file
         Cmd(' ')  # no dump file
         Cmd('aseq 2 15 0.5')
         Cmd(' ')  # escape OPER
@@ -112,8 +142,8 @@ class XFoilGame():
         else:
             print "airfoil model not selected"
 
-        self.Xfoil(name,self.Ncrit,self.Re, self.M, self.NoIter)
-        self.writeArchiveBase(name, actions)
+        self.Xfoil(name,self.Ncrit,self.Re, self.M1, self.M2, self.NoIter)
+        self.writeArchiveBase(name, self.M1, self.M2, actions)
         return self.getObjectiveValues(name)
 
     def reset(self):
@@ -133,8 +163,8 @@ class XFoilGame():
         else:
             self.foilnum = 0
 
-    def writeArchiveBase(self, name, actions):
-        filename = name + ".log"
+    def writeArchiveBase(self, name, M1, M2, actions):
+        filename = name + str(M1) + ".log"
         f = open(filename, 'r')
         flines = f.readlines()
         archive = open('allResults.log', 'a')
@@ -142,10 +172,20 @@ class XFoilGame():
             archive.write(filename + str(flines[i]))
         archive.close()
         logActions = open('allActions.log', 'a')
+        logActions.write(filename + "    " + "    ".join(map(str, actions)))
+
+        filename = name + str(M2) + ".log"
+        f = open(filename, 'r')
+        flines = f.readlines()
+        archive = open('allResults.log', 'a')
+        for i in range(12, len(flines)):
+            archive.write(filename + str(flines[i]))
+        archive.close()
+        logActions = open('allActions.log', 'a')
         logActions.write(filename + "    " + "    ".join(map(str, actions)) + '\n')
 
     def getLDmax(self, name):
-        filename = name + ".log"
+        filename = name + "0.04.log"
         f = open(filename, 'r')
         flines = f.readlines()
         LDmax = 0
@@ -158,7 +198,7 @@ class XFoilGame():
         return LDmax
 
     def getObjectiveValues(self, name):
-        filename = name + ".log"
+        filename = name + "0.04.log"
         f = open(filename, 'r')
         flines = f.readlines()
         Lmax = 0
@@ -189,15 +229,18 @@ class XFoilGame():
 
         return LL,DD
 
+'''
 os.chdir("/home/simonx/Documents/Udacity/Projects/capstone/PESMOC_XFoil/Archive")
 LEU = 0.5 #min 0.02 max 0.5
 LED = -0.5 #min -0.5 max -0.02
 TEU = 0.5
 TED = 0.3
 
-
+'''
+os.chdir("/home/simonx/Documents/Udacity/Projects/capstone/PESMOC_XFoil/Archive")
 #actions = [LEU, TEU, LED, TED]
-actions = [0.02, 0.02, 0, 0, 0, 0.05, 0.05, 0.05] #0.01 0.01 -0.1 -0.1 -0.1
+actions = [0.5, 0.5, 0.5, 0.2, -0.5, -0.5, -0.3, -0.05] #0.01 0.01 -0.1 -0.1 -0.1
 XFG = XFoilGame()
 testCST = XFG.newGame(actions)
 print testCST
+

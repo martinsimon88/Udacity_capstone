@@ -1,0 +1,55 @@
+2017-04-24T10:41:26.885+0200 I CONTROL  [initandlisten] MongoDB starting : pid=3344 port=27017 dbpath=/home/simonx/Documents/Udacity/Projects/capstone/PESMOC_XFoil/datadir/ 64-bit host=simonx
+2017-04-24T10:41:26.885+0200 I CONTROL  [initandlisten] db version v3.4.4
+2017-04-24T10:41:26.885+0200 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-04-24T10:41:26.885+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1f 6 Jan 2014
+2017-04-24T10:41:26.885+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-04-24T10:41:26.885+0200 I CONTROL  [initandlisten] modules: none
+2017-04-24T10:41:26.885+0200 I CONTROL  [initandlisten] build environment:
+2017-04-24T10:41:26.885+0200 I CONTROL  [initandlisten]     distmod: ubuntu1404
+2017-04-24T10:41:26.886+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-04-24T10:41:26.886+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-04-24T10:41:26.886+0200 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "datadir/" }, systemLog: { destination: "file", path: "logfile" } }
+2017-04-24T10:41:26.917+0200 I STORAGE  [initandlisten] 
+2017-04-24T10:41:26.917+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-04-24T10:41:26.917+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-04-24T10:41:26.918+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=11495M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] 
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] 
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] 
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] 
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2017-04-24T10:41:26.989+0200 I CONTROL  [initandlisten] 
+2017-04-24T10:41:27.003+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/simonx/Documents/Udacity/Projects/capstone/PESMOC_XFoil/datadir/diagnostic.data'
+2017-04-24T10:41:27.021+0200 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-04-24T10:41:27.021+0200 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-04-24T10:41:27.022+0200 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2017-04-24T10:41:27.023+0200 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2017-04-24T10:41:27.023+0200 I NETWORK  [thread1] waiting for connections on port 27017
+2017-04-24T10:41:27.466+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:49452 #1 (1 connection now open)
+2017-04-24T10:41:27.466+0200 I NETWORK  [conn1] received client metadata from 127.0.0.1:49452 conn1: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-24T10:41:27.467+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:49454 #2 (2 connections now open)
+2017-04-24T10:41:27.467+0200 I NETWORK  [conn2] received client metadata from 127.0.0.1:49454 conn2: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-24T10:41:27.882+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:49456 #3 (3 connections now open)
+2017-04-24T10:41:27.882+0200 I NETWORK  [conn3] received client metadata from 127.0.0.1:49456 conn3: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-24T10:41:27.883+0200 I NETWORK  [thread1] connection accepted from 127.0.0.1:49458 #4 (4 connections now open)
+2017-04-24T10:41:27.883+0200 I NETWORK  [conn4] received client metadata from 127.0.0.1:49458 conn4: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "Ubuntu 14.04 trusty", architecture: "x86_64", version: "4.4.0-72-generic" }, platform: "CPython 2.7.12.final.0" }
+2017-04-24T10:41:29.686+0200 I -        [conn3] end connection 127.0.0.1:49456 (4 connections now open)
+2017-04-24T10:41:29.686+0200 I -        [conn4] end connection 127.0.0.1:49458 (4 connections now open)
+2017-04-24T10:41:46.548+0200 I -        [conn2] end connection 127.0.0.1:49454 (2 connections now open)
+2017-04-24T10:41:46.548+0200 I -        [conn1] end connection 127.0.0.1:49452 (2 connections now open)
+2017-04-24T10:41:54.649+0200 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2017-04-24T10:41:54.649+0200 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-04-24T10:41:54.649+0200 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-04-24T10:41:54.649+0200 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-04-24T10:41:54.649+0200 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2017-04-24T10:41:54.649+0200 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-04-24T10:41:54.649+0200 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-04-24T10:41:54.650+0200 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-04-24T10:41:54.741+0200 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-04-24T10:41:54.741+0200 I CONTROL  [signalProcessingThread] now exiting
+2017-04-24T10:41:54.741+0200 I CONTROL  [signalProcessingThread] shutting down with code:0

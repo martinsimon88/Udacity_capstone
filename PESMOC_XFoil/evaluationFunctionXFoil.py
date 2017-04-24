@@ -43,18 +43,18 @@ from sklearn.gaussian_process import GaussianProcessRegressor
 def TwoDXFoilGame(job_id, params):
     #print individual
     LEU = params['LEU']
+    U1 = params['U1']
+    U2 = params['U2']
+    TEU = params['TEU']
     LED = params['LED']
-    C25 = params['C25']
-    C50 = params['C50']
-    C75 = params['C75']
-    T25 = params['T25']
-    T50 = params['T50']
-    T75 = params['T75']
+    D1 = params['D1']
+    D2 = params['D2']
+    TED = params['TED']
 
-    C25, C50, C75, T25, T50, T75
-    actions = [LEU, TEU, LED, TED]
+    actions = [LEU, U1, U2, TEU, LED, D1, D2, TED]
     XFG = XFoilGame.XFoilGame()
     testgen = XFG.newGame(actions)
+
     return {
         "LL": testgen[0],
         "DD": testgen[1],
