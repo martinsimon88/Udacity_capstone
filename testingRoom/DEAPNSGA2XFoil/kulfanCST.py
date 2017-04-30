@@ -20,7 +20,7 @@ import os, sys, shutil, copy
 import subprocess as sp
 
 class CST_shape(object):
-    def __init__(self, wl=[-1, -1, -1], wu=[1, 1, 1], dz=0, N=200):
+    def __init__(self, wl=[-1, -1, -1], wu=[1, 1, 1], dz=0, N=400):
         self.wl = wl
         self.wu = wu
         self.dz = dz
@@ -231,7 +231,7 @@ class CST_shape(object):
 
         airfoil_CST = CST_shape(wl, wu, dz, N)
         airfoil_CST.airfoil_coor(name)
-        airfoil_CST.saveplot(name)
+        #airfoil_CST.saveplot(name)
 
 
 '''

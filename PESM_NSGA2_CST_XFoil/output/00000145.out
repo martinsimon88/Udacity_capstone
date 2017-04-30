@@ -1,0 +1,3287 @@
+Job launching after 0.28 seconds in submission.
+Running python job.
+Changed into dir /home/simonx/Documents/Udacity/Projects/capstone/PESM_NSGA2_CST_XFoil
+Importing evaluationFunctionXFoil.py
+Running evaluationFunctionXFoil.main()
+0
+1
+2
+0.04
+resp: 
+ ===================================================
+  XFOIL Version 6.97
+  Copyright (C) 2000   Mark Drela, Harold Youngren
+
+  This software comes with ABSOLUTELY NO WARRANTY,
+    subject to the GNU General Public License.
+
+  Caveat computor
+ ===================================================
+
+ File  xfoil.def  not found
+
+   QUIT    Exit program
+
+  .OPER    Direct operating point(s)
+  .MDES    Complex mapping design routine
+  .QDES    Surface speed design routine
+  .GDES    Geometry design routine
+
+   SAVE f  Write airfoil to labeled coordinate file
+   PSAV f  Write airfoil to plain coordinate file
+   ISAV f  Write airfoil to ISES coordinate file
+   MSAV f  Write airfoil to MSES coordinate file
+   REVE    Reverse written-airfoil node ordering
+   DELI i  Change written-airfoil file delimiters
+
+   LOAD f  Read buffer airfoil from coordinate file
+   NACA i  Set NACA 4,5-digit airfoil and buffer airfoil
+   INTE    Set buffer airfoil by interpolating two airfoils
+   NORM    Buffer airfoil normalization toggle
+   HALF    Halve the number of points in buffer airfoil
+   XYCM rr Change CM reference location, currently  0.25000 0.00000
+
+   BEND    Display structural properties of current airfoil
+
+   PCOP    Set current-airfoil panel nodes directly from buffer airfoil points
+   PANE    Set current-airfoil panel nodes ( 160 ) based on curvature
+  .PPAR    Show/change paneling
+
+  .PLOP    Plotting options
+
+   WDEF f  Write  current-settings file
+   RDEF f  Reread current-settings file
+   NAME s  Specify new airfoil name
+   NINC    Increment name version number
+
+   Z       Zoom    | (available in all menus)
+   U       Unzoom  | 
+
+ XFOIL   c>   ...............................................
+
+  G raphics-enable flag:        T
+  S ize of plot object          10.00"
+  A spect ratio of plot object   0.5500
+  P age dimensions              11.00 x  8.50"
+  M argins from page edges       0.00",  0.00"
+  F ont size (relative)          0.0150
+  W indow/screen size fraction   0.8000
+  B lowup input method:        Cursor    
+  O rientation of plot:        Landscape 
+  C olor PostScript output?     F
+
+      Option, Value   (or <Return>)    c>   ...............................................
+
+  G raphics-enable flag:        F
+  S ize of plot object          10.00"
+  A spect ratio of plot object   0.5500
+  P age dimensions              11.00 x  8.50"
+  M argins from page edges       0.00",  0.00"
+  F ont size (relative)          0.0150
+  W indow/screen size fraction   0.8000
+  B lowup input method:        Cursor    
+  O rientation of plot:        Landscape 
+  C olor PostScript output?     F
+
+      Option, Value   (or <Return>)    c>  
+ XFOIL   c>  
+ Labeled airfoil file.  Name:  000145                                          
+
+ Number of input coordinate points: 200
+ Clockwise ordering
+ Max thickness =     0.199756  at x =   0.170
+ Max camber    =     0.051252  at x =   0.302
+
+  LE  x,y  =  -0.00001   0.00095  |   Chord =   0.99988
+  TE  x,y  =   0.99988   0.00006  |
+
+ Current airfoil nodes set from buffer airfoil nodes ( 200 )
+
+ XFOIL   c>  
+ You are working with the buffer airfoil
+
+.GDES   c>  
+  i       x        y      angle
+   2   0.9990   0.0005    0.053
+   3   0.9978   0.0010    0.214
+   4   0.9961   0.0018    0.261
+   5   0.9938   0.0028    0.292
+   6   0.9911   0.0040    0.363
+   7   0.9880   0.0055    0.431
+   8   0.9843   0.0070    0.468
+   9   0.9801   0.0088    0.532
+  10   0.9755   0.0107    0.562
+  11   0.9704   0.0127    0.605
+  12   0.9649   0.0149    0.642
+  13   0.9589   0.0171    0.669
+  14   0.9524   0.0195    0.708
+  15   0.9455   0.0219    0.718
+  16   0.9382   0.0243    0.727
+  17   0.9304   0.0268    0.744
+  18   0.9222   0.0293    0.735
+  19   0.9135   0.0319    0.734
+  20   0.9045   0.0344    0.722
+  21   0.8951   0.0369    0.697
+  22   0.8853   0.0393    0.686
+  23   0.8751   0.0418    0.641
+  24   0.8645   0.0442    0.617
+  25   0.8536   0.0465    0.565
+  26   0.8423   0.0488    0.534
+  27   0.8307   0.0511    0.471
+  28   0.8187   0.0534    0.433
+  29   0.8065   0.0556    0.369
+  30   0.7939   0.0577    0.321
+  31   0.7810   0.0599    0.265
+  32   0.7679   0.0620    0.207
+  33   0.7545   0.0641    0.156
+  34   0.7409   0.0662    0.097
+  35   0.7270   0.0684    0.049
+  36   0.7129   0.0705    0.005
+  37   0.6986   0.0727   -0.046
+  38   0.6841   0.0750   -0.081
+  39   0.6694   0.0773   -0.120
+  40   0.6545   0.0796   -0.150
+  41   0.6395   0.0820   -0.176
+  42   0.6243   0.0845   -0.190
+  43   0.6091   0.0870   -0.206
+  44   0.5937   0.0896   -0.213
+  45   0.5782   0.0923   -0.214
+  46   0.5627   0.0951   -0.205
+  47   0.5471   0.0979   -0.190
+  48   0.5314   0.1008   -0.174
+  49   0.5157   0.1038   -0.142
+  50   0.5000   0.1068   -0.113
+  51   0.4843   0.1098   -0.070
+  52   0.4686   0.1129   -0.025
+  53   0.4529   0.1159    0.028
+  54   0.4373   0.1190    0.084
+  55   0.4218   0.1219    0.148
+  56   0.4063   0.1249    0.221
+  57   0.3909   0.1277    0.290
+  58   0.3757   0.1305    0.370
+  59   0.3605   0.1331    0.452
+  60   0.3455   0.1356    0.545
+  61   0.3306   0.1380    0.632
+  62   0.3159   0.1401    0.727
+  63   0.3014   0.1420    0.832
+  64   0.2871   0.1437    0.928
+  65   0.2730   0.1451    1.038
+  66   0.2591   0.1462    1.146
+  67   0.2455   0.1471    1.256
+  68   0.2321   0.1476    1.366
+  69   0.2190   0.1479    1.486
+  70   0.2061   0.1477    1.599
+  71   0.1935   0.1473    1.712
+  72   0.1813   0.1464    1.830
+  73   0.1693   0.1453    1.948
+  74   0.1577   0.1437    2.062
+  75   0.1464   0.1418    2.167
+  76   0.1355   0.1395    2.286
+  77   0.1249   0.1368    2.384
+  78   0.1147   0.1338    2.495
+  79   0.1049   0.1304    2.595
+  80   0.0955   0.1267    2.682
+  81   0.0865   0.1226    2.784
+  82   0.0778   0.1182    2.868
+  83   0.0696   0.1135    2.947
+  84   0.0618   0.1084    3.025
+  85   0.0545   0.1031    3.105
+  86   0.0476   0.0975    3.176
+  87   0.0411   0.0916    3.241
+  88   0.0351   0.0855    3.297
+  89   0.0296   0.0792    3.368
+  90   0.0245   0.0727    3.412
+  91   0.0199   0.0659    3.474
+  92   0.0157   0.0591    3.531
+  93   0.0120   0.0520    3.552
+  94   0.0089   0.0448    3.618
+  95   0.0062   0.0375    3.637
+  96   0.0039   0.0301    3.670
+  97   0.0022   0.0227    3.702
+  98   0.0010   0.0151    3.710
+  99   0.0002   0.0076    3.723
+ 100   0.0000   0.0000    4.924
+ 101   0.0002  -0.0046    6.097
+ 102   0.0010  -0.0092    6.070
+ 103   0.0022  -0.0137    6.040
+ 104   0.0039  -0.0182    5.947
+ 105   0.0062  -0.0225    5.843
+ 106   0.0089  -0.0266    5.721
+ 107   0.0120  -0.0306    5.499
+ 108   0.0157  -0.0344    5.307
+ 109   0.0199  -0.0379    5.015
+ 110   0.0245  -0.0412    4.737
+ 111   0.0296  -0.0442    4.408
+ 112   0.0351  -0.0469    4.075
+ 113   0.0411  -0.0494    3.751
+ 114   0.0476  -0.0515    3.408
+ 115   0.0545  -0.0534    3.094
+ 116   0.0618  -0.0549    2.769
+ 117   0.0696  -0.0562    2.489
+ 118   0.0778  -0.0571    2.203
+ 119   0.0865  -0.0578    1.952
+ 120   0.0955  -0.0582    1.703
+ 121   0.1049  -0.0584    1.503
+ 122   0.1147  -0.0582    1.288
+ 123   0.1249  -0.0579    1.110
+ 124   0.1355  -0.0573    0.938
+ 125   0.1464  -0.0565    0.800
+ 126   0.1577  -0.0556    0.653
+ 127   0.1693  -0.0545    0.540
+ 128   0.1813  -0.0532    0.425
+ 129   0.1935  -0.0518    0.337
+ 130   0.2061  -0.0503    0.248
+ 131   0.2190  -0.0488    0.179
+ 132   0.2321  -0.0471    0.121
+ 133   0.2455  -0.0454    0.060
+ 134   0.2591  -0.0436    0.029
+ 135   0.2730  -0.0418   -0.012
+ 136   0.2871  -0.0400   -0.029
+ 137   0.3014  -0.0381   -0.052
+ 138   0.3159  -0.0362   -0.062
+ 139   0.3306  -0.0344   -0.062
+ 140   0.3455  -0.0325   -0.068
+ 141   0.3605  -0.0306   -0.057
+ 142   0.3757  -0.0287   -0.056
+ 143   0.3909  -0.0269   -0.034
+ 144   0.4063  -0.0250   -0.031
+ 145   0.4218  -0.0231   -0.008
+ 146   0.4373  -0.0212    0.001
+ 147   0.4529  -0.0193    0.019
+ 148   0.4686  -0.0174    0.030
+ 149   0.4843  -0.0155    0.047
+ 150   0.5000  -0.0135    0.050
+ 151   0.5157  -0.0116    0.057
+ 152   0.5314  -0.0096    0.064
+ 153   0.5471  -0.0076    0.057
+ 154   0.5627  -0.0056    0.058
+ 155   0.5782  -0.0036    0.039
+ 156   0.5937  -0.0016    0.029
+ 157   0.6091   0.0004    0.007
+ 158   0.6243   0.0024   -0.019
+ 159   0.6395   0.0043   -0.052
+ 160   0.6545   0.0063   -0.082
+ 161   0.6694   0.0081   -0.129
+ 162   0.6841   0.0100   -0.173
+ 163   0.6986   0.0118   -0.221
+ 164   0.7129   0.0134   -0.277
+ 165   0.7270   0.0150   -0.329
+ 166   0.7409   0.0165   -0.397
+ 167   0.7545   0.0179   -0.452
+ 168   0.7679   0.0191   -0.519
+ 169   0.7810   0.0202   -0.584
+ 170   0.7939   0.0212   -0.653
+ 171   0.8065   0.0219   -0.705
+ 172   0.8187   0.0225   -0.783
+ 173   0.8307   0.0230   -0.830
+ 174   0.8423   0.0232   -0.893
+ 175   0.8536   0.0233   -0.949
+ 176   0.8645   0.0231   -0.992
+ 177   0.8751   0.0228   -1.030
+ 178   0.8853   0.0224   -1.074
+ 179   0.8951   0.0217   -1.091
+ 180   0.9045   0.0209   -1.117
+ 181   0.9135   0.0200   -1.125
+ 182   0.9222   0.0189   -1.130
+ 183   0.9304   0.0177   -1.124
+ 184   0.9382   0.0164   -1.097
+ 185   0.9455   0.0151   -1.077
+ 186   0.9524   0.0137   -1.053
+ 187   0.9589   0.0123   -1.001
+ 188   0.9649   0.0108   -0.958
+ 189   0.9704   0.0094   -0.894
+ 190   0.9755   0.0080   -0.841
+ 191   0.9801   0.0066   -0.763
+ 192   0.9843   0.0053   -0.705
+ 193   0.9880   0.0042   -0.607
+ 194   0.9911   0.0031   -0.533
+ 195   0.9938   0.0022   -0.469
+ 196   0.9961   0.0014   -0.339
+ 197   0.9978   0.0008   -0.279
+ 198   0.9990   0.0004   -0.172
+ 199   0.9998   0.0001   -0.111
+
+ Maximum panel corner angle =  6.097   at  i,x,y  = 101   0.0002  -0.0046
+
+ Enter corner angle criterion for refinement (deg):   3.048
+ Enter type of spline parameter (1=uniform, 2=arclength):   1
+ Enter refinement x limits:  -0.10000   1.10000
+ Number of points added:           62
+ Max thickness =     0.199734  at x =   0.169
+ Max camber    =     0.051925  at x =   0.301
+
+ Maximum panel corner angle =  2.947   at  i,x,y  =  83   0.0696   0.1135
+
+.GDES   c>  
+ Buffer airfoil is not identical to current airfoil
+
+ XFOIL   c>  
+ Blunt trailing edge.  Gap =  0.00027
+
+ Paneling parameters used...
+   Number of panel nodes       160
+   Panel bunching parameter    1.000
+   TE/LE panel density ratio   0.150
+   Refined-area/LE panel density ratio    0.200
+   Top    side refined area x/c limits  1.000 1.000
+   Bottom side refined area x/c limits  1.000 1.000
+
+ XFOIL   c>  
+Enter output filename   s>  
+ XFOIL   c>  
+.OPERi   c>   Current iteration limit:          20
+
+Enter new iteration limit   i>  
+Enter new iteration limit   i>  
+Enter new iteration limit   i>  
+.OPERi   c>  
+ M  =    0.0000
+ Re =  0.3000E+06
+
+.OPERv   c>  
+ Sonic Cp =   -420.65      Sonic Q/Qinf =    22.825
+
+
+.OPERv   c>  
+ Polar  1 newly created for accumulation
+ Airfoil archived with polar: 000145                                          
+
+Enter  polar save filename  OR  <return> for no file   s>  
+ New polar save file available
+
+Enter  polar dump filename  OR  <return> for no file   s>  
+ Polar dump file will NOT be written
+
+ Polar accumulation enabled
+
+.OPERva   c>   Calculating unit vorticity distributions ...
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Initializing BL ...
+    side            1  ...
+ MRCHUE: Inverse mode at  50     Hk =   4.361
+ MRCHUE: Inverse mode at  51     Hk =   5.180
+ MRCHUE: Inverse mode at  52     Hk =   6.009
+ MRCHUE: Inverse mode at  53     Hk =   6.856
+ MRCHUE: Inverse mode at  54     Hk =   7.728
+ MRCHUE: Inverse mode at  55     Hk =   8.632
+ MRCHUE: Inverse mode at  56     Hk =   9.513
+ MRCHUE: Inverse mode at  57     Hk =   4.621
+ MRCHUE: Inverse mode at  58     Hk =   2.588
+    side            2  ...
+ MRCHUE: Inverse mode at  34     Hk =   4.080
+ MRCHUE: Inverse mode at  35     Hk =   4.915
+ MRCHUE: Inverse mode at  36     Hk =   5.798
+ MRCHUE: Inverse mode at  37     Hk =   6.744
+ MRCHUE: Inverse mode at  38     Hk =   7.760
+ MRCHUE: Inverse mode at  39     Hk =   8.847
+ MRCHUE: Inverse mode at  40     Hk =   7.779
+ MRCHUE: Inverse mode at  41     Hk =   3.220
+ MRCHUE: Inverse mode at  75     Hk =   1.602
+ MRCHUE: Inverse mode at  76     Hk =   1.595
+
+ Side 1  free  transition at x/c =  0.2815   56
+ Side 2  free  transition at x/c =  0.2755   40
+
+   1   rms: 0.1667E+00   max: -.6014E+00   D at   58  1   RLX: 0.831
+       a =  2.000      CL =  1.1140
+      Cm = -0.1678     CD =  0.02043   =>   CDf =  0.00929    CDp =  0.01114
+
+ MRCHDU: Convergence failed at  56  side 1    Res =  0.6059E+02
+ MRCHDU: Convergence failed at  57  side 1    Res =  0.1445E+02
+ MRCHDU: Convergence failed at  58  side 1    Res =  0.1323E+02
+ MRCHDU: Convergence failed at  59  side 1    Res =  0.2462E+03
+ MRCHDU: Convergence failed at  60  side 1    Res =  0.1092E+03
+ MRCHDU: Convergence failed at  61  side 1    Res =  0.3189E+03
+ MRCHDU: Convergence failed at  62  side 1    Res =  0.1103E+03
+ MRCHDU: Convergence failed at  63  side 1    Res =  0.4518E+02
+ MRCHDU: Convergence failed at  64  side 1    Res =  0.2845E+02
+ MRCHDU: Convergence failed at  65  side 1    Res =  0.2101E+02
+ MRCHDU: Convergence failed at  66  side 1    Res =  0.1707E+02
+ MRCHDU: Convergence failed at  67  side 1    Res =  0.1209E+02
+ MRCHDU: Convergence failed at  68  side 1    Res =  0.1292E+02
+ MRCHDU: Convergence failed at  69  side 1    Res =  0.1340E+02
+ MRCHDU: Convergence failed at  70  side 1    Res =  0.2718E+02
+ MRCHDU: Convergence failed at  71  side 1    Res =  0.2884E+02
+ MRCHDU: Convergence failed at  72  side 1    Res =  0.1351E+02
+ MRCHDU: Convergence failed at  73  side 1    Res =  0.2817E+02
+ MRCHDU: Convergence failed at  74  side 1    Res =  0.2843E+02
+ MRCHDU: Convergence failed at  75  side 1    Res =  0.1678E+02
+ MRCHDU: Convergence failed at  76  side 1    Res =  0.1710E+02
+ MRCHDU: Convergence failed at  77  side 1    Res =  0.1714E+02
+ MRCHDU: Convergence failed at  78  side 1    Res =  0.1686E+02
+ MRCHDU: Convergence failed at  79  side 1    Res =  0.1621E+02
+ MRCHDU: Convergence failed at  80  side 1    Res =  0.3466E+02
+ MRCHDU: Convergence failed at  81  side 1    Res =  0.2474E+02
+ MRCHDU: Convergence failed at  82  side 1    Res =  0.4133E+02
+ MRCHDU: Convergence failed at  83  side 1    Res =  0.2334E+02
+ MRCHDU: Convergence failed at  84  side 1    Res =  0.3306E+02
+ MRCHDU: Convergence failed at  85  side 1    Res =  0.6388E+02
+ MRCHDU: Convergence failed at  86  side 1    Res =  0.2045E+05
+ MRCHDU: Convergence failed at  87  side 1    Res =  0.4922E+02
+ MRCHDU: Convergence failed at  88  side 1    Res =  0.3832E+02
+ MRCHDU: Convergence failed at  42  side 2    Res =  0.7064E+01
+ MRCHDU: Convergence failed at  43  side 2    Res =  0.2037E+01
+ MRCHDU: Convergence failed at  44  side 2    Res =  0.1507E+02
+ MRCHDU: Convergence failed at  45  side 2    Res =  0.6235E+01
+ MRCHDU: Convergence failed at  46  side 2    Res =  0.6469E+01
+ MRCHDU: Convergence failed at  47  side 2    Res =  0.8390E+01
+ MRCHDU: Convergence failed at  48  side 2    Res =  0.1255E+02
+ MRCHDU: Convergence failed at  49  side 2    Res =  0.2478E+02
+ MRCHDU: Convergence failed at  50  side 2    Res =  0.1058E+03
+ MRCHDU: Convergence failed at  51  side 2    Res =  0.1024E+03
+ MRCHDU: Convergence failed at  52  side 2    Res =  0.3478E+02
+ MRCHDU: Convergence failed at  53  side 2    Res =  0.2013E+02
+ MRCHDU: Convergence failed at  54  side 2    Res =  0.1395E+02
+ MRCHDU: Convergence failed at  55  side 2    Res =  0.1031E+02
+ MRCHDU: Convergence failed at  56  side 2    Res =  0.8414E+01
+ MRCHDU: Convergence failed at  57  side 2    Res =  0.7908E+01
+ MRCHDU: Convergence failed at  58  side 2    Res =  0.9965E+01
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.1255E+02
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.1572E+02
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.1941E+02
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.2255E+02
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.2513E+02
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.2582E+02
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.2467E+02
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.2220E+02
+ MRCHDU: Convergence failed at  67  side 2    Res =  0.1898E+02
+ MRCHDU: Convergence failed at  68  side 2    Res =  0.1582E+02
+ MRCHDU: Convergence failed at  69  side 2    Res =  0.1279E+02
+ MRCHDU: Convergence failed at  70  side 2    Res =  0.1018E+02
+ MRCHDU: Convergence failed at  71  side 2    Res =  0.7895E+01
+ MRCHDU: Convergence failed at  72  side 2    Res =  0.1293E+02
+ MRCHDU: Convergence failed at  73  side 2    Res =  0.3228E+02
+ Side 1  free  transition at x/c =  0.2918   56
+ Side 2  free  transition at x/c =  0.2952   42
+
+   2   rms: 0.1011E+01   max: 0.3910E+01   D at   76  2   RLX: 0.244
+       a =  2.000      CL =  1.5809
+      Cm = -0.3793     CD =  0.00645   =>   CDf =  0.00292    CDp =  0.00353
+
+ MRCHDU: Convergence failed at  71  side 1    Res =  0.3614E+00
+ MRCHDU: Convergence failed at  72  side 1    Res =  0.4006E+00
+ MRCHDU: Convergence failed at  73  side 1    Res =  0.2415E+01
+ MRCHDU: Convergence failed at  74  side 1    Res =  0.7680E+00
+ Side 1  free  transition at x/c =  0.2882   56
+ Side 2  free  transition at x/c =  0.2825   42
+
+   3   rms: 0.3627E+00   max: -.5067E+00   D at   75  2   RLX: 0.534
+       a =  2.000      CL =  1.1924
+      Cm = -0.2172     CD =  0.01959   =>   CDf =  0.01158    CDp =  0.00800
+
+ Side 1  free  transition at x/c =  0.2922   55
+ Side 2  free  transition at x/c =  0.2809   42
+
+   4   rms: 0.7254E+00   max: -.4333E+01   D at   79  1   RLX: 0.115
+       a =  2.000      CL =  1.1418
+      Cm = -0.2018     CD =  0.01712   =>   CDf =  0.00979    CDp =  0.00733
+
+ Side 1  free  transition at x/c =  0.2935   55
+ Side 2  free  transition at x/c =  0.2769   42
+
+   5   rms: 0.2994E+00   max: -.1564E+01   D at   76  1   RLX: 0.320
+       a =  2.000      CL =  1.1461
+      Cm = -0.1931     CD =  0.01684   =>   CDf =  0.00991    CDp =  0.00693
+
+ Side 1  free  transition at x/c =  0.2922   55
+ Side 2  free  transition at x/c =  0.2841   43
+
+   6   rms: 0.1998E+00   max: 0.9348E+00   D at   87  1   RLX: 0.441
+       a =  2.000      CL =  1.1145
+      Cm = -0.1787     CD =  0.01637   =>   CDf =  0.00995    CDp =  0.00642
+
+ Side 1  free  transition at x/c =  0.2914   56
+ Side 2  free  transition at x/c =  0.2908   42
+
+   7   rms: 0.1666E+00   max: -.9098E+00   D at   78  1   RLX: 0.550
+       a =  2.000      CL =  1.0803
+      Cm = -0.1657     CD =  0.01771   =>   CDf =  0.00952    CDp =  0.00819
+
+ Side 1  free  transition at x/c =  0.2909   56
+ Side 2  free  transition at x/c =  0.2907   42
+
+   8   rms: 0.9324E-01   max: -.6844E+00   D at   79  1   RLX: 0.731
+       a =  2.000      CL =  1.0636
+      Cm = -0.1589     CD =  0.01857   =>   CDf =  0.00900    CDp =  0.00956
+
+ Side 1  free  transition at x/c =  0.2903   56
+ Side 2  free  transition at x/c =  0.2914   42
+
+   9   rms: 0.3631E-01   max: -.3687E+00   D at   79  1
+       a =  2.000      CL =  1.0706
+      Cm = -0.1594     CD =  0.01877   =>   CDf =  0.00875    CDp =  0.01002
+
+ Side 1  free  transition at x/c =  0.2897   56
+ Side 2  free  transition at x/c =  0.2944   42
+
+  10   rms: 0.3484E-02   max: -.5414E-01   D at   79  1
+       a =  2.000      CL =  1.0708
+      Cm = -0.1595     CD =  0.01877   =>   CDf =  0.00868    CDp =  0.01009
+
+ Side 1  free  transition at x/c =  0.2897   56
+ Side 2  free  transition at x/c =  0.2945   42
+
+  11   rms: 0.6902E-04   max: 0.2772E-03   U at   79  1
+       a =  2.000      CL =  1.0708
+      Cm = -0.1595     CD =  0.01877   =>   CDf =  0.00868    CDp =  0.01009
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2897   56
+ Side 2  free  transition at x/c =  0.2945   42
+
+   1   rms: 0.1643E+00   max: -.9006E+00   T at   42  2   RLX: 0.555
+       a =  3.000      CL =  1.1418
+      Cm = -0.1605     CD =  0.01896   =>   CDf =  0.00869    CDp =  0.01027
+
+ Side 1  free  transition at x/c =  0.2833   56
+ Side 2  free  transition at x/c =  0.3348   43
+
+   2   rms: 0.7962E-01   max: -.7827E+00   C at   43  2   RLX: 0.639
+       a =  3.000      CL =  1.1777
+      Cm = -0.1610     CD =  0.01962   =>   CDf =  0.00853    CDp =  0.01110
+
+ Side 1  free  transition at x/c =  0.2810   56
+ Side 2  free  transition at x/c =  0.3633   43
+
+   3   rms: 0.3514E-01   max: -.3554E+00   T at   43  2
+       a =  3.000      CL =  1.1975
+      Cm = -0.1610     CD =  0.01957   =>   CDf =  0.00870    CDp =  0.01087
+
+ Side 1  free  transition at x/c =  0.2790   56
+ Side 2  free  transition at x/c =  0.4218   45
+
+   4   rms: 0.3699E-01   max: -.8065E+00   C at   45  2   RLX: 0.620
+       a =  3.000      CL =  1.2008
+      Cm = -0.1618     CD =  0.01939   =>   CDf =  0.00834    CDp =  0.01105
+
+ Side 1  free  transition at x/c =  0.2789   56
+ Side 2  free  transition at x/c =  0.4278   46
+
+   5   rms: 0.2329E-01   max: -.3425E+00   C at   46  2
+       a =  3.000      CL =  1.2036
+      Cm = -0.1625     CD =  0.01937   =>   CDf =  0.00837    CDp =  0.01099
+
+ Side 1  free  transition at x/c =  0.2788   56
+ Side 2  free  transition at x/c =  0.4580   47
+
+   6   rms: 0.4199E-02   max: 0.5350E-01   C at   47  2
+       a =  3.000      CL =  1.2031
+      Cm = -0.1624     CD =  0.01939   =>   CDf =  0.00824    CDp =  0.01115
+
+ Side 1  free  transition at x/c =  0.2788   56
+ Side 2  free  transition at x/c =  0.4509   46
+
+   7   rms: 0.6383E-03   max: 0.1102E-01   C at   46  2
+       a =  3.000      CL =  1.2032
+      Cm = -0.1624     CD =  0.01939   =>   CDf =  0.00825    CDp =  0.01114
+
+ Side 1  free  transition at x/c =  0.2788   56
+ Side 2  free  transition at x/c =  0.4506   46
+
+   8   rms: 0.4303E-05   max: 0.8697E-04   C at   46  2
+       a =  3.000      CL =  1.2032
+      Cm = -0.1624     CD =  0.01939   =>   CDf =  0.00825    CDp =  0.01114
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2788   56
+ Side 2  free  transition at x/c =  0.4506   46
+
+   1   rms: 0.3662E+00   max: -.7252E+01   C at   46  2   RLX: 0.069
+       a =  4.000      CL =  1.2124
+      Cm = -0.1627     CD =  0.01940   =>   CDf =  0.00826    CDp =  0.01114
+
+ Side 1  free  transition at x/c =  0.2780   56
+ Side 2  free  transition at x/c =  0.4803   47
+
+   2   rms: 0.3800E+00   max: -.7658E+01   C at   47  2   RLX: 0.065
+       a =  4.000      CL =  1.2208
+      Cm = -0.1629     CD =  0.01941   =>   CDf =  0.00816    CDp =  0.01126
+
+ Side 1  free  transition at x/c =  0.2773   56
+ Side 2  free  transition at x/c =  0.5064   48
+
+   3   rms: 0.3286E+00   max: -.6397E+01   C at   48  2   RLX: 0.078
+       a =  4.000      CL =  1.2301
+      Cm = -0.1632     CD =  0.01944   =>   CDf =  0.00807    CDp =  0.01137
+
+ Side 1  free  transition at x/c =  0.2765   56
+ Side 2  free  transition at x/c =  0.5352   49
+
+   4   rms: 0.2506E+00   max: -.4516E+01   C at   49  2   RLX: 0.111
+       a =  4.000      CL =  1.2415
+      Cm = -0.1633     CD =  0.01950   =>   CDf =  0.00782    CDp =  0.01167
+
+ Side 1  free  transition at x/c =  0.2755   57
+ Side 2  free  transition at x/c =  0.5712   49
+
+   5   rms: 0.1408E+00   max: -.1660E+01   C at   49  2   RLX: 0.301
+       a =  4.000      CL =  1.2673
+      Cm = -0.1632     CD =  0.01969   =>   CDf =  0.00788    CDp =  0.01181
+
+ MRCHDU: Convergence failed at  53  side 2    Res =  0.2086E+01
+ MRCHDU: Convergence failed at  54  side 2    Res =  0.1029E+01
+ MRCHDU: Convergence failed at  55  side 2    Res =  0.1766E+01
+ MRCHDU: Convergence failed at  56  side 2    Res =  0.2198E+01
+ MRCHDU: Convergence failed at  57  side 2    Res =  0.2551E+01
+ MRCHDU: Convergence failed at  58  side 2    Res =  0.2829E+01
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.3060E+01
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.3252E+01
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.3428E+01
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.3608E+01
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.3807E+01
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.4047E+01
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.4352E+01
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.4764E+01
+ MRCHDU: Convergence failed at  67  side 2    Res =  0.5357E+01
+ MRCHDU: Convergence failed at  68  side 2    Res =  0.6260E+01
+ MRCHDU: Convergence failed at  69  side 2    Res =  0.7780E+01
+ MRCHDU: Convergence failed at  70  side 2    Res =  0.1147E+02
+ MRCHDU: Convergence failed at  71  side 2    Res =  0.1393E+02
+ Side 1  free  transition at x/c =  0.2731   57
+ Side 2  free  transition at x/c =  0.6646   53
+
+   6   rms: 0.1641E+00   max: 0.6879E+00   T at   62  2   RLX: 0.897
+       a =  4.000      CL =  1.3386
+      Cm = -0.1645     CD =  0.02007   =>   CDf =  0.00713    CDp =  0.01294
+
+ Side 1  free  transition at x/c =  0.2681   58
+ Side 2  free  transition at x/c =  0.7146   53
+
+   7   rms: 0.3761E-01   max: -.3686E+00   C at   53  2
+       a =  4.000      CL =  1.3193
+      Cm = -0.1611     CD =  0.02019   =>   CDf =  0.00777    CDp =  0.01242
+
+ Side 1  free  transition at x/c =  0.2686   58
+ Side 2  free  transition at x/c =  0.6868   52
+
+   8   rms: 0.1279E-01   max: -.1915E+00   D at   53  2
+       a =  4.000      CL =  1.3222
+      Cm = -0.1619     CD =  0.02029   =>   CDf =  0.00780    CDp =  0.01249
+
+ Side 1  free  transition at x/c =  0.2685   58
+ Side 2  free  transition at x/c =  0.6981   53
+
+   9   rms: 0.1129E-01   max: 0.1263E+00   C at   53  2
+       a =  4.000      CL =  1.3212
+      Cm = -0.1616     CD =  0.02026   =>   CDf =  0.00771    CDp =  0.01255
+
+ Side 1  free  transition at x/c =  0.2685   58
+ Side 2  free  transition at x/c =  0.6942   53
+
+  10   rms: 0.1465E-02   max: -.1956E-01   D at   56  2
+       a =  4.000      CL =  1.3209
+      Cm = -0.1616     CD =  0.02027   =>   CDf =  0.00775    CDp =  0.01252
+
+ Side 1  free  transition at x/c =  0.2685   58
+ Side 2  free  transition at x/c =  0.6938   53
+
+  11   rms: 0.1591E-04   max: -.2649E-03   D at   56  2
+       a =  4.000      CL =  1.3209
+      Cm = -0.1616     CD =  0.02027   =>   CDf =  0.00775    CDp =  0.01252
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2685   58
+ Side 2  free  transition at x/c =  0.6938   53
+
+   1   rms: 0.1650E+00   max: 0.9876E+00   D at   54  2   RLX: 0.690
+       a =  5.000      CL =  1.3909
+      Cm = -0.1585     CD =  0.02133   =>   CDf =  0.00761    CDp =  0.01372
+
+ Side 1  free  transition at x/c =  0.2635   58
+ Side 2  free  transition at x/c =  0.7223   53
+
+   2   rms: 0.1015E+00   max: -.9250E+00   T at   53  2   RLX: 0.541
+       a =  5.000      CL =  1.4135
+      Cm = -0.1596     CD =  0.02190   =>   CDf =  0.00780    CDp =  0.01409
+
+ Side 1  free  transition at x/c =  0.2610   58
+ Side 2  free  transition at x/c =  0.7374   53
+
+   3   rms: 0.6578E-01   max: -.6334E+00   T at   53  2   RLX: 0.789
+       a =  5.000      CL =  1.4313
+      Cm = -0.1604     CD =  0.02230   =>   CDf =  0.00771    CDp =  0.01460
+
+ MRCHDU: Convergence failed at  55  side 2    Res =  0.6503E+02
+ MRCHDU: Convergence failed at  56  side 2    Res =  0.4690E+01
+ MRCHDU: Convergence failed at  57  side 2    Res =  0.3978E+01
+ MRCHDU: Convergence failed at  58  side 2    Res =  0.5797E+01
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.7828E+01
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.9942E+01
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.1193E+02
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.1370E+02
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.1506E+02
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.1576E+02
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.1563E+02
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.1286E+02
+ MRCHDU: Convergence failed at  67  side 2    Res =  0.7708E+01
+ MRCHDU: Convergence failed at  68  side 2    Res =  0.3717E+01
+ Side 1  free  transition at x/c =  0.2592   58
+ Side 2  free  transition at x/c =  0.7641   55
+
+   4   rms: 0.1715E+00   max: 0.1046E+01   T at   64  2   RLX: 0.719
+       a =  5.000      CL =  1.4355
+      Cm = -0.1570     CD =  0.02178   =>   CDf =  0.00730    CDp =  0.01447
+
+ Side 1  free  transition at x/c =  0.2586   58
+ Side 2  free  transition at x/c =  0.7562   54
+
+   5   rms: 0.3756E-01   max: -.4168E+00   D at   56  2
+       a =  5.000      CL =  1.4278
+      Cm = -0.1587     CD =  0.02182   =>   CDf =  0.00773    CDp =  0.01409
+
+ Side 1  free  transition at x/c =  0.2590   58
+ Side 2  free  transition at x/c =  0.7591   54
+
+   6   rms: 0.3782E-02   max: 0.6492E-01   D at   57  2
+       a =  5.000      CL =  1.4271
+      Cm = -0.1585     CD =  0.02181   =>   CDf =  0.00764    CDp =  0.01417
+
+ Side 1  free  transition at x/c =  0.2590   58
+ Side 2  free  transition at x/c =  0.7581   54
+
+   7   rms: 0.9158E-04   max: -.2168E-02   D at   57  2
+       a =  5.000      CL =  1.4271
+      Cm = -0.1585     CD =  0.02181   =>   CDf =  0.00764    CDp =  0.01417
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2590   58
+ Side 2  free  transition at x/c =  0.7581   54
+
+   1   rms: 0.1479E+00   max: -.8867E+00   T at   54  2   RLX: 0.564
+       a =  6.000      CL =  1.4923
+      Cm = -0.1582     CD =  0.02258   =>   CDf =  0.00750    CDp =  0.01508
+
+ MRCHDU: Convergence failed at  55  side 2    Res =  0.4755E+01
+ MRCHDU: Convergence failed at  56  side 2    Res =  0.4643E+02
+ MRCHDU: Convergence failed at  57  side 2    Res =  0.7356E+01
+ MRCHDU: Convergence failed at  58  side 2    Res =  0.4843E+01
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.5489E+01
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.7430E+01
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.9726E+01
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.1240E+02
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.1515E+02
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.1717E+02
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.1719E+02
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.1131E+02
+ MRCHDU: Convergence failed at  67  side 2    Res =  0.4335E+01
+ Side 1  free  transition at x/c =  0.2537   59
+ Side 2  free  transition at x/c =  0.7895   55
+
+   2   rms: 0.1815E+00   max: 0.1084E+01   T at   66  2   RLX: 0.700
+       a =  6.000      CL =  1.5284
+      Cm = -0.1549     CD =  0.02298   =>   CDf =  0.00740    CDp =  0.01558
+
+ Side 1  free  transition at x/c =  0.2513   59
+ Side 2  free  transition at x/c =  0.7949   55
+
+   3   rms: 0.3995E-01   max: -.4824E+00   D at   58  2
+       a =  6.000      CL =  1.5303
+      Cm = -0.1553     CD =  0.02357   =>   CDf =  0.00779    CDp =  0.01578
+
+ Side 1  free  transition at x/c =  0.2504   58
+ Side 2  free  transition at x/c =  0.8000   55
+
+   4   rms: 0.5222E-02   max: 0.8672E-01   D at   59  2
+       a =  6.000      CL =  1.5323
+      Cm = -0.1557     CD =  0.02347   =>   CDf =  0.00778    CDp =  0.01568
+
+ Side 1  free  transition at x/c =  0.2503   58
+ Side 2  free  transition at x/c =  0.8011   56
+
+   5   rms: 0.1771E-02   max: -.2928E-01   D at   55  2
+       a =  6.000      CL =  1.5321
+      Cm = -0.1557     CD =  0.02346   =>   CDf =  0.00777    CDp =  0.01569
+
+ Side 1  free  transition at x/c =  0.2503   58
+ Side 2  free  transition at x/c =  0.8010   56
+
+   6   rms: 0.7616E-04   max: 0.8370E-03   D at   56  2
+       a =  6.000      CL =  1.5321
+      Cm = -0.1557     CD =  0.02346   =>   CDf =  0.00777    CDp =  0.01569
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2503   58
+ Side 2  free  transition at x/c =  0.8010   56
+
+   1   rms: 0.1380E+00   max: -.9057E+00   T at   56  2   RLX: 0.552
+       a =  7.000      CL =  1.5814
+      Cm = -0.1524     CD =  0.02390   =>   CDf =  0.00761    CDp =  0.01629
+
+ Side 1  free  transition at x/c =  0.2457   59
+ Side 2  free  transition at x/c =  0.8154   55
+
+   2   rms: 0.8465E-01   max: -.7106E+00   T at   55  2   RLX: 0.704
+       a =  7.000      CL =  1.6241
+      Cm = -0.1540     CD =  0.02507   =>   CDf =  0.00756    CDp =  0.01751
+
+ MRCHDU: Convergence failed at  57  side 2    Res =  0.4978E+01
+ MRCHDU: Convergence failed at  58  side 2    Res =  0.2373E+02
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.8868E+01
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.5065E+01
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.5561E+01
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.6730E+01
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.7230E+01
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.6247E+01
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.4180E+01
+ Side 1  free  transition at x/c =  0.2427   59
+ Side 2  free  transition at x/c =  0.8397   57
+
+   3   rms: 0.1495E+00   max: 0.1092E+01   T at   65  2   RLX: 0.805
+       a =  7.000      CL =  1.6268
+      Cm = -0.1503     CD =  0.02472   =>   CDf =  0.00719    CDp =  0.01753
+
+ Side 1  free  transition at x/c =  0.2420   60
+ Side 2  free  transition at x/c =  0.8340   55
+
+   4   rms: 0.3146E-01   max: -.4812E+00   D at   58  2
+       a =  7.000      CL =  1.6305
+      Cm = -0.1519     CD =  0.02485   =>   CDf =  0.00753    CDp =  0.01732
+
+ Side 1  free  transition at x/c =  0.2419   60
+ Side 2  free  transition at x/c =  0.8402   56
+
+   5   rms: 0.1058E-01   max: 0.1278E+00   D at   57  2
+       a =  7.000      CL =  1.6300
+      Cm = -0.1518     CD =  0.02473   =>   CDf =  0.00753    CDp =  0.01720
+
+ Side 1  free  transition at x/c =  0.2419   60
+ Side 2  free  transition at x/c =  0.8392   56
+
+   6   rms: 0.6188E-03   max: 0.1047E-01   D at   57  2
+       a =  7.000      CL =  1.6299
+      Cm = -0.1517     CD =  0.02474   =>   CDf =  0.00752    CDp =  0.01722
+
+ Side 1  free  transition at x/c =  0.2419   60
+ Side 2  free  transition at x/c =  0.8391   56
+
+   7   rms: 0.1623E-05   max: 0.3134E-04   D at   57  2
+       a =  7.000      CL =  1.6299
+      Cm = -0.1517     CD =  0.02474   =>   CDf =  0.00752    CDp =  0.01722
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2419   60
+ Side 2  free  transition at x/c =  0.8391   56
+
+   1   rms: 0.1430E+00   max: -.1085E+01   T at   56  2   RLX: 0.461
+       a =  8.000      CL =  1.6680
+      Cm = -0.1485     CD =  0.02521   =>   CDf =  0.00754    CDp =  0.01767
+
+ Side 1  free  transition at x/c =  0.2385   60
+ Side 2  free  transition at x/c =  0.8589   57
+
+   2   rms: 0.8319E-01   max: -.7805E+00   T at   57  2   RLX: 0.641
+       a =  8.000      CL =  1.7038
+      Cm = -0.1479     CD =  0.02616   =>   CDf =  0.00736    CDp =  0.01880
+
+ Side 1  free  transition at x/c =  0.2362   60
+ Side 2  free  transition at x/c =  0.8751   57
+
+   3   rms: 0.3204E-01   max: -.2429E+00   T at   57  2
+       a =  8.000      CL =  1.7216
+      Cm = -0.1471     CD =  0.02645   =>   CDf =  0.00759    CDp =  0.01885
+
+ Side 1  free  transition at x/c =  0.2343   60
+ Side 2  free  transition at x/c =  0.8833   57
+
+   4   rms: 0.1126E-01   max: -.1258E+00   D at   58  2
+       a =  8.000      CL =  1.7234
+      Cm = -0.1475     CD =  0.02653   =>   CDf =  0.00747    CDp =  0.01906
+
+ Side 1  free  transition at x/c =  0.2343   60
+ Side 2  free  transition at x/c =  0.8842   58
+
+   5   rms: 0.3843E-02   max: -.7099E-01   D at   57  2
+       a =  8.000      CL =  1.7226
+      Cm = -0.1473     CD =  0.02650   =>   CDf =  0.00747    CDp =  0.01903
+
+ Side 1  free  transition at x/c =  0.2343   60
+ Side 2  free  transition at x/c =  0.8841   58
+
+   6   rms: 0.3199E-03   max: 0.4508E-02   D at   59  2
+       a =  8.000      CL =  1.7225
+      Cm = -0.1473     CD =  0.02650   =>   CDf =  0.00747    CDp =  0.01903
+
+ Side 1  free  transition at x/c =  0.2343   60
+ Side 2  free  transition at x/c =  0.8840   58
+
+   7   rms: 0.9349E-06   max: -.7313E-05   T at   60  1
+       a =  8.000      CL =  1.7225
+      Cm = -0.1473     CD =  0.02650   =>   CDf =  0.00747    CDp =  0.01903
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2343   60
+ Side 2  free  transition at x/c =  0.8840   58
+
+   1   rms: 0.1295E+00   max: -.7395E+00   T at   58  2   RLX: 0.676
+       a =  9.000      CL =  1.7804
+      Cm = -0.1438     CD =  0.02746   =>   CDf =  0.00729    CDp =  0.02018
+
+ Side 1  free  transition at x/c =  0.2288   61
+ Side 2  free  transition at x/c =  0.8977   58
+
+   2   rms: 0.7242E-01   max: -.5847E+00   T at   58  2   RLX: 0.855
+       a =  9.000      CL =  1.8126
+      Cm = -0.1443     CD =  0.02805   =>   CDf =  0.00733    CDp =  0.02072
+
+ Side 1  free  transition at x/c =  0.2268   61
+ Side 2  free  transition at x/c =  0.9086   58
+
+   3   rms: 0.3238E-01   max: -.3803E+00   D at   59  2
+       a =  9.000      CL =  1.8201
+      Cm = -0.1447     CD =  0.02825   =>   CDf =  0.00733    CDp =  0.02092
+
+ Side 1  free  transition at x/c =  0.2266   61
+ Side 2  free  transition at x/c =  0.9113   58
+
+   4   rms: 0.7502E-02   max: -.9997E-01   D at   58  2
+       a =  9.000      CL =  1.8176
+      Cm = -0.1442     CD =  0.02815   =>   CDf =  0.00735    CDp =  0.02080
+
+ Side 1  free  transition at x/c =  0.2266   61
+ Side 2  free  transition at x/c =  0.9109   58
+
+   5   rms: 0.4064E-03   max: 0.7077E-02   D at   59  2
+       a =  9.000      CL =  1.8175
+      Cm = -0.1441     CD =  0.02815   =>   CDf =  0.00734    CDp =  0.02081
+
+ Side 1  free  transition at x/c =  0.2266   61
+ Side 2  free  transition at x/c =  0.9109   58
+
+   6   rms: 0.2563E-05   max: 0.5070E-04   D at   59  2
+       a =  9.000      CL =  1.8175
+      Cm = -0.1441     CD =  0.02815   =>   CDf =  0.00734    CDp =  0.02081
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2266   61
+ Side 2  free  transition at x/c =  0.9109   58
+
+   1   rms: 0.1312E+00   max: -.4695E+00   T at   58  2
+       a = 10.000      CL =  1.9206
+      Cm = -0.1429     CD =  0.03003   =>   CDf =  0.00695    CDp =  0.02308
+
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.3394E+03
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.2433E+01
+ Side 1  free  transition at x/c =  0.2208   62
+ Side 2  free  transition at x/c =  0.9447   59
+
+   2   rms: 0.4268E-01   max: -.5513E+00   D at   60  2   RLX: 0.907
+       a = 10.000      CL =  1.8984
+      Cm = -0.1391     CD =  0.03062   =>   CDf =  0.00722    CDp =  0.02340
+
+ Side 1  free  transition at x/c =  0.2197   62
+ Side 2  free  transition at x/c =  0.9485   59
+
+   3   rms: 0.6490E-02   max: -.7982E-01   C at   59  2
+       a = 10.000      CL =  1.8957
+      Cm = -0.1386     CD =  0.03044   =>   CDf =  0.00742    CDp =  0.02302
+
+ Side 1  free  transition at x/c =  0.2196   61
+ Side 2  free  transition at x/c =  0.9489   60
+
+   4   rms: 0.5368E-03   max: -.8245E-02   D at    2  2
+       a = 10.000      CL =  1.8957
+      Cm = -0.1386     CD =  0.03043   =>   CDf =  0.00716    CDp =  0.02327
+
+ Side 1  free  transition at x/c =  0.2196   61
+ Side 2  free  transition at x/c =  0.9489   60
+
+   5   rms: 0.2293E-03   max: 0.2940E-02   D at    4  2
+       a = 10.000      CL =  1.8957
+      Cm = -0.1386     CD =  0.03043   =>   CDf =  0.00716    CDp =  0.02327
+
+ Side 1  free  transition at x/c =  0.2196   61
+ Side 2  free  transition at x/c =  0.9489   60
+
+   6   rms: 0.6746E-05   max: -.8388E-04   D at    4  2
+       a = 10.000      CL =  1.8957
+      Cm = -0.1386     CD =  0.03043   =>   CDf =  0.00716    CDp =  0.02327
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2196   61
+ Side 2  free  transition at x/c =  0.9489   60
+
+   1   rms: 0.1788E+00   max: -.2487E+01   C at   60  2   RLX: 0.201
+       a = 11.000      CL =  1.9072
+      Cm = -0.1369     CD =  0.03087   =>   CDf =  0.00693    CDp =  0.02394
+
+ Side 1  free  transition at x/c =  0.2182   62
+ Side 2  free  transition at x/c =  0.9620   60
+
+   2   rms: 0.6707E+00   max: -.1141E+02   C at   60  2   RLX: 0.044
+       a = 11.000      CL =  1.9082
+      Cm = -0.1365     CD =  0.03095   =>   CDf =  0.00712    CDp =  0.02384
+
+ Side 1  free  transition at x/c =  0.2180   62
+ Side 2  free  transition at x/c =  0.9626   60
+
+   3   rms: 0.1017E+00   max: -.4703E+00   C at   60  2
+       a = 11.000      CL =  1.9768
+      Cm = -0.1345     CD =  0.03305   =>   CDf =  0.00685    CDp =  0.02620
+
+ Side 1  free  transition at x/c =  0.2120   63
+ Side 2 forced transition at x/c =  1.0001   62
+
+   4   rms: 0.2954E-01   max: 0.3846E+00   C at   62  2
+       a = 11.000      CL =  1.9789
+      Cm = -0.1350     CD =  0.03294   =>   CDf =  0.00713    CDp =  0.02581
+
+ Side 1  free  transition at x/c =  0.2128   63
+ Side 2 forced transition at x/c =  1.0001   62
+
+   5   rms: 0.2486E-02   max: -.3437E-01   D at   59  2
+       a = 11.000      CL =  1.9800
+      Cm = -0.1351     CD =  0.03295   =>   CDf =  0.00709    CDp =  0.02586
+
+ Side 1  free  transition at x/c =  0.2128   63
+ Side 2 forced transition at x/c =  1.0001   62
+
+   6   rms: 0.3374E-04   max: -.5110E-03   C at   62  2
+       a = 11.000      CL =  1.9799
+      Cm = -0.1351     CD =  0.03295   =>   CDf =  0.00709    CDp =  0.02586
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2128   63
+ Side 2 forced transition at x/c =  1.0001   62
+
+   1   rms: 0.1269E+00   max: 0.4051E+00   T at   63  1
+       a = 12.000      CL =  2.0697
+      Cm = -0.1329     CD =  0.03596   =>   CDf =  0.00684    CDp =  0.02912
+
+ MRCHDU: Convergence failed at  64  side 1    Res =  0.1683E+01
+ MRCHDU: Convergence failed at  65  side 1    Res =  0.3546E+01
+ MRCHDU: Convergence failed at  66  side 1    Res =  0.2890E+01
+ MRCHDU: Convergence failed at  67  side 1    Res =  0.5515E+01
+ MRCHDU: Convergence failed at  68  side 1    Res =  0.2921E+02
+ MRCHDU: Convergence failed at  69  side 1    Res =  0.3673E+02
+ MRCHDU: Convergence failed at  70  side 1    Res =  0.1481E+02
+ MRCHDU: Convergence failed at  71  side 1    Res =  0.1234E+02
+ MRCHDU: Convergence failed at  72  side 1    Res =  0.1244E+02
+ MRCHDU: Convergence failed at  73  side 1    Res =  0.2235E+02
+ MRCHDU: Convergence failed at  74  side 1    Res =  0.3027E+02
+ MRCHDU: Convergence failed at  75  side 1    Res =  0.4209E+02
+ MRCHDU: Convergence failed at  76  side 1    Res =  0.7465E+02
+ MRCHDU: Convergence failed at  77  side 1    Res =  0.2520E+02
+ MRCHDU: Convergence failed at  78  side 1    Res =  0.4960E+03
+ MRCHDU: Convergence failed at  79  side 1    Res =  0.1030E+03
+ MRCHDU: Convergence failed at  80  side 1    Res =  0.6421E+02
+ MRCHDU: Convergence failed at  81  side 1    Res =  0.1929E+03
+ MRCHDU: Convergence failed at  82  side 1    Res =  0.1083E+03
+ MRCHDU: Convergence failed at  83  side 1    Res =  0.8086E+02
+ MRCHDU: Convergence failed at  84  side 1    Res =  0.5218E+03
+ MRCHDU: Convergence failed at  85  side 1    Res =  0.2258E+03
+ MRCHDU: Convergence failed at  86  side 1    Res =  0.1378E+03
+ MRCHDU: Convergence failed at  87  side 1    Res =  0.9353E+02
+ MRCHDU: Convergence failed at  88  side 1    Res =  0.6874E+02
+ MRCHDU: Convergence failed at  89  side 1    Res =  0.3213E+02
+ MRCHDU: Convergence failed at  90  side 1    Res =  0.2761E+02
+ MRCHDU: Convergence failed at  91  side 1    Res =  0.2584E+02
+ MRCHDU: Convergence failed at  92  side 1    Res =  0.2039E+02
+ MRCHDU: Convergence failed at  93  side 1    Res =  0.2917E+02
+ MRCHDU: Convergence failed at  94  side 1    Res =  0.8545E+02
+ MRCHDU: Convergence failed at  95  side 1    Res =  0.1517E+03
+ MRCHDU: Convergence failed at  96  side 1    Res =  0.8398E+02
+ MRCHDU: Convergence failed at  97  side 1    Res =  0.1110E+03
+ MRCHDU: Convergence failed at  98  side 1    Res =  0.2404E+03
+ MRCHDU: Convergence failed at  99  side 1    Res =  0.1037E+03
+ MRCHDU: Convergence failed at 100  side 1    Res =  0.1812E+03
+ MRCHDU: Convergence failed at 101  side 1    Res =  0.2622E+03
+ MRCHDU: Convergence failed at  68  side 2    Res =  0.3992E+01
+ Side 1  free  transition at x/c =  0.2081   63
+ Side 2 forced transition at x/c =  1.0001   61
+
+   2   rms: 0.2453E+01   max: 0.1154E+02   D at   63  2   RLX: 0.130
+       a = 12.000      CL =  3.9481
+      Cm = -0.9306     CD =  0.00518   =>   CDf =  0.00372    CDp =  0.00146
+
+ MRCHDU: Convergence failed at  69  side 1    Res =  0.2302E+00
+ MRCHDU: Convergence failed at  70  side 1    Res =  0.2093E+00
+ MRCHDU: Convergence failed at  71  side 1    Res =  0.1860E+00
+ MRCHDU: Convergence failed at  72  side 1    Res =  0.1575E+00
+ MRCHDU: Convergence failed at  74  side 1    Res =  0.3178E+00
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.1834E+01
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.2890E+01
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.1268E+02
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.2844E+01
+ Side 1  free  transition at x/c =  0.1973   62
+ Side 2 forced transition at x/c =  1.0001   61
+
+   3   rms: 0.8075E+00   max: -.6426E+01   T at   62  1   RLX: 0.078
+       a = 12.000      CL =  3.1798
+      Cm = -0.6420     CD =  0.05209   =>   CDf =  0.00534    CDp =  0.04675
+
+ MRCHDU: Convergence failed at  63  side 1    Res =  0.3959E+01
+ MRCHDU: Convergence failed at  75  side 1    Res =  0.2682E+00
+ MRCHDU: Convergence failed at  76  side 1    Res =  0.7344E+00
+ MRCHDU: Convergence failed at 101  side 1    Res =  0.5142E+00
+ Side 1  free  transition at x/c =  0.2064   63
+ Side 2 forced transition at x/c =  1.0001   61
+
+   4   rms: 0.6468E+00   max: -.2714E+01   D at   68  1   RLX: 0.184
+       a = 12.000      CL =  2.6664
+      Cm = -0.3650     CD =  0.05320   =>   CDf =  0.00413    CDp =  0.04906
+
+ Side 1  free  transition at x/c =  0.2244   65
+ Side 2 forced transition at x/c =  1.0001   61
+
+   5   rms: 0.3399E+00   max: 0.1513E+01   D at   67  2   RLX: 0.503
+       a = 12.000      CL =  2.1926
+      Cm = -0.2209     CD =  0.06077   =>   CDf =  0.00487    CDp =  0.05590
+
+ Side 1  free  transition at x/c =  0.2218   64
+ Side 2 forced transition at x/c =  1.0001   61
+
+   6   rms: 0.2558E+00   max: -.1224E+01   D at   74  1   RLX: 0.408
+       a = 12.000      CL =  2.1017
+      Cm = -0.1698     CD =  0.05215   =>   CDf =  0.00505    CDp =  0.04710
+
+ Side 1  free  transition at x/c =  0.2171   64
+ Side 2 forced transition at x/c =  1.0001   61
+
+   7   rms: 0.1978E+00   max: -.9179E+00   D at   80  1   RLX: 0.545
+       a = 12.000      CL =  2.0349
+      Cm = -0.1323     CD =  0.04136   =>   CDf =  0.00563    CDp =  0.03573
+
+ Side 1  free  transition at x/c =  0.2125   64
+ Side 2 forced transition at x/c =  1.0001   61
+
+   8   rms: 0.1354E+00   max: -.7300E+00   D at   89  1   RLX: 0.685
+       a = 12.000      CL =  2.0332
+      Cm = -0.1214     CD =  0.03569   =>   CDf =  0.00638    CDp =  0.02931
+
+ Side 1  free  transition at x/c =  0.2099   63
+ Side 2 forced transition at x/c =  1.0001   61
+
+   9   rms: 0.5171E-01   max: -.4011E+00   D at   89  1
+       a = 12.000      CL =  2.0438
+      Cm = -0.1282     CD =  0.03649   =>   CDf =  0.00682    CDp =  0.02968
+
+ Side 1  free  transition at x/c =  0.2063   63
+ Side 2 forced transition at x/c =  1.0001   61
+
+  10   rms: 0.1430E-01   max: -.1175E+00   D at   89  1
+       a = 12.000      CL =  2.0327
+      Cm = -0.1280     CD =  0.03732   =>   CDf =  0.00681    CDp =  0.03052
+
+ Side 1  free  transition at x/c =  0.2065   63
+ Side 2 forced transition at x/c =  1.0001   61
+
+  11   rms: 0.1083E-02   max: -.8357E-02   D at   90  1
+       a = 12.000      CL =  2.0320
+      Cm = -0.1279     CD =  0.03736   =>   CDf =  0.00679    CDp =  0.03057
+
+ Side 1  free  transition at x/c =  0.2066   63
+ Side 2 forced transition at x/c =  1.0001   61
+
+  12   rms: 0.1798E-04   max: 0.1425E-03   D at   99  1
+       a = 12.000      CL =  2.0320
+      Cm = -0.1279     CD =  0.03736   =>   CDf =  0.00679    CDp =  0.03057
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2066   63
+ Side 2 forced transition at x/c =  1.0001   61
+
+   1   rms: 0.1135E+00   max: 0.3062E+00   D at   94  1   RLX: 0.938
+       a = 13.000      CL =  2.0656
+      Cm = -0.1200     CD =  0.04212   =>   CDf =  0.00651    CDp =  0.03561
+
+ Side 1  free  transition at x/c =  0.2003   64
+ Side 2 forced transition at x/c =  1.0001   60
+
+   2   rms: 0.2335E-01   max: -.1760E+00   D at   64  1
+       a = 13.000      CL =  2.0736
+      Cm = -0.1209     CD =  0.04205   =>   CDf =  0.00668    CDp =  0.03536
+
+ Side 1  free  transition at x/c =  0.2007   64
+ Side 2 forced transition at x/c =  1.0001   60
+
+   3   rms: 0.2048E-02   max: -.1105E-01   D at   74  2
+       a = 13.000      CL =  2.0755
+      Cm = -0.1211     CD =  0.04205   =>   CDf =  0.00665    CDp =  0.03540
+
+ Side 1  free  transition at x/c =  0.2007   64
+ Side 2 forced transition at x/c =  1.0001   60
+
+   4   rms: 0.1731E-04   max: 0.2158E-03   D at   97  1
+       a = 13.000      CL =  2.0755
+      Cm = -0.1211     CD =  0.04206   =>   CDf =  0.00665    CDp =  0.03540
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2007   64
+ Side 2 forced transition at x/c =  1.0001   60
+
+   1   rms: 0.1120E+00   max: 0.3755E+00   T at   64  1   RLX: 0.851
+       a = 14.000      CL =  2.1237
+      Cm = -0.1171     CD =  0.04603   =>   CDf =  0.00635    CDp =  0.03968
+
+ Side 1  free  transition at x/c =  0.1972   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   2   rms: 0.6033E-01   max: 0.2843E+00   D at   97  1
+       a = 14.000      CL =  2.0695
+      Cm = -0.1136     CD =  0.05170   =>   CDf =  0.00650    CDp =  0.04520
+
+ Side 1  free  transition at x/c =  0.1953   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   3   rms: 0.5871E-02   max: 0.5961E-01   D at   95  1
+       a = 14.000      CL =  2.0722
+      Cm = -0.1146     CD =  0.05165   =>   CDf =  0.00620    CDp =  0.04545
+
+ Side 1  free  transition at x/c =  0.1952   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   4   rms: 0.2812E-03   max: 0.4974E-02   D at   93  1
+       a = 14.000      CL =  2.0720
+      Cm = -0.1146     CD =  0.05165   =>   CDf =  0.00619    CDp =  0.04546
+
+ Side 1  free  transition at x/c =  0.1952   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   5   rms: 0.8220E-05   max: 0.4448E-04   D at   93  1
+       a = 14.000      CL =  2.0720
+      Cm = -0.1146     CD =  0.05165   =>   CDf =  0.00619    CDp =  0.04546
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.1952   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   1   rms: 0.1376E+00   max: 0.5808E+00   D at   90  1   RLX: 0.626
+       a = 15.000      CL =  2.0505
+      Cm = -0.1130     CD =  0.06104   =>   CDf =  0.00623    CDp =  0.05482
+
+ Side 1  free  transition at x/c =  0.1912   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   2   rms: 0.4882E-01   max: 0.2845E+00   D at   89  1
+       a = 15.000      CL =  2.0511
+      Cm = -0.1159     CD =  0.06668   =>   CDf =  0.00592    CDp =  0.06076
+
+ Side 1  free  transition at x/c =  0.1893   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   3   rms: 0.8085E-02   max: -.6285E-01   D at   90  1
+       a = 15.000      CL =  2.0577
+      Cm = -0.1160     CD =  0.06539   =>   CDf =  0.00581    CDp =  0.05958
+
+ Side 1  free  transition at x/c =  0.1893   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   4   rms: 0.1319E-02   max: -.5315E-02   D at   87  1
+       a = 15.000      CL =  2.0588
+      Cm = -0.1159     CD =  0.06531   =>   CDf =  0.00583    CDp =  0.05949
+
+ Side 1  free  transition at x/c =  0.1893   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   5   rms: 0.1221E-03   max: -.5694E-03   D at   72  2
+       a = 15.000      CL =  2.0589
+      Cm = -0.1159     CD =  0.06532   =>   CDf =  0.00583    CDp =  0.05949
+
+ Side 1  free  transition at x/c =  0.1893   64
+ Side 2 forced transition at x/c =  1.0001   59
+
+   6   rms: 0.1087E-04   max: -.7002E-04   D at   75  2
+       a = 15.000      CL =  2.0589
+      Cm = -0.1159     CD =  0.06532   =>   CDf =  0.00583    CDp =  0.05949
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.04.log                                 
+ Dump file unspecified or not available
+
+.OPERva   c>  
+ XFOIL   c>  
+0.1
+resp: 
+ ===================================================
+  XFOIL Version 6.97
+  Copyright (C) 2000   Mark Drela, Harold Youngren
+
+  This software comes with ABSOLUTELY NO WARRANTY,
+    subject to the GNU General Public License.
+
+  Caveat computor
+ ===================================================
+
+ File  xfoil.def  not found
+
+   QUIT    Exit program
+
+  .OPER    Direct operating point(s)
+  .MDES    Complex mapping design routine
+  .QDES    Surface speed design routine
+  .GDES    Geometry design routine
+
+   SAVE f  Write airfoil to labeled coordinate file
+   PSAV f  Write airfoil to plain coordinate file
+   ISAV f  Write airfoil to ISES coordinate file
+   MSAV f  Write airfoil to MSES coordinate file
+   REVE    Reverse written-airfoil node ordering
+   DELI i  Change written-airfoil file delimiters
+
+   LOAD f  Read buffer airfoil from coordinate file
+   NACA i  Set NACA 4,5-digit airfoil and buffer airfoil
+   INTE    Set buffer airfoil by interpolating two airfoils
+   NORM    Buffer airfoil normalization toggle
+   HALF    Halve the number of points in buffer airfoil
+   XYCM rr Change CM reference location, currently  0.25000 0.00000
+
+   BEND    Display structural properties of current airfoil
+
+   PCOP    Set current-airfoil panel nodes directly from buffer airfoil points
+   PANE    Set current-airfoil panel nodes ( 160 ) based on curvature
+  .PPAR    Show/change paneling
+
+  .PLOP    Plotting options
+
+   WDEF f  Write  current-settings file
+   RDEF f  Reread current-settings file
+   NAME s  Specify new airfoil name
+   NINC    Increment name version number
+
+   Z       Zoom    | (available in all menus)
+   U       Unzoom  | 
+
+ XFOIL   c>   ...............................................
+
+  G raphics-enable flag:        T
+  S ize of plot object          10.00"
+  A spect ratio of plot object   0.5500
+  P age dimensions              11.00 x  8.50"
+  M argins from page edges       0.00",  0.00"
+  F ont size (relative)          0.0150
+  W indow/screen size fraction   0.8000
+  B lowup input method:        Cursor    
+  O rientation of plot:        Landscape 
+  C olor PostScript output?     F
+
+      Option, Value   (or <Return>)    c>   ...............................................
+
+  G raphics-enable flag:        F
+  S ize of plot object          10.00"
+  A spect ratio of plot object   0.5500
+  P age dimensions              11.00 x  8.50"
+  M argins from page edges       0.00",  0.00"
+  F ont size (relative)          0.0150
+  W indow/screen size fraction   0.8000
+  B lowup input method:        Cursor    
+  O rientation of plot:        Landscape 
+  C olor PostScript output?     F
+
+      Option, Value   (or <Return>)    c>  
+ XFOIL   c>  
+ Labeled airfoil file.  Name:  000145                                          
+
+ Number of input coordinate points: 200
+ Clockwise ordering
+ Max thickness =     0.199756  at x =   0.170
+ Max camber    =     0.051252  at x =   0.302
+
+  LE  x,y  =  -0.00001   0.00095  |   Chord =   0.99988
+  TE  x,y  =   0.99988   0.00006  |
+
+ Current airfoil nodes set from buffer airfoil nodes ( 200 )
+
+ XFOIL   c>  
+ You are working with the buffer airfoil
+
+.GDES   c>  
+  i       x        y      angle
+   2   0.9990   0.0005    0.053
+   3   0.9978   0.0010    0.214
+   4   0.9961   0.0018    0.261
+   5   0.9938   0.0028    0.292
+   6   0.9911   0.0040    0.363
+   7   0.9880   0.0055    0.431
+   8   0.9843   0.0070    0.468
+   9   0.9801   0.0088    0.532
+  10   0.9755   0.0107    0.562
+  11   0.9704   0.0127    0.605
+  12   0.9649   0.0149    0.642
+  13   0.9589   0.0171    0.669
+  14   0.9524   0.0195    0.708
+  15   0.9455   0.0219    0.718
+  16   0.9382   0.0243    0.727
+  17   0.9304   0.0268    0.744
+  18   0.9222   0.0293    0.735
+  19   0.9135   0.0319    0.734
+  20   0.9045   0.0344    0.722
+  21   0.8951   0.0369    0.697
+  22   0.8853   0.0393    0.686
+  23   0.8751   0.0418    0.641
+  24   0.8645   0.0442    0.617
+  25   0.8536   0.0465    0.565
+  26   0.8423   0.0488    0.534
+  27   0.8307   0.0511    0.471
+  28   0.8187   0.0534    0.433
+  29   0.8065   0.0556    0.369
+  30   0.7939   0.0577    0.321
+  31   0.7810   0.0599    0.265
+  32   0.7679   0.0620    0.207
+  33   0.7545   0.0641    0.156
+  34   0.7409   0.0662    0.097
+  35   0.7270   0.0684    0.049
+  36   0.7129   0.0705    0.005
+  37   0.6986   0.0727   -0.046
+  38   0.6841   0.0750   -0.081
+  39   0.6694   0.0773   -0.120
+  40   0.6545   0.0796   -0.150
+  41   0.6395   0.0820   -0.176
+  42   0.6243   0.0845   -0.190
+  43   0.6091   0.0870   -0.206
+  44   0.5937   0.0896   -0.213
+  45   0.5782   0.0923   -0.214
+  46   0.5627   0.0951   -0.205
+  47   0.5471   0.0979   -0.190
+  48   0.5314   0.1008   -0.174
+  49   0.5157   0.1038   -0.142
+  50   0.5000   0.1068   -0.113
+  51   0.4843   0.1098   -0.070
+  52   0.4686   0.1129   -0.025
+  53   0.4529   0.1159    0.028
+  54   0.4373   0.1190    0.084
+  55   0.4218   0.1219    0.148
+  56   0.4063   0.1249    0.221
+  57   0.3909   0.1277    0.290
+  58   0.3757   0.1305    0.370
+  59   0.3605   0.1331    0.452
+  60   0.3455   0.1356    0.545
+  61   0.3306   0.1380    0.632
+  62   0.3159   0.1401    0.727
+  63   0.3014   0.1420    0.832
+  64   0.2871   0.1437    0.928
+  65   0.2730   0.1451    1.038
+  66   0.2591   0.1462    1.146
+  67   0.2455   0.1471    1.256
+  68   0.2321   0.1476    1.366
+  69   0.2190   0.1479    1.486
+  70   0.2061   0.1477    1.599
+  71   0.1935   0.1473    1.712
+  72   0.1813   0.1464    1.830
+  73   0.1693   0.1453    1.948
+  74   0.1577   0.1437    2.062
+  75   0.1464   0.1418    2.167
+  76   0.1355   0.1395    2.286
+  77   0.1249   0.1368    2.384
+  78   0.1147   0.1338    2.495
+  79   0.1049   0.1304    2.595
+  80   0.0955   0.1267    2.682
+  81   0.0865   0.1226    2.784
+  82   0.0778   0.1182    2.868
+  83   0.0696   0.1135    2.947
+  84   0.0618   0.1084    3.025
+  85   0.0545   0.1031    3.105
+  86   0.0476   0.0975    3.176
+  87   0.0411   0.0916    3.241
+  88   0.0351   0.0855    3.297
+  89   0.0296   0.0792    3.368
+  90   0.0245   0.0727    3.412
+  91   0.0199   0.0659    3.474
+  92   0.0157   0.0591    3.531
+  93   0.0120   0.0520    3.552
+  94   0.0089   0.0448    3.618
+  95   0.0062   0.0375    3.637
+  96   0.0039   0.0301    3.670
+  97   0.0022   0.0227    3.702
+  98   0.0010   0.0151    3.710
+  99   0.0002   0.0076    3.723
+ 100   0.0000   0.0000    4.924
+ 101   0.0002  -0.0046    6.097
+ 102   0.0010  -0.0092    6.070
+ 103   0.0022  -0.0137    6.040
+ 104   0.0039  -0.0182    5.947
+ 105   0.0062  -0.0225    5.843
+ 106   0.0089  -0.0266    5.721
+ 107   0.0120  -0.0306    5.499
+ 108   0.0157  -0.0344    5.307
+ 109   0.0199  -0.0379    5.015
+ 110   0.0245  -0.0412    4.737
+ 111   0.0296  -0.0442    4.408
+ 112   0.0351  -0.0469    4.075
+ 113   0.0411  -0.0494    3.751
+ 114   0.0476  -0.0515    3.408
+ 115   0.0545  -0.0534    3.094
+ 116   0.0618  -0.0549    2.769
+ 117   0.0696  -0.0562    2.489
+ 118   0.0778  -0.0571    2.203
+ 119   0.0865  -0.0578    1.952
+ 120   0.0955  -0.0582    1.703
+ 121   0.1049  -0.0584    1.503
+ 122   0.1147  -0.0582    1.288
+ 123   0.1249  -0.0579    1.110
+ 124   0.1355  -0.0573    0.938
+ 125   0.1464  -0.0565    0.800
+ 126   0.1577  -0.0556    0.653
+ 127   0.1693  -0.0545    0.540
+ 128   0.1813  -0.0532    0.425
+ 129   0.1935  -0.0518    0.337
+ 130   0.2061  -0.0503    0.248
+ 131   0.2190  -0.0488    0.179
+ 132   0.2321  -0.0471    0.121
+ 133   0.2455  -0.0454    0.060
+ 134   0.2591  -0.0436    0.029
+ 135   0.2730  -0.0418   -0.012
+ 136   0.2871  -0.0400   -0.029
+ 137   0.3014  -0.0381   -0.052
+ 138   0.3159  -0.0362   -0.062
+ 139   0.3306  -0.0344   -0.062
+ 140   0.3455  -0.0325   -0.068
+ 141   0.3605  -0.0306   -0.057
+ 142   0.3757  -0.0287   -0.056
+ 143   0.3909  -0.0269   -0.034
+ 144   0.4063  -0.0250   -0.031
+ 145   0.4218  -0.0231   -0.008
+ 146   0.4373  -0.0212    0.001
+ 147   0.4529  -0.0193    0.019
+ 148   0.4686  -0.0174    0.030
+ 149   0.4843  -0.0155    0.047
+ 150   0.5000  -0.0135    0.050
+ 151   0.5157  -0.0116    0.057
+ 152   0.5314  -0.0096    0.064
+ 153   0.5471  -0.0076    0.057
+ 154   0.5627  -0.0056    0.058
+ 155   0.5782  -0.0036    0.039
+ 156   0.5937  -0.0016    0.029
+ 157   0.6091   0.0004    0.007
+ 158   0.6243   0.0024   -0.019
+ 159   0.6395   0.0043   -0.052
+ 160   0.6545   0.0063   -0.082
+ 161   0.6694   0.0081   -0.129
+ 162   0.6841   0.0100   -0.173
+ 163   0.6986   0.0118   -0.221
+ 164   0.7129   0.0134   -0.277
+ 165   0.7270   0.0150   -0.329
+ 166   0.7409   0.0165   -0.397
+ 167   0.7545   0.0179   -0.452
+ 168   0.7679   0.0191   -0.519
+ 169   0.7810   0.0202   -0.584
+ 170   0.7939   0.0212   -0.653
+ 171   0.8065   0.0219   -0.705
+ 172   0.8187   0.0225   -0.783
+ 173   0.8307   0.0230   -0.830
+ 174   0.8423   0.0232   -0.893
+ 175   0.8536   0.0233   -0.949
+ 176   0.8645   0.0231   -0.992
+ 177   0.8751   0.0228   -1.030
+ 178   0.8853   0.0224   -1.074
+ 179   0.8951   0.0217   -1.091
+ 180   0.9045   0.0209   -1.117
+ 181   0.9135   0.0200   -1.125
+ 182   0.9222   0.0189   -1.130
+ 183   0.9304   0.0177   -1.124
+ 184   0.9382   0.0164   -1.097
+ 185   0.9455   0.0151   -1.077
+ 186   0.9524   0.0137   -1.053
+ 187   0.9589   0.0123   -1.001
+ 188   0.9649   0.0108   -0.958
+ 189   0.9704   0.0094   -0.894
+ 190   0.9755   0.0080   -0.841
+ 191   0.9801   0.0066   -0.763
+ 192   0.9843   0.0053   -0.705
+ 193   0.9880   0.0042   -0.607
+ 194   0.9911   0.0031   -0.533
+ 195   0.9938   0.0022   -0.469
+ 196   0.9961   0.0014   -0.339
+ 197   0.9978   0.0008   -0.279
+ 198   0.9990   0.0004   -0.172
+ 199   0.9998   0.0001   -0.111
+
+ Maximum panel corner angle =  6.097   at  i,x,y  = 101   0.0002  -0.0046
+
+ Enter corner angle criterion for refinement (deg):   3.048
+ Enter type of spline parameter (1=uniform, 2=arclength):   1
+ Enter refinement x limits:  -0.10000   1.10000
+ Number of points added:           62
+ Max thickness =     0.199734  at x =   0.169
+ Max camber    =     0.051925  at x =   0.301
+
+ Maximum panel corner angle =  2.947   at  i,x,y  =  83   0.0696   0.1135
+
+.GDES   c>  
+ Buffer airfoil is not identical to current airfoil
+
+ XFOIL   c>  
+ Blunt trailing edge.  Gap =  0.00027
+
+ Paneling parameters used...
+   Number of panel nodes       160
+   Panel bunching parameter    1.000
+   TE/LE panel density ratio   0.150
+   Refined-area/LE panel density ratio    0.200
+   Top    side refined area x/c limits  1.000 1.000
+   Bottom side refined area x/c limits  1.000 1.000
+
+ XFOIL   c>  
+.OPERi   c>   Current iteration limit:          20
+
+Enter new iteration limit   i>  
+Enter new iteration limit   i>  
+Enter new iteration limit   i>  
+.OPERi   c>  
+ M  =    0.0000
+ Re =  0.3000E+06
+
+.OPERv   c>  
+ Sonic Cp =    -66.86      Sonic Q/Qinf =     9.138
+
+
+.OPERv   c>  
+ Polar  1 newly created for accumulation
+ Airfoil archived with polar: 000145                                          
+
+Enter  polar save filename  OR  <return> for no file   s>  
+ New polar save file available
+
+Enter  polar dump filename  OR  <return> for no file   s>  
+ Polar dump file will NOT be written
+
+ Polar accumulation enabled
+
+.OPERva   c>   Calculating unit vorticity distributions ...
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Initializing BL ...
+    side            1  ...
+ MRCHUE: Inverse mode at  50     Hk =   4.466
+ MRCHUE: Inverse mode at  51     Hk =   5.285
+ MRCHUE: Inverse mode at  52     Hk =   6.115
+ MRCHUE: Inverse mode at  53     Hk =   6.963
+ MRCHUE: Inverse mode at  54     Hk =   7.837
+ MRCHUE: Inverse mode at  55     Hk =   8.742
+ MRCHUE: Inverse mode at  56     Hk =   9.037
+ MRCHUE: Inverse mode at  57     Hk =   4.515
+ MRCHUE: Inverse mode at  58     Hk =   2.500
+    side            2  ...
+ MRCHUE: Inverse mode at  34     Hk =   4.091
+ MRCHUE: Inverse mode at  35     Hk =   4.926
+ MRCHUE: Inverse mode at  36     Hk =   5.810
+ MRCHUE: Inverse mode at  37     Hk =   6.756
+ MRCHUE: Inverse mode at  38     Hk =   7.772
+ MRCHUE: Inverse mode at  39     Hk =   8.860
+ MRCHUE: Inverse mode at  40     Hk =   7.686
+ MRCHUE: Inverse mode at  41     Hk =   3.174
+ MRCHUE: Inverse mode at  75     Hk =   1.631
+ MRCHUE: Inverse mode at  76     Hk =   1.623
+
+ Side 1  free  transition at x/c =  0.2804   56
+ Side 2  free  transition at x/c =  0.2751   40
+
+   1   rms: 0.1671E+00   max: -.5564E+00   D at   41  2   RLX: 0.899
+       a =  2.000      CL =  1.1093
+      Cm = -0.1663     CD =  0.01983   =>   CDf =  0.00921    CDp =  0.01062
+
+ MRCHDU: Convergence failed at  56  side 1    Res =  0.4721E+01
+ MRCHDU: Convergence failed at  57  side 1    Res =  0.6180E+01
+ MRCHDU: Convergence failed at  58  side 1    Res =  0.1175E+02
+ MRCHDU: Convergence failed at  59  side 1    Res =  0.1010E+03
+ MRCHDU: Convergence failed at  60  side 1    Res =  0.2285E+03
+ MRCHDU: Convergence failed at  61  side 1    Res =  0.5685E+03
+ MRCHDU: Convergence failed at  62  side 1    Res =  0.7576E+02
+ MRCHDU: Convergence failed at  63  side 1    Res =  0.3884E+02
+ MRCHDU: Convergence failed at  64  side 1    Res =  0.2610E+02
+ MRCHDU: Convergence failed at  65  side 1    Res =  0.1931E+02
+ MRCHDU: Convergence failed at  66  side 1    Res =  0.1653E+02
+ MRCHDU: Convergence failed at  67  side 1    Res =  0.1273E+02
+ MRCHDU: Convergence failed at  68  side 1    Res =  0.1363E+02
+ MRCHDU: Convergence failed at  69  side 1    Res =  0.1418E+02
+ MRCHDU: Convergence failed at  70  side 1    Res =  0.1447E+02
+ MRCHDU: Convergence failed at  71  side 1    Res =  0.2876E+02
+ MRCHDU: Convergence failed at  72  side 1    Res =  0.3017E+02
+ MRCHDU: Convergence failed at  73  side 1    Res =  0.1400E+02
+ MRCHDU: Convergence failed at  74  side 1    Res =  0.2932E+02
+ MRCHDU: Convergence failed at  75  side 1    Res =  0.2964E+02
+ MRCHDU: Convergence failed at  76  side 1    Res =  0.1631E+02
+ MRCHDU: Convergence failed at  77  side 1    Res =  0.1637E+02
+ MRCHDU: Convergence failed at  78  side 1    Res =  0.3858E+02
+ MRCHDU: Convergence failed at  79  side 1    Res =  0.3258E+02
+ MRCHDU: Convergence failed at  80  side 1    Res =  0.2705E+02
+ MRCHDU: Convergence failed at  81  side 1    Res =  0.3256E+02
+ MRCHDU: Convergence failed at  82  side 1    Res =  0.4278E+02
+ MRCHDU: Convergence failed at  83  side 1    Res =  0.4752E+02
+ MRCHDU: Convergence failed at  84  side 1    Res =  0.3868E+02
+ MRCHDU: Convergence failed at  85  side 1    Res =  0.7919E+02
+ MRCHDU: Convergence failed at  86  side 1    Res =  0.2433E+03
+ MRCHDU: Convergence failed at  87  side 1    Res =  0.4546E+02
+ MRCHDU: Convergence failed at  88  side 1    Res =  0.3094E+02
+ MRCHDU: Convergence failed at  42  side 2    Res =  0.2674E+01
+ Side 1  free  transition at x/c =  0.2903   56
+ Side 2  free  transition at x/c =  0.2970   42
+
+   2   rms: 0.9334E+00   max: 0.3654E+01   D at   76  2   RLX: 0.411
+       a =  2.000      CL =  1.5716
+      Cm = -0.3874     CD =  0.00893   =>   CDf =  0.00493    CDp =  0.00400
+
+ Side 1  free  transition at x/c =  0.2818   55
+ Side 2  free  transition at x/c =  0.2826   43
+
+   3   rms: 0.2992E+00   max: -.5216E+00   D at   76  2   RLX: 0.407
+       a =  2.000      CL =  1.1895
+      Cm = -0.2319     CD =  0.02774   =>   CDf =  0.00712    CDp =  0.02062
+
+ Side 1  free  transition at x/c =  0.2868   55
+ Side 2  free  transition at x/c =  0.2717   42
+
+   4   rms: 0.3165E+00   max: -.1677E+01   D at   63  1   RLX: 0.298
+       a =  2.000      CL =  1.0997
+      Cm = -0.1960     CD =  0.02578   =>   CDf =  0.00691    CDp =  0.01887
+
+ Side 1  free  transition at x/c =  0.2924   55
+ Side 2  free  transition at x/c =  0.2694   42
+
+   5   rms: 0.1289E+01   max: -.7994E+01   D at   62  1   RLX: 0.063
+       a =  2.000      CL =  1.1421
+      Cm = -0.2043     CD =  0.02496   =>   CDf =  0.00714    CDp =  0.01782
+
+ Side 1  free  transition at x/c =  0.2936   55
+ Side 2  free  transition at x/c =  0.2762   42
+
+   6   rms: 0.2759E+00   max: -.2114E+01   D at   64  1   RLX: 0.236
+       a =  2.000      CL =  1.1108
+      Cm = -0.1883     CD =  0.02439   =>   CDf =  0.00736    CDp =  0.01703
+
+ MRCHDU: Convergence failed at  61  side 1    Res =  0.4443E-01
+ Side 1  free  transition at x/c =  0.2949   55
+ Side 2  free  transition at x/c =  0.2766   42
+
+   7   rms: 0.2739E+00   max: -.2106E+01   D at   64  1   RLX: 0.237
+       a =  2.000      CL =  1.0920
+      Cm = -0.1755     CD =  0.02385   =>   CDf =  0.00753    CDp =  0.01632
+
+ MRCHDU: Convergence failed at  61  side 1    Res =  0.3346E-01
+ MRCHDU: Convergence failed at  66  side 1    Res =  0.1649E+01
+ Side 1  free  transition at x/c =  0.2954   55
+ Side 2  free  transition at x/c =  0.2783   42
+
+   8   rms: 0.3310E+00   max: -.2215E+01   D at   64  1   RLX: 0.226
+       a =  2.000      CL =  1.0995
+      Cm = -0.1707     CD =  0.02253   =>   CDf =  0.00741    CDp =  0.01512
+
+ MRCHDU: Convergence failed at  61  side 1    Res =  0.1134E+00
+ Side 1  free  transition at x/c =  0.2957   55
+ Side 2  free  transition at x/c =  0.2811   42
+
+   9   rms: 0.3027E+00   max: -.1462E+01   D at   64  1   RLX: 0.342
+       a =  2.000      CL =  1.1121
+      Cm = -0.1642     CD =  0.02010   =>   CDf =  0.00772    CDp =  0.01238
+
+ Side 1  free  transition at x/c =  0.2948   56
+ Side 2  free  transition at x/c =  0.2851   42
+
+  10   rms: 0.1550E+00   max: 0.5581E+00   D at   76  2   RLX: 0.492
+       a =  2.000      CL =  1.0921
+      Cm = -0.1619     CD =  0.01856   =>   CDf =  0.00931    CDp =  0.00925
+
+ Side 1  free  transition at x/c =  0.2922   56
+ Side 2  free  transition at x/c =  0.2889   42
+
+  11   rms: 0.8251E-01   max: -.7216E+00   D at   67  1   RLX: 0.693
+       a =  2.000      CL =  1.0759
+      Cm = -0.1596     CD =  0.01883   =>   CDf =  0.00886    CDp =  0.00998
+
+ Side 1  free  transition at x/c =  0.2899   56
+ Side 2  free  transition at x/c =  0.2903   42
+
+  12   rms: 0.3312E-01   max: -.3619E+00   D at   67  1
+       a =  2.000      CL =  1.0762
+      Cm = -0.1597     CD =  0.01892   =>   CDf =  0.00869    CDp =  0.01023
+
+ Side 1  free  transition at x/c =  0.2886   56
+ Side 2  free  transition at x/c =  0.2924   42
+
+  13   rms: 0.2824E-02   max: -.4095E-01   D at   67  1
+       a =  2.000      CL =  1.0761
+      Cm = -0.1597     CD =  0.01892   =>   CDf =  0.00867    CDp =  0.01024
+
+ Side 1  free  transition at x/c =  0.2886   56
+ Side 2  free  transition at x/c =  0.2924   42
+
+  14   rms: 0.2949E-04   max: -.4810E-03   D at   67  1
+       a =  2.000      CL =  1.0761
+      Cm = -0.1597     CD =  0.01892   =>   CDf =  0.00867    CDp =  0.01024
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2886   56
+ Side 2  free  transition at x/c =  0.2924   42
+
+   1   rms: 0.1683E+00   max: 0.9758E+00   D at   42  2   RLX: 0.539
+       a =  3.000      CL =  1.1461
+      Cm = -0.1608     CD =  0.01908   =>   CDf =  0.00869    CDp =  0.01040
+
+ Side 1  free  transition at x/c =  0.2827   56
+ Side 2  free  transition at x/c =  0.3293   43
+
+   2   rms: 0.8251E-01   max: -.5505E+00   C at   43  2   RLX: 0.908
+       a =  3.000      CL =  1.1993
+      Cm = -0.1616     CD =  0.02020   =>   CDf =  0.00855    CDp =  0.01164
+
+ Side 1  free  transition at x/c =  0.2788   56
+ Side 2  free  transition at x/c =  0.3762   44
+
+   3   rms: 0.4827E-01   max: -.6057E+00   C at   44  2   RLX: 0.825
+       a =  3.000      CL =  1.2075
+      Cm = -0.1624     CD =  0.01967   =>   CDf =  0.00855    CDp =  0.01112
+
+ Side 1  free  transition at x/c =  0.2780   56
+ Side 2  free  transition at x/c =  0.4100   45
+
+   4   rms: 0.2628E-01   max: -.5041E+00   C at   45  2   RLX: 0.992
+       a =  3.000      CL =  1.2091
+      Cm = -0.1625     CD =  0.01958   =>   CDf =  0.00836    CDp =  0.01122
+
+ Side 1  free  transition at x/c =  0.2777   56
+ Side 2  free  transition at x/c =  0.4323   46
+
+   5   rms: 0.9209E-02   max: -.1715E+00   C at   46  2
+       a =  3.000      CL =  1.2091
+      Cm = -0.1626     CD =  0.01957   =>   CDf =  0.00828    CDp =  0.01129
+
+ Side 1  free  transition at x/c =  0.2777   56
+ Side 2  free  transition at x/c =  0.4393   46
+
+   6   rms: 0.6262E-03   max: 0.1279E-01   C at   46  2
+       a =  3.000      CL =  1.2091
+      Cm = -0.1625     CD =  0.01958   =>   CDf =  0.00824    CDp =  0.01134
+
+ Side 1  free  transition at x/c =  0.2777   56
+ Side 2  free  transition at x/c =  0.4387   46
+
+   7   rms: 0.3214E-05   max: 0.6106E-04   C at   46  2
+       a =  3.000      CL =  1.2091
+      Cm = -0.1625     CD =  0.01958   =>   CDf =  0.00824    CDp =  0.01134
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2777   56
+ Side 2  free  transition at x/c =  0.4387   46
+
+   1   rms: 0.3832E+00   max: -.7223E+01   C at   46  2   RLX: 0.069
+       a =  4.000      CL =  1.2188
+      Cm = -0.1629     CD =  0.01958   =>   CDf =  0.00825    CDp =  0.01133
+
+ Side 1  free  transition at x/c =  0.2769   56
+ Side 2  free  transition at x/c =  0.4624   47
+
+   2   rms: 0.3691E+00   max: -.6505E+01   C at   47  2   RLX: 0.077
+       a =  4.000      CL =  1.2298
+      Cm = -0.1635     CD =  0.01961   =>   CDf =  0.00818    CDp =  0.01143
+
+ Side 1  free  transition at x/c =  0.2760   56
+ Side 2  free  transition at x/c =  0.4871   47
+
+   3   rms: 0.2164E+00   max: -.3684E+01   C at   47  2   RLX: 0.136
+       a =  4.000      CL =  1.2454
+      Cm = -0.1638     CD =  0.01972   =>   CDf =  0.00795    CDp =  0.01177
+
+ Side 1  free  transition at x/c =  0.2747   57
+ Side 2  free  transition at x/c =  0.5410   48
+
+   4   rms: 0.1320E+00   max: -.8076E+00   C at   48  2   RLX: 0.619
+       a =  4.000      CL =  1.3019
+      Cm = -0.1638     CD =  0.02008   =>   CDf =  0.00796    CDp =  0.01212
+
+ MRCHDU: Convergence failed at  51  side 2    Res =  0.3268E+01
+ MRCHDU: Convergence failed at  52  side 2    Res =  0.1082E+01
+ MRCHDU: Convergence failed at  53  side 2    Res =  0.2058E+01
+ MRCHDU: Convergence failed at  54  side 2    Res =  0.2894E+01
+ MRCHDU: Convergence failed at  55  side 2    Res =  0.3601E+01
+ MRCHDU: Convergence failed at  56  side 2    Res =  0.4050E+01
+ MRCHDU: Convergence failed at  57  side 2    Res =  0.4286E+01
+ MRCHDU: Convergence failed at  58  side 2    Res =  0.4401E+01
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.4515E+01
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.4465E+01
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.4458E+01
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.4490E+01
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.4591E+01
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.4781E+01
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.5065E+01
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.5509E+01
+ MRCHDU: Convergence failed at  67  side 2    Res =  0.6253E+01
+ MRCHDU: Convergence failed at  68  side 2    Res =  0.7552E+01
+ MRCHDU: Convergence failed at  69  side 2    Res =  0.1045E+02
+ MRCHDU: Convergence failed at  70  side 2    Res =  0.2561E+02
+ MRCHDU: Convergence failed at  71  side 2    Res =  0.3480E+02
+ Side 1  free  transition at x/c =  0.2695   57
+ Side 2  free  transition at x/c =  0.7976   58
+
+   5   rms: 0.1509E+00   max: 0.7117E+00   T at   61  2
+       a =  4.000      CL =  1.3449
+      Cm = -0.1652     CD =  0.02018   =>   CDf =  0.00734    CDp =  0.01284
+
+ MRCHDU: Convergence failed at  57  side 2    Res =  0.1413E+01
+ MRCHDU: Convergence failed at  58  side 2    Res =  0.2365E+01
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.3321E+01
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.3618E+01
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.3452E+01
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.3221E+01
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.3109E+01
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.3220E+01
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.3789E+01
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.5822E+01
+ MRCHDU: Convergence failed at  67  side 2    Res =  0.4723E+02
+ MRCHDU: Convergence failed at  68  side 2    Res =  0.3577E+01
+ MRCHDU: Convergence failed at  69  side 2    Res =  0.1388E+01
+ Side 1  free  transition at x/c =  0.2673   58
+ Side 2  free  transition at x/c =  0.7462   55
+
+   6   rms: 0.1067E+00   max: -.6741E+00   D at   69  2   RLX: 0.742
+       a =  4.000      CL =  1.3394
+      Cm = -0.1615     CD =  0.02029   =>   CDf =  0.00737    CDp =  0.01291
+
+ Side 1  free  transition at x/c =  0.2670   58
+ Side 2  free  transition at x/c =  0.7067   53
+
+   7   rms: 0.3788E-01   max: -.3814E+00   D at   54  2
+       a =  4.000      CL =  1.3292
+      Cm = -0.1620     CD =  0.02049   =>   CDf =  0.00779    CDp =  0.01270
+
+ Side 1  free  transition at x/c =  0.2674   58
+ Side 2  free  transition at x/c =  0.6903   52
+
+   8   rms: 0.6441E-02   max: -.1131E+00   D at   53  2
+       a =  4.000      CL =  1.3291
+      Cm = -0.1620     CD =  0.02056   =>   CDf =  0.00779    CDp =  0.01277
+
+ Side 1  free  transition at x/c =  0.2674   58
+ Side 2  free  transition at x/c =  0.6939   53
+
+   9   rms: 0.5869E-02   max: 0.6299E-01   C at   53  2
+       a =  4.000      CL =  1.3286
+      Cm = -0.1619     CD =  0.02055   =>   CDf =  0.00775    CDp =  0.01280
+
+ Side 1  free  transition at x/c =  0.2674   58
+ Side 2  free  transition at x/c =  0.6921   53
+
+  10   rms: 0.4820E-03   max: -.6350E-02   D at   55  2
+       a =  4.000      CL =  1.3286
+      Cm = -0.1619     CD =  0.02055   =>   CDf =  0.00777    CDp =  0.01278
+
+ Side 1  free  transition at x/c =  0.2674   58
+ Side 2  free  transition at x/c =  0.6920   53
+
+  11   rms: 0.2462E-05   max: -.3112E-04   D at   55  2
+       a =  4.000      CL =  1.3286
+      Cm = -0.1619     CD =  0.02055   =>   CDf =  0.00777    CDp =  0.01278
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2674   58
+ Side 2  free  transition at x/c =  0.6920   53
+
+   1   rms: 0.1698E+00   max: 0.1050E+01   D at   54  2   RLX: 0.673
+       a =  5.000      CL =  1.3967
+      Cm = -0.1588     CD =  0.02194   =>   CDf =  0.00779    CDp =  0.01416
+
+ Side 1  free  transition at x/c =  0.2622   57
+ Side 2  free  transition at x/c =  0.7199   54
+
+   2   rms: 0.1011E+00   max: -.1041E+01   T at   54  2   RLX: 0.480
+       a =  5.000      CL =  1.4180
+      Cm = -0.1599     CD =  0.02234   =>   CDf =  0.00759    CDp =  0.01474
+
+ Side 1  free  transition at x/c =  0.2600   58
+ Side 2  free  transition at x/c =  0.7338   53
+
+   3   rms: 0.7063E-01   max: -.6270E+00   T at   53  2   RLX: 0.797
+       a =  5.000      CL =  1.4380
+      Cm = -0.1604     CD =  0.02251   =>   CDf =  0.00765    CDp =  0.01486
+
+ MRCHDU: Convergence failed at  55  side 2    Res =  0.2262E+02
+ MRCHDU: Convergence failed at  56  side 2    Res =  0.2396E+01
+ MRCHDU: Convergence failed at  57  side 2    Res =  0.6546E+01
+ MRCHDU: Convergence failed at  58  side 2    Res =  0.3056E+02
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.5496E+02
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.2429E+02
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.1913E+02
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.1705E+02
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.1553E+02
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.1402E+02
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.1255E+02
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.1162E+02
+ MRCHDU: Convergence failed at  67  side 2    Res =  0.1435E+02
+ MRCHDU: Convergence failed at  68  side 2    Res =  0.1416E+02
+ Side 1  free  transition at x/c =  0.2580   58
+ Side 2  free  transition at x/c =  0.7608   54
+
+   4   rms: 0.1039E+00   max: 0.6174E+00   T at   63  2   RLX: 0.949
+       a =  5.000      CL =  1.3886
+      Cm = -0.1476     CD =  0.02131   =>   CDf =  0.00727    CDp =  0.01405
+
+ Side 1  free  transition at x/c =  0.2591   58
+ Side 2  free  transition at x/c =  0.7281   53
+
+   5   rms: 0.6926E-01   max: -.7304E+00   D at   57  2   RLX: 0.685
+       a =  5.000      CL =  1.4224
+      Cm = -0.1562     CD =  0.02231   =>   CDf =  0.00765    CDp =  0.01466
+
+ Side 1  free  transition at x/c =  0.2582   58
+ Side 2  free  transition at x/c =  0.7515   54
+
+   6   rms: 0.2641E-01   max: -.2594E+00   D at   57  2
+       a =  5.000      CL =  1.4340
+      Cm = -0.1584     CD =  0.02204   =>   CDf =  0.00759    CDp =  0.01445
+
+ Side 1  free  transition at x/c =  0.2579   58
+ Side 2  free  transition at x/c =  0.7560   54
+
+   7   rms: 0.3019E-02   max: -.4660E-01   D at   57  2
+       a =  5.000      CL =  1.4347
+      Cm = -0.1586     CD =  0.02205   =>   CDf =  0.00760    CDp =  0.01446
+
+ Side 1  free  transition at x/c =  0.2578   58
+ Side 2  free  transition at x/c =  0.7567   54
+
+   8   rms: 0.5742E-04   max: 0.8681E-03   D at   55  2
+       a =  5.000      CL =  1.4347
+      Cm = -0.1586     CD =  0.02205   =>   CDf =  0.00760    CDp =  0.01445
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2578   58
+ Side 2  free  transition at x/c =  0.7567   54
+
+   1   rms: 0.1446E+00   max: -.8340E+00   T at   54  2   RLX: 0.600
+       a =  6.000      CL =  1.5031
+      Cm = -0.1578     CD =  0.02286   =>   CDf =  0.00746    CDp =  0.01540
+
+ Side 1  free  transition at x/c =  0.2525   59
+ Side 2  free  transition at x/c =  0.7882   55
+
+   2   rms: 0.6588E-01   max: 0.7009E+00   D at   55  2
+       a =  6.000      CL =  1.5355
+      Cm = -0.1545     CD =  0.02359   =>   CDf =  0.00767    CDp =  0.01592
+
+ Side 1  free  transition at x/c =  0.2501   58
+ Side 2  free  transition at x/c =  0.7960   55
+
+   3   rms: 0.1065E-01   max: -.1892E+00   D at   57  2
+       a =  6.000      CL =  1.5391
+      Cm = -0.1554     CD =  0.02375   =>   CDf =  0.00770    CDp =  0.01606
+
+ Side 1  free  transition at x/c =  0.2494   58
+ Side 2  free  transition at x/c =  0.7998   55
+
+   4   rms: 0.1147E-02   max: -.1463E-01   D at   56  2
+       a =  6.000      CL =  1.5398
+      Cm = -0.1555     CD =  0.02375   =>   CDf =  0.00767    CDp =  0.01608
+
+ Side 1  free  transition at x/c =  0.2494   58
+ Side 2  free  transition at x/c =  0.8001   55
+
+   5   rms: 0.6762E-05   max: -.7343E-04   D at   59  2
+       a =  6.000      CL =  1.5397
+      Cm = -0.1555     CD =  0.02375   =>   CDf =  0.00767    CDp =  0.01608
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2494   58
+ Side 2  free  transition at x/c =  0.8001   55
+
+   1   rms: 0.1492E+00   max: -.9695E+00   T at   55  2   RLX: 0.516
+       a =  7.000      CL =  1.5989
+      Cm = -0.1553     CD =  0.02459   =>   CDf =  0.00751    CDp =  0.01708
+
+ MRCHDU: Convergence failed at  56  side 2    Res =  0.5723E+01
+ MRCHDU: Convergence failed at  57  side 2    Res =  0.3793E+02
+ MRCHDU: Convergence failed at  58  side 2    Res =  0.7953E+01
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.4904E+01
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.6770E+01
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.9403E+01
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.1223E+02
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.1387E+02
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.1205E+02
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.7211E+01
+ Side 1  free  transition at x/c =  0.2442   59
+ Side 2  free  transition at x/c =  0.8267   56
+
+   2   rms: 0.1614E+00   max: 0.1063E+01   T at   65  2   RLX: 0.811
+       a =  7.000      CL =  1.6318
+      Cm = -0.1508     CD =  0.02503   =>   CDf =  0.00716    CDp =  0.01787
+
+ Side 1  free  transition at x/c =  0.2412   60
+ Side 2  free  transition at x/c =  0.8319   55
+
+   3   rms: 0.4753E-01   max: 0.6523E+00   D at    2  1
+       a =  7.000      CL =  1.6382
+      Cm = -0.1515     CD =  0.02519   =>   CDf =  0.00749    CDp =  0.01769
+
+ Side 1  free  transition at x/c =  0.2408   60
+ Side 2  free  transition at x/c =  0.8379   56
+
+   4   rms: 0.5728E-02   max: 0.8300E-01   D at   59  2
+       a =  7.000      CL =  1.6389
+      Cm = -0.1516     CD =  0.02511   =>   CDf =  0.00750    CDp =  0.01761
+
+ Side 1  free  transition at x/c =  0.2408   60
+ Side 2  free  transition at x/c =  0.8383   56
+
+   5   rms: 0.3489E-03   max: -.7967E-02   D at   59  2
+       a =  7.000      CL =  1.6388
+      Cm = -0.1516     CD =  0.02511   =>   CDf =  0.00749    CDp =  0.01762
+
+ Side 1  free  transition at x/c =  0.2408   60
+ Side 2  free  transition at x/c =  0.8382   56
+
+   6   rms: 0.2977E-05   max: -.6324E-04   D at   59  2
+       a =  7.000      CL =  1.6388
+      Cm = -0.1516     CD =  0.02511   =>   CDf =  0.00749    CDp =  0.01762
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2408   60
+ Side 2  free  transition at x/c =  0.8382   56
+
+   1   rms: 0.1440E+00   max: -.1117E+01   T at   56  2   RLX: 0.448
+       a =  8.000      CL =  1.6757
+      Cm = -0.1483     CD =  0.02559   =>   CDf =  0.00752    CDp =  0.01807
+
+ Side 1  free  transition at x/c =  0.2376   60
+ Side 2  free  transition at x/c =  0.8570   57
+
+   2   rms: 0.8678E-01   max: -.8076E+00   T at   57  2   RLX: 0.619
+       a =  8.000      CL =  1.7100
+      Cm = -0.1475     CD =  0.02685   =>   CDf =  0.00735    CDp =  0.01951
+
+ Side 1  free  transition at x/c =  0.2353   60
+ Side 2  free  transition at x/c =  0.8719   57
+
+   3   rms: 0.5936E-01   max: -.4891E+00   T at   57  2
+       a =  8.000      CL =  1.7290
+      Cm = -0.1466     CD =  0.02686   =>   CDf =  0.00750    CDp =  0.01936
+
+ Side 1  free  transition at x/c =  0.2331   60
+ Side 2  free  transition at x/c =  0.8825   57
+
+   4   rms: 0.3352E-01   max: -.3349E+00   D at   58  2
+       a =  8.000      CL =  1.7320
+      Cm = -0.1472     CD =  0.02709   =>   CDf =  0.00735    CDp =  0.01973
+
+ Side 1  free  transition at x/c =  0.2330   60
+ Side 2  free  transition at x/c =  0.8841   58
+
+   5   rms: 0.4187E-02   max: -.6792E-01   D at   57  2
+       a =  8.000      CL =  1.7302
+      Cm = -0.1468     CD =  0.02700   =>   CDf =  0.00737    CDp =  0.01963
+
+ Side 1  free  transition at x/c =  0.2330   60
+ Side 2  free  transition at x/c =  0.8835   58
+
+   6   rms: 0.4781E-03   max: 0.7308E-02   D at   59  2
+       a =  8.000      CL =  1.7301
+      Cm = -0.1468     CD =  0.02700   =>   CDf =  0.00737    CDp =  0.01963
+
+ Side 1  free  transition at x/c =  0.2331   60
+ Side 2  free  transition at x/c =  0.8834   58
+
+   7   rms: 0.1165E-05   max: 0.1332E-04   D at   59  2
+       a =  8.000      CL =  1.7301
+      Cm = -0.1468     CD =  0.02700   =>   CDf =  0.00737    CDp =  0.01963
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2331   60
+ Side 2  free  transition at x/c =  0.8834   58
+
+   1   rms: 0.1298E+00   max: -.7746E+00   T at   58  2   RLX: 0.645
+       a =  9.000      CL =  1.7854
+      Cm = -0.1433     CD =  0.02798   =>   CDf =  0.00719    CDp =  0.02079
+
+ Side 1  free  transition at x/c =  0.2278   61
+ Side 2  free  transition at x/c =  0.8964   57
+
+   2   rms: 0.6390E-01   max: -.4215E+00   D at   59  2
+       a =  9.000      CL =  1.8340
+      Cm = -0.1452     CD =  0.02912   =>   CDf =  0.00727    CDp =  0.02185
+
+ MRCHDU: Convergence failed at  59  side 2    Res =  0.6342E+01
+ MRCHDU: Convergence failed at  60  side 2    Res =  0.9841E+01
+ MRCHDU: Convergence failed at  61  side 2    Res =  0.3197E+01
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.3500E+01
+ Side 1  free  transition at x/c =  0.2252   61
+ Side 2  free  transition at x/c =  0.9127   59
+
+   3   rms: 0.7994E-01   max: 0.7748E+00   C at   60  2   RLX: 0.880
+       a =  9.000      CL =  1.8209
+      Cm = -0.1422     CD =  0.02875   =>   CDf =  0.00728    CDp =  0.02146
+
+ Side 1  free  transition at x/c =  0.2256   61
+ Side 2  free  transition at x/c =  0.9080   58
+
+   4   rms: 0.1843E-01   max: -.3657E+00   D at   60  2
+       a =  9.000      CL =  1.8250
+      Cm = -0.1434     CD =  0.02875   =>   CDf =  0.00730    CDp =  0.02145
+
+ Side 1  free  transition at x/c =  0.2256   61
+ Side 2  free  transition at x/c =  0.9104   58
+
+   5   rms: 0.2812E-02   max: 0.4817E-01   D at   61  2
+       a =  9.000      CL =  1.8254
+      Cm = -0.1434     CD =  0.02872   =>   CDf =  0.00731    CDp =  0.02141
+
+ Side 1  free  transition at x/c =  0.2256   61
+ Side 2  free  transition at x/c =  0.9101   58
+
+   6   rms: 0.5526E-04   max: -.1229E-02   D at   61  2
+       a =  9.000      CL =  1.8253
+      Cm = -0.1434     CD =  0.02873   =>   CDf =  0.00731    CDp =  0.02142
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.2256   61
+ Side 2  free  transition at x/c =  0.9101   58
+
+   1   rms: 0.1311E+00   max: -.4673E+00   T at   58  2
+       a = 10.000      CL =  1.9277
+      Cm = -0.1418     CD =  0.03094   =>   CDf =  0.00692    CDp =  0.02403
+
+ MRCHDU: Convergence failed at  63  side 1    Res =  0.1988E+01
+ MRCHDU: Convergence failed at  64  side 1    Res =  0.3669E+01
+ MRCHDU: Convergence failed at  65  side 1    Res =  0.2947E+01
+ MRCHDU: Convergence failed at  66  side 1    Res =  0.5931E+01
+ MRCHDU: Convergence failed at  67  side 1    Res =  0.3034E+02
+ MRCHDU: Convergence failed at  68  side 1    Res =  0.3994E+02
+ MRCHDU: Convergence failed at  69  side 1    Res =  0.1657E+02
+ MRCHDU: Convergence failed at  70  side 1    Res =  0.1300E+02
+ MRCHDU: Convergence failed at  71  side 1    Res =  0.1378E+02
+ MRCHDU: Convergence failed at  72  side 1    Res =  0.2264E+02
+ MRCHDU: Convergence failed at  73  side 1    Res =  0.2284E+03
+ MRCHDU: Convergence failed at  74  side 1    Res =  0.1496E+02
+ MRCHDU: Convergence failed at  75  side 1    Res =  0.5313E+02
+ MRCHDU: Convergence failed at  76  side 1    Res =  0.9471E+02
+ MRCHDU: Convergence failed at  77  side 1    Res =  0.1671E+03
+ MRCHDU: Convergence failed at  78  side 1    Res =  0.2477E+02
+ MRCHDU: Convergence failed at  79  side 1    Res =  0.1557E+03
+ MRCHDU: Convergence failed at  80  side 1    Res =  0.1055E+03
+ MRCHDU: Convergence failed at  81  side 1    Res =  0.8541E+02
+ MRCHDU: Convergence failed at  82  side 1    Res =  0.7583E+02
+ MRCHDU: Convergence failed at  83  side 1    Res =  0.7150E+02
+ MRCHDU: Convergence failed at  84  side 1    Res =  0.7077E+02
+ MRCHDU: Convergence failed at  85  side 1    Res =  0.6731E+02
+ MRCHDU: Convergence failed at  86  side 1    Res =  0.8730E+02
+ MRCHDU: Convergence failed at  87  side 1    Res =  0.3244E+02
+ MRCHDU: Convergence failed at  88  side 1    Res =  0.1478E+03
+ MRCHDU: Convergence failed at  89  side 1    Res =  0.8613E+02
+ MRCHDU: Convergence failed at  90  side 1    Res =  0.6037E+02
+ MRCHDU: Convergence failed at  91  side 1    Res =  0.5946E+02
+ MRCHDU: Convergence failed at  92  side 1    Res =  0.2414E+02
+ MRCHDU: Convergence failed at  93  side 1    Res =  0.2170E+02
+ MRCHDU: Convergence failed at  94  side 1    Res =  0.4602E+02
+ MRCHDU: Convergence failed at  95  side 1    Res =  0.9160E+02
+ MRCHDU: Convergence failed at  96  side 1    Res =  0.7326E+02
+ MRCHDU: Convergence failed at  97  side 1    Res =  0.8866E+02
+ MRCHDU: Convergence failed at  98  side 1    Res =  0.1244E+03
+ MRCHDU: Convergence failed at  99  side 1    Res =  0.8585E+02
+ Side 1  free  transition at x/c =  0.2199   62
+ Side 2  free  transition at x/c =  0.9433   59
+
+   2   rms: 0.2071E+01   max: 0.9843E+01   D at   65  2   RLX: 0.096
+       a = 10.000      CL =  3.6106
+      Cm = -0.8597     CD =  0.00466   =>   CDf =  0.00374    CDp =  0.00092
+
+ MRCHDU: Convergence failed at  67  side 1    Res =  0.2489E+00
+ MRCHDU: Convergence failed at  68  side 1    Res =  0.2296E+00
+ MRCHDU: Convergence failed at  69  side 1    Res =  0.2073E+00
+ MRCHDU: Convergence failed at  70  side 1    Res =  0.1627E+00
+ MRCHDU: Convergence failed at  72  side 1    Res =  0.3427E+00
+ MRCHDU: Convergence failed at  73  side 1    Res =  0.3201E+00
+ MRCHDU: Convergence failed at  74  side 1    Res =  0.2960E+00
+ MRCHDU: Convergence failed at  75  side 1    Res =  0.2629E+00
+ MRCHDU: Convergence failed at  77  side 1    Res =  0.3736E+00
+ MRCHDU: Convergence failed at  78  side 1    Res =  0.3648E+00
+ MRCHDU: Convergence failed at  79  side 1    Res =  0.3573E+00
+ MRCHDU: Convergence failed at  80  side 1    Res =  0.3513E+00
+ MRCHDU: Convergence failed at  81  side 1    Res =  0.3467E+00
+ MRCHDU: Convergence failed at  82  side 1    Res =  0.3438E+00
+ MRCHDU: Convergence failed at  83  side 1    Res =  0.3423E+00
+ MRCHDU: Convergence failed at  84  side 1    Res =  0.3414E+00
+ MRCHDU: Convergence failed at  85  side 1    Res =  0.3400E+00
+ MRCHDU: Convergence failed at  86  side 1    Res =  0.3381E+00
+ MRCHDU: Convergence failed at  87  side 1    Res =  0.3356E+00
+ MRCHDU: Convergence failed at  88  side 1    Res =  0.3328E+00
+ MRCHDU: Convergence failed at  89  side 1    Res =  0.3295E+00
+ MRCHDU: Convergence failed at  90  side 1    Res =  0.3265E+00
+ MRCHDU: Convergence failed at  91  side 1    Res =  0.3240E+00
+ MRCHDU: Convergence failed at  92  side 1    Res =  0.3222E+00
+ MRCHDU: Convergence failed at  93  side 1    Res =  0.3214E+00
+ MRCHDU: Convergence failed at  94  side 1    Res =  0.3223E+00
+ MRCHDU: Convergence failed at  95  side 1    Res =  0.3254E+00
+ MRCHDU: Convergence failed at  96  side 1    Res =  0.3316E+00
+ MRCHDU: Convergence failed at  97  side 1    Res =  0.3419E+00
+ MRCHDU: Convergence failed at  98  side 1    Res =  0.3585E+00
+ MRCHDU: Convergence failed at  99  side 1    Res =  0.3743E+00
+ MRCHDU: Convergence failed at  65  side 2    Res =  0.3388E+01
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.8316E+01
+ MRCHDU: Convergence failed at  67  side 2    Res =  0.3292E+01
+ MRCHDU: Convergence failed at  68  side 2    Res =  0.5001E+02
+ MRCHDU: Convergence failed at  69  side 2    Res =  0.8194E+01
+ MRCHDU: Convergence failed at  70  side 2    Res =  0.4805E+01
+ MRCHDU: Convergence failed at  71  side 2    Res =  0.3613E+01
+ MRCHDU: Convergence failed at  72  side 2    Res =  0.2492E+01
+ MRCHDU: Convergence failed at  73  side 2    Res =  0.2120E+01
+ MRCHDU: Convergence failed at  74  side 2    Res =  0.1773E+01
+ MRCHDU: Convergence failed at  75  side 2    Res =  0.1490E+01
+ MRCHDU: Convergence failed at  76  side 2    Res =  0.1484E+01
+ MRCHDU: Convergence failed at  77  side 2    Res =  0.1362E+01
+ Side 1  free  transition at x/c =  0.2120   62
+ Side 2  free  transition at x/c =  0.9509   59
+
+   3   rms: 0.8085E+00   max: 0.3105E+01   D at   78  2   RLX: 0.216
+       a = 10.000      CL =  2.4880
+      Cm = -0.4712     CD =  0.02500   =>   CDf =  0.00426    CDp =  0.02074
+
+ Side 1  free  transition at x/c =  0.2112   61
+ Side 2  free  transition at x/c =  0.9466   60
+
+   4   rms: 0.4009E+00   max: -.4105E+00   D at   78  2   RLX: 0.440
+       a = 10.000      CL =  1.8149
+      Cm = -0.2444     CD =  0.09741   =>   CDf =  0.00436    CDp =  0.09305
+
+ Side 1  free  transition at x/c =  0.2114   59
+ Side 2  free  transition at x/c =  0.9297   61
+
+   5   rms: 0.2150E+00   max: -.7128E+00   D at   63  1   RLX: 0.701
+       a = 10.000      CL =  1.5384
+      Cm = -0.1606     CD =  0.08791   =>   CDf =  0.00401    CDp =  0.08390
+
+ Side 1  free  transition at x/c =  0.2144   59
+ Side 2  free  transition at x/c =  0.9225   60
+
+   6   rms: 0.1540E+01   max: -.6365E+01   D at   65  1   RLX: 0.079
+       a = 10.000      CL =  1.5757
+      Cm = -0.1300     CD =  0.07522   =>   CDf =  0.00408    CDp =  0.07114
+
+ Side 1  free  transition at x/c =  0.2213   59
+ Side 2  free  transition at x/c =  0.9285   61
+
+   7   rms: 0.1463E+00   max: 0.1010E+01   T at   59  1   RLX: 0.667
+       a = 10.000      CL =  1.4865
+      Cm = -0.1354     CD =  0.08454   =>   CDf =  0.00437    CDp =  0.08017
+
+ Side 1  free  transition at x/c =  0.2119   59
+ Side 2  free  transition at x/c =  0.9287   61
+
+   8   rms: 0.5206E+00   max: -.1960E+01   D at   68  1   RLX: 0.255
+       a = 10.000      CL =  1.5906
+      Cm = -0.1323     CD =  0.06929   =>   CDf =  0.00408    CDp =  0.06521
+
+ Side 1  free  transition at x/c =  0.2171   59
+ Side 2  free  transition at x/c =  0.9346   61
+
+   9   rms: 0.3583E+00   max: 0.9081E+00   D at   68  1
+       a = 10.000      CL =  1.2761
+      Cm = -0.1619     CD =  0.12342   =>   CDf =  0.00462    CDp =  0.11879
+
+ MRCHDU: Convergence failed at  57  side 1    Res =  0.7232E+01
+ MRCHDU: Convergence failed at  58  side 1    Res =  0.6352E+01
+ MRCHDU: Convergence failed at  59  side 1    Res =  0.1020E+03
+ MRCHDU: Convergence failed at  60  side 1    Res =  0.1543E+03
+ MRCHDU: Convergence failed at  61  side 1    Res =  0.4882E+03
+ MRCHDU: Convergence failed at  62  side 1    Res =  0.9313E+03
+ MRCHDU: Convergence failed at  63  side 1    Res =  0.8742E+02
+ MRCHDU: Convergence failed at  64  side 1    Res =  0.4005E+02
+ MRCHDU: Convergence failed at  65  side 1    Res =  0.5415E+02
+ MRCHDU: Convergence failed at  66  side 1    Res =  0.6546E+02
+ MRCHDU: Convergence failed at  67  side 1    Res =  0.5304E+02
+ MRCHDU: Convergence failed at  68  side 1    Res =  0.3156E+02
+ MRCHDU: Convergence failed at  69  side 1    Res =  0.9796E+02
+ MRCHDU: Convergence failed at  70  side 1    Res =  0.2042E+03
+ MRCHDU: Convergence failed at  71  side 1    Res =  0.7524E+02
+ MRCHDU: Convergence failed at  72  side 1    Res =  0.3328E+02
+ MRCHDU: Convergence failed at  73  side 1    Res =  0.9209E+02
+ MRCHDU: Convergence failed at  74  side 1    Res =  0.2029E+04
+ MRCHDU: Convergence failed at  75  side 1    Res =  0.6270E+04
+ MRCHDU: Convergence failed at  76  side 1    Res =  0.5129E+03
+ MRCHDU: Convergence failed at  77  side 1    Res =  0.2201E+03
+ MRCHDU: Convergence failed at  78  side 1    Res =  0.9800E+02
+ MRCHDU: Convergence failed at  79  side 1    Res =  0.4585E+02
+ MRCHDU: Convergence failed at  80  side 1    Res =  0.7142E+02
+ MRCHDU: Convergence failed at  81  side 1    Res =  0.5208E+02
+ MRCHDU: Convergence failed at  82  side 1    Res =  0.2758E+02
+ MRCHDU: Convergence failed at  83  side 1    Res =  0.5797E+02
+ MRCHDU: Convergence failed at  84  side 1    Res =  0.4360E+02
+ MRCHDU: Convergence failed at  85  side 1    Res =  0.4219E+02
+ MRCHDU: Convergence failed at  86  side 1    Res =  0.6847E+02
+ MRCHDU: Convergence failed at  87  side 1    Res =  0.7160E+02
+ MRCHDU: Convergence failed at  88  side 1    Res =  0.7447E+02
+ MRCHDU: Convergence failed at  89  side 1    Res =  0.7698E+02
+ MRCHDU: Convergence failed at  90  side 1    Res =  0.7926E+02
+ MRCHDU: Convergence failed at  91  side 1    Res =  0.8143E+02
+ MRCHDU: Convergence failed at  92  side 1    Res =  0.8358E+02
+ MRCHDU: Convergence failed at  93  side 1    Res =  0.8589E+02
+ MRCHDU: Convergence failed at  94  side 1    Res =  0.3501E+02
+ MRCHDU: Convergence failed at  76  side 2    Res =  0.4022E+01
+ MRCHDU: Convergence failed at  77  side 2    Res =  0.4136E+01
+ MRCHDU: Convergence failed at  78  side 2    Res =  0.2825E+02
+ MRCHDU: Convergence failed at  79  side 2    Res =  0.3084E+01
+ MRCHDU: Convergence failed at  80  side 2    Res =  0.2521E+01
+ MRCHDU: Convergence failed at  81  side 2    Res =  0.4864E+00
+ MRCHDU: Convergence failed at  82  side 2    Res =  0.1806E+01
+ MRCHDU: Convergence failed at  83  side 2    Res =  0.1380E+01
+ Side 1  free  transition at x/c =  0.2061   56
+ Side 2  free  transition at x/c =  0.8986   61
+
+  10   rms: 0.2100E+01   max: 0.1274E+02   D at   74  2   RLX: 0.118
+       a = 10.000      CL =  2.3155
+      Cm = -0.5680     CD =  0.01848   =>   CDf =  0.00360    CDp =  0.01488
+
+ MRCHDU: Convergence failed at  74  side 2    Res =  0.5500E+01
+ MRCHDU: Convergence failed at  75  side 2    Res =  0.1887E+02
+ MRCHDU: Convergence failed at  76  side 2    Res =  0.3918E+01
+ Side 1  free  transition at x/c =  0.1981   55
+ Side 2  free  transition at x/c =  0.9160   62
+
+  11   rms: 0.3614E+00   max: 0.1936E+01   D at   83  2   RLX: 0.468
+       a = 10.000      CL =  1.5190
+      Cm = -0.2595     CD =  0.12992   =>   CDf =  0.00381    CDp =  0.12610
+
+ MRCHDU: Convergence failed at  82  side 2    Res =  0.2882E+01
+ MRCHDU: Convergence failed at  83  side 2    Res =  0.9801E+00
+ Side 1  free  transition at x/c =  0.2030   56
+ Side 2  free  transition at x/c =  0.9112   61
+
+  12   rms: 0.1788E+00   max: 0.6096E+00   D at   56  1   RLX: 0.854
+       a = 10.000      CL =  1.2978
+      Cm = -0.1595     CD =  0.10288   =>   CDf =  0.00382    CDp =  0.09906
+
+ Side 1  free  transition at x/c =  0.2036   56
+ Side 2  free  transition at x/c =  0.8969   60
+
+  13   rms: 0.9690E+00   max: -.3983E+01   T at   60  2   RLX: 0.110
+       a = 10.000      CL =  1.3269
+      Cm = -0.1329     CD =  0.10828   =>   CDf =  0.00371    CDp =  0.10457
+
+ Side 1  free  transition at x/c =  0.2114   58
+ Side 2  free  transition at x/c =  0.9110   60
+
+  14   rms: 0.4203E+00   max: 0.1844E+01   C at   60  2   RLX: 0.280
+       a = 10.000      CL =  1.4090
+      Cm = -0.1275     CD =  0.09395   =>   CDf =  0.00403    CDp =  0.08993
+
+ Side 1  free  transition at x/c =  0.2159   58
+ Side 2  free  transition at x/c =  0.9206   61
+
+  15   rms: 0.6451E+00   max: 0.2278E+01   D at   65  1   RLX: 0.458
+       a = 10.000      CL =  1.1950
+      Cm = -0.1577     CD =  0.15169   =>   CDf =  0.00440    CDp =  0.14729
+
+ MRCHDU: Convergence failed at  56  side 1    Res =  0.1691E+02
+ MRCHDU: Convergence failed at  57  side 1    Res =  0.3517E+03
+ MRCHDU: Convergence failed at  58  side 1    Res =  0.6967E+02
+ MRCHDU: Convergence failed at  59  side 1    Res =  0.1125E+04
+ MRCHDU: Convergence failed at  60  side 1    Res =  0.4471E+02
+ MRCHDU: Convergence failed at  61  side 1    Res =  0.2572E+02
+ MRCHDU: Convergence failed at  62  side 1    Res =  0.7263E+02
+ MRCHDU: Convergence failed at  63  side 1    Res =  0.3663E+02
+ MRCHDU: Convergence failed at  64  side 1    Res =  0.5908E+02
+ MRCHDU: Convergence failed at  65  side 1    Res =  0.8945E+02
+ MRCHDU: Convergence failed at  66  side 1    Res =  0.3579E+02
+ MRCHDU: Convergence failed at  67  side 1    Res =  0.2219E+02
+ MRCHDU: Convergence failed at  68  side 1    Res =  0.2016E+02
+ MRCHDU: Convergence failed at  69  side 1    Res =  0.2392E+02
+ MRCHDU: Convergence failed at  70  side 1    Res =  0.2813E+02
+ MRCHDU: Convergence failed at  71  side 1    Res =  0.3135E+02
+ MRCHDU: Convergence failed at  72  side 1    Res =  0.3391E+02
+ MRCHDU: Convergence failed at  73  side 1    Res =  0.3602E+02
+ MRCHDU: Convergence failed at  74  side 1    Res =  0.3758E+02
+ MRCHDU: Convergence failed at  75  side 1    Res =  0.3872E+02
+ MRCHDU: Convergence failed at  76  side 1    Res =  0.3944E+02
+ MRCHDU: Convergence failed at  77  side 1    Res =  0.4039E+02
+ MRCHDU: Convergence failed at  78  side 1    Res =  0.3775E+02
+ MRCHDU: Convergence failed at  79  side 1    Res =  0.4929E+02
+ MRCHDU: Convergence failed at  80  side 1    Res =  0.4925E+02
+ MRCHDU: Convergence failed at  81  side 1    Res =  0.5216E+02
+ MRCHDU: Convergence failed at  82  side 1    Res =  0.5471E+02
+ MRCHDU: Convergence failed at  83  side 1    Res =  0.5805E+02
+ MRCHDU: Convergence failed at  84  side 1    Res =  0.2693E+02
+ MRCHDU: Convergence failed at  85  side 1    Res =  0.2603E+02
+ MRCHDU: Convergence failed at  86  side 1    Res =  0.6123E+02
+ MRCHDU: Convergence failed at  87  side 1    Res =  0.4347E+02
+ MRCHDU: Convergence failed at  88  side 1    Res =  0.6323E+02
+ MRCHDU: Convergence failed at  89  side 1    Res =  0.6716E+02
+ MRCHDU: Convergence failed at  90  side 1    Res =  0.8595E+02
+ MRCHDU: Convergence failed at  91  side 1    Res =  0.3505E+02
+ MRCHDU: Convergence failed at  92  side 1    Res =  0.2833E+02
+ MRCHDU: Convergence failed at  93  side 1    Res =  0.7042E+02
+ MRCHDU: Convergence failed at  78  side 2    Res =  0.3045E+01
+ MRCHDU: Convergence failed at  79  side 2    Res =  0.3278E+01
+ MRCHDU: Convergence failed at  80  side 2    Res =  0.3104E+01
+ MRCHDU: Convergence failed at  81  side 2    Res =  0.2032E+01
+ MRCHDU: Convergence failed at  82  side 2    Res =  0.3305E+01
+ MRCHDU: Convergence failed at  83  side 2    Res =  0.2985E+01
+ MRCHDU: Convergence failed at  84  side 2    Res =  0.1508E+01
+ MRCHDU: Convergence failed at  85  side 2    Res =  0.4425E+01
+ MRCHDU: Convergence failed at  86  side 2    Res =  0.1745E+02
+ Side 1  free  transition at x/c =  0.2038   55
+ Side 2  free  transition at x/c =  0.8732   60
+
+  16   rms: 0.1803E+01   max: 0.1201E+02   D at   76  2   RLX: 0.125
+       a = 10.000      CL =  2.1295
+      Cm = -0.5232     CD =  0.02323   =>   CDf =  0.00356    CDp =  0.01967
+
+ MRCHDU: Convergence failed at  76  side 2    Res =  0.5643E+01
+ MRCHDU: Convergence failed at  77  side 2    Res =  0.4842E+02
+ MRCHDU: Convergence failed at  78  side 2    Res =  0.5123E+01
+ MRCHDU: Convergence failed at  79  side 2    Res =  0.3056E+01
+ Side 1  free  transition at x/c =  0.1973   54
+ Side 2  free  transition at x/c =  0.8864   61
+
+  17   rms: 0.3810E+00   max: -.1900E+01   T at   54  1   RLX: 0.263
+       a = 10.000      CL =  1.5569
+      Cm = -0.2866     CD =  0.12673   =>   CDf =  0.00360    CDp =  0.12314
+
+ Side 1  free  transition at x/c =  0.2037   56
+ Side 2  free  transition at x/c =  0.8934   60
+
+  18   rms: 0.2216E+00   max: 0.1173E+01   C at   60  2   RLX: 0.486
+       a = 10.000      CL =  1.3887
+      Cm = -0.2144     CD =  0.12591   =>   CDf =  0.00382    CDp =  0.12209
+
+ Side 1  free  transition at x/c =  0.2015   56
+ Side 2  free  transition at x/c =  0.8942   60
+
+  19   rms: 0.1669E+00   max: -.7904E+00   T at   60  2   RLX: 0.633
+       a = 10.000      CL =  1.3071
+      Cm = -0.1710     CD =  0.11831   =>   CDf =  0.00384    CDp =  0.11448
+
+ Side 1  free  transition at x/c =  0.2018   56
+ Side 2  free  transition at x/c =  0.8939   60
+
+  20   rms: 0.2167E+00   max: -.1574E+01   T at   60  2   RLX: 0.318
+       a = 10.000      CL =  1.3135
+      Cm = -0.1539     CD =  0.11935   =>   CDf =  0.00384    CDp =  0.11550
+
+ Side 1  free  transition at x/c =  0.2043   56
+ Side 2  free  transition at x/c =  0.9031   61
+
+  21   rms: 0.5003E+01   max: -.2670E+02   T at   56  1   RLX: 0.019
+       a = 10.000      CL =  1.3676
+      Cm = -0.1425     CD =  0.10738   =>   CDf =  0.00371    CDp =  0.10367
+
+ Side 1  free  transition at x/c =  0.2130   58
+ Side 2  free  transition at x/c =  0.9114   60
+
+  22   rms: 0.5747E+00   max: 0.2405E+01   C at   60  2   RLX: 0.217
+       a = 10.000      CL =  1.4384
+      Cm = -0.1255     CD =  0.08927   =>   CDf =  0.00401    CDp =  0.08526
+
+ Side 1  free  transition at x/c =  0.2188   58
+ Side 2  free  transition at x/c =  0.9208   61
+
+  23   rms: 0.1741E+00   max: 0.6572E+00   D at   66  1
+       a = 10.000      CL =  1.3219
+      Cm = -0.1505     CD =  0.11114   =>   CDf =  0.00440    CDp =  0.10674
+
+ Side 1  free  transition at x/c =  0.2059   56
+ Side 2  free  transition at x/c =  0.9056   61
+
+  24   rms: 0.1120E+00   max: 0.8982E+00   T at   56  1
+       a = 10.000      CL =  1.2448
+      Cm = -0.1553     CD =  0.12505   =>   CDf =  0.00388    CDp =  0.12117
+
+ Side 1  free  transition at x/c =  0.1963   55
+ Side 2  free  transition at x/c =  0.8861   60
+
+  25   rms: 0.6065E-01   max: 0.6707E+00   T at   55  1
+       a = 10.000      CL =  1.2125
+      Cm = -0.1594     CD =  0.13087   =>   CDf =  0.00390    CDp =  0.12697
+ VISCAL:  Convergence failed
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.1900   54
+ Side 2  free  transition at x/c =  0.8810   60
+
+   1   rms: 0.1719E+00   max: -.9453E+00   T at   60  2   RLX: 0.470
+       a = 11.000      CL =  1.2669
+      Cm = -0.1595     CD =  0.12904   =>   CDf =  0.00358    CDp =  0.12546
+
+ MRCHDU: Convergence failed at  62  side 2    Res =  0.3186E+04
+ MRCHDU: Convergence failed at  63  side 2    Res =  0.3083E+01
+ MRCHDU: Convergence failed at  64  side 2    Res =  0.4803E+01
+ Side 1  free  transition at x/c =  0.1906   55
+ Side 2  free  transition at x/c =  0.9097   61
+
+   2   rms: 0.1433E+00   max: -.8886E+00   T at   61  2   RLX: 0.563
+       a = 11.000      CL =  1.3089
+      Cm = -0.1501     CD =  0.12206   =>   CDf =  0.00354    CDp =  0.11852
+
+ Side 1  free  transition at x/c =  0.1929   56
+ Side 2  free  transition at x/c =  0.9262   62
+
+   3   rms: 0.1877E+00   max: 0.1180E+01   T at   56  1   RLX: 0.931
+       a = 11.000      CL =  1.1946
+      Cm = -0.1660     CD =  0.15992   =>   CDf =  0.00393    CDp =  0.15599
+
+ Side 1  free  transition at x/c =  0.1837   54
+ Side 2  free  transition at x/c =  0.9112   61
+
+   4   rms: 0.4939E-01   max: 0.6681E+00   T at   54  1
+       a = 11.000      CL =  1.1862
+      Cm = -0.1681     CD =  0.15435   =>   CDf =  0.00359    CDp =  0.15075
+
+ Side 1  free  transition at x/c =  0.1779   54
+ Side 2  free  transition at x/c =  0.9097   61
+
+   5   rms: 0.5047E-01   max: -.3048E+00   T at   54  1
+       a = 11.000      CL =  1.2032
+      Cm = -0.1642     CD =  0.14478   =>   CDf =  0.00355    CDp =  0.14123
+
+ Side 1  free  transition at x/c =  0.1802   54
+ Side 2  free  transition at x/c =  0.9131   62
+
+   6   rms: 0.6355E-01   max: -.3662E+00   T at   62  2
+       a = 11.000      CL =  1.2338
+      Cm = -0.1582     CD =  0.13690   =>   CDf =  0.00360    CDp =  0.13330
+
+ Side 1  free  transition at x/c =  0.1846   54
+ Side 2  free  transition at x/c =  0.9207   62
+
+   7   rms: 0.3832E-01   max: -.3413E+00   D at   63  2
+       a = 11.000      CL =  1.2216
+      Cm = -0.1627     CD =  0.14514   =>   CDf =  0.00365    CDp =  0.14148
+
+ Side 1  free  transition at x/c =  0.1812   54
+ Side 2  free  transition at x/c =  0.9205   62
+
+   8   rms: 0.7527E-01   max: -.4793E+00   T at   54  1
+       a = 11.000      CL =  1.2603
+      Cm = -0.1549     CD =  0.13088   =>   CDf =  0.00345    CDp =  0.12743
+
+ Side 1  free  transition at x/c =  0.1875   56
+ Side 2  free  transition at x/c =  0.9265   62
+
+   9   rms: 0.8310E-01   max: -.4605E+00   T at   56  1
+       a = 11.000      CL =  1.3032
+      Cm = -0.1507     CD =  0.12294   =>   CDf =  0.00370    CDp =  0.11923
+
+ Side 1  free  transition at x/c =  0.1904   56
+ Side 2  free  transition at x/c =  0.9352   62
+
+  10   rms: 0.1351E+00   max: -.7137E+00   T at   56  1   RLX: 0.701
+       a = 11.000      CL =  1.3739
+      Cm = -0.1472     CD =  0.11171   =>   CDf =  0.00375    CDp =  0.10796
+
+ Side 1  free  transition at x/c =  0.1971   56
+ Side 2  free  transition at x/c =  0.9429   63
+
+  11   rms: 0.5463E-01   max: 0.4048E+00   T at   56  1
+       a = 11.000      CL =  1.3390
+      Cm = -0.1488     CD =  0.11849   =>   CDf =  0.00388    CDp =  0.11461
+
+ Side 1  free  transition at x/c =  0.1932   56
+ Side 2  free  transition at x/c =  0.9467   63
+
+  12   rms: 0.2265E+00   max: 0.1254E+01   C at   63  2
+       a = 11.000      CL =  1.1819
+      Cm = -0.1669     CD =  0.16389   =>   CDf =  0.00397    CDp =  0.15992
+
+ Side 1  free  transition at x/c =  0.1833   54
+ Side 2  free  transition at x/c =  0.9017   61
+
+  13   rms: 0.6400E-01   max: 0.7998E+00   T at   54  1
+       a = 11.000      CL =  1.1722
+      Cm = -0.1704     CD =  0.15887   =>   CDf =  0.00359    CDp =  0.15529
+
+ Side 1  free  transition at x/c =  0.1766   54
+ Side 2  free  transition at x/c =  0.9059   61
+
+  14   rms: 0.6569E-01   max: -.4235E+00   T at   54  1
+       a = 11.000      CL =  1.1823
+      Cm = -0.1665     CD =  0.14719   =>   CDf =  0.00353    CDp =  0.14365
+
+ Side 1  free  transition at x/c =  0.1785   54
+ Side 2  free  transition at x/c =  0.9069   61
+
+  15   rms: 0.5530E-01   max: -.2651E+00   T at   54  1
+       a = 11.000      CL =  1.2106
+      Cm = -0.1631     CD =  0.14285   =>   CDf =  0.00357    CDp =  0.13928
+
+ Side 1  free  transition at x/c =  0.1811   54
+ Side 2  free  transition at x/c =  0.9152   62
+
+  16   rms: 0.9489E-01   max: -.5485E+00   T at   54  1   RLX: 0.912
+       a = 11.000      CL =  1.2565
+      Cm = -0.1541     CD =  0.13107   =>   CDf =  0.00346    CDp =  0.12761
+
+ Side 1  free  transition at x/c =  0.1876   56
+ Side 2  free  transition at x/c =  0.9237   61
+
+  17   rms: 0.1158E+00   max: -.1345E+01   D at    2  1   RLX: 0.372
+       a = 11.000      CL =  1.2655
+      Cm = -0.1500     CD =  0.13243   =>   CDf =  0.00371    CDp =  0.12871
+
+ Side 1  free  transition at x/c =  0.1887   56
+ Side 2  free  transition at x/c =  0.9289   62
+
+  18   rms: 0.8501E-01   max: -.4501E+00   T at   56  1
+       a = 11.000      CL =  1.3318
+      Cm = -0.1480     CD =  0.11757   =>   CDf =  0.00372    CDp =  0.11384
+
+ Side 1  free  transition at x/c =  0.1931   56
+ Side 2  free  transition at x/c =  0.9383   63
+
+  19   rms: 0.7853E-01   max: 0.5008E+00   T at   56  1
+       a = 11.000      CL =  1.2759
+      Cm = -0.1560     CD =  0.13551   =>   CDf =  0.00380    CDp =  0.13171
+
+ Side 1  free  transition at x/c =  0.1872   56
+ Side 2  free  transition at x/c =  0.9343   62
+
+  20   rms: 0.6771E-01   max: -.4815E+00   T at   56  1
+       a = 11.000      CL =  1.2847
+      Cm = -0.1526     CD =  0.12557   =>   CDf =  0.00369    CDp =  0.12189
+
+ Side 1  free  transition at x/c =  0.1891   56
+ Side 2  free  transition at x/c =  0.9346   62
+
+  21   rms: 0.7518E-01   max: -.3817E+00   T at   56  1
+       a = 11.000      CL =  1.3270
+      Cm = -0.1481     CD =  0.11743   =>   CDf =  0.00372    CDp =  0.11370
+
+ Side 1  free  transition at x/c =  0.1931   56
+ Side 2  free  transition at x/c =  0.9382   63
+
+  22   rms: 0.9000E-01   max: 0.5651E+00   T at   56  1
+       a = 11.000      CL =  1.2665
+      Cm = -0.1571     CD =  0.13841   =>   CDf =  0.00380    CDp =  0.13460
+
+ Side 1  free  transition at x/c =  0.1868   55
+ Side 2  free  transition at x/c =  0.9321   62
+
+  23   rms: 0.4358E-01   max: 0.3083E+00   T at   55  1
+       a = 11.000      CL =  1.2428
+      Cm = -0.1586     CD =  0.13745   =>   CDf =  0.00384    CDp =  0.13361
+
+ Side 1  free  transition at x/c =  0.1846   54
+ Side 2  free  transition at x/c =  0.9258   63
+
+  24   rms: 0.3810E-01   max: 0.3129E+00   T at   54  1
+       a = 11.000      CL =  1.2188
+      Cm = -0.1632     CD =  0.14567   =>   CDf =  0.00365    CDp =  0.14202
+
+ Side 1  free  transition at x/c =  0.1809   54
+ Side 2  free  transition at x/c =  0.9185   62
+
+  25   rms: 0.6236E-01   max: -.3883E+00   T at   54  1
+       a = 11.000      CL =  1.2498
+      Cm = -0.1568     CD =  0.13397   =>   CDf =  0.00360    CDp =  0.13037
+ VISCAL:  Convergence failed
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.1862   54
+ Side 2  free  transition at x/c =  0.9250   62
+
+   1   rms: 0.1567E+00   max: -.7782E+00   T at   62  2   RLX: 0.436
+       a = 12.000      CL =  1.2938
+      Cm = -0.1565     CD =  0.13741   =>   CDf =  0.00356    CDp =  0.13385
+
+ Side 1  free  transition at x/c =  0.1858   55
+ Side 2  free  transition at x/c =  0.9423   63
+
+   2   rms: 0.1236E+00   max: -.1849E+01   C at   63  2   RLX: 0.270
+       a = 12.000      CL =  1.2973
+      Cm = -0.1536     CD =  0.13724   =>   CDf =  0.00373    CDp =  0.13350
+
+ Side 1  free  transition at x/c =  0.1855   55
+ Side 2  free  transition at x/c =  0.9509   63
+
+   3   rms: 0.6225E-01   max: -.3812E+00   D at   63  2
+       a = 12.000      CL =  1.3452
+      Cm = -0.1556     CD =  0.13560   =>   CDf =  0.00357    CDp =  0.13202
+
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99862  1.00076  N:  8.894  9.000  9.031  Nx:  11.982   dN: 0.118E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99852  1.00076  N:  8.894  9.000  9.033  Nx:  11.983   dN: 0.105E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99852  1.00076  N:  8.894  9.000  9.033  Nx:  11.986   dN: 0.105E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99816  1.00076  N:  8.894  9.000  9.021  Nx:  12.837   dN:-0.239E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99823  1.00076  N:  8.894  9.000  9.020  Nx:  12.971   dN:-0.200E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99830  1.00076  N:  8.894  9.000  9.019  Nx:  13.044   dN:-0.182E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99813  1.00076  N:  8.894  9.000  9.022  Nx:  13.800   dN:-0.169E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99816  1.00076  N:  8.894  9.000  9.021  Nx:  13.917   dN:-0.166E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99831  1.00076  N:  8.894  9.000  9.019  Nx:  13.566   dN:-0.153E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99815  1.00076  N:  8.894  9.000  9.021  Nx:  14.248   dN:-0.168E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99836  1.00076  N:  8.894  9.000  9.019  Nx:  13.623   dN:-0.148E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99837  1.00076  N:  8.894  9.000  9.019  Nx:  13.662   dN:-0.146E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99849  1.00076  N:  8.894  9.000  9.017  Nx:  13.300   dN:-0.144E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99824  1.00076  N:  8.894  9.000  9.020  Nx:  14.249   dN:-0.158E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99845  1.00076  N:  8.894  9.000  9.018  Nx:  13.498   dN:-0.141E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99847  1.00076  N:  8.894  9.000  9.017  Nx:  13.455   dN:-0.140E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99846  1.00076  N:  8.894  9.000  9.017  Nx:  13.521   dN:-0.140E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99846  1.00076  N:  8.894  9.000  9.017  Nx:  13.525   dN:-0.139E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99843  1.00076  N:  8.894  9.000  9.018  Nx:  13.658   dN:-0.140E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99861  1.00076  N:  8.894  9.000  9.022  Nx:  12.550   dN:-0.168E-02
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99840  1.00076  N:  8.894  9.000  9.018  Nx:  13.759   dN:-0.142E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99824  1.00076  N:  8.894  9.000  9.020  Nx:  14.354   dN:-0.158E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99853  1.00076  N:  8.894  9.000  9.017  Nx:  13.287   dN:-0.141E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99846  1.00076  N:  8.894  9.000  9.017  Nx:  13.538   dN:-0.139E-01
+ TRCHEK2: N2 convergence failed.
+ x:  0.98894  0.99825  1.00076  N:  8.894  9.000  9.020  Nx:  14.355   dN:-0.158E-01
+ MRCHDU: Convergence failed at  66  side 2    Res =  0.1149E+01
+ Side 1  free  transition at x/c =  0.1841   56
+ Side 2  free  transition at x/c =  0.9950   66
+
+   4   rms: 0.4358E+00   max: -.8786E+01   C at   66  2   RLX: 0.057
+       a = 12.000      CL =  1.3424
+      Cm = -0.1587     CD =  0.13840   =>   CDf =  0.00359    CDp =  0.13482
+
+ Side 1  free  transition at x/c =  0.1841   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+   5   rms: 0.1839E+01   max: -.2990E+02   C at   66  2   RLX: 0.017
+       a = 12.000      CL =  1.3276
+      Cm = -0.1564     CD =  0.13828   =>   CDf =  0.00360    CDp =  0.13467
+
+ Side 1  free  transition at x/c =  0.1843   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+   6   rms: 0.7668E+00   max: -.1557E+02   C at   66  2   RLX: 0.032
+       a = 12.000      CL =  1.3165
+      Cm = -0.1544     CD =  0.13719   =>   CDf =  0.00363    CDp =  0.13356
+
+ Side 1  free  transition at x/c =  0.1843   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+   7   rms: 0.5428E+00   max: -.1224E+02   C at   66  2   RLX: 0.041
+       a = 12.000      CL =  1.3089
+      Cm = -0.1529     CD =  0.13653   =>   CDf =  0.00366    CDp =  0.13287
+
+ Side 1  free  transition at x/c =  0.1843   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+   8   rms: 0.4464E+00   max: -.1069E+02   C at   66  2   RLX: 0.047
+       a = 12.000      CL =  1.3038
+      Cm = -0.1520     CD =  0.13608   =>   CDf =  0.00373    CDp =  0.13234
+
+ Side 1  free  transition at x/c =  0.1843   55
+ Side 2 forced transition at x/c =  1.0001   67
+
+   9   rms: 0.6946E+00   max: -.1021E+02   T at    2  2   RLX: 0.049
+       a = 12.000      CL =  1.3008
+      Cm = -0.1514     CD =  0.13578   =>   CDf =  0.00369    CDp =  0.13209
+
+ Side 1  free  transition at x/c =  0.1843   55
+ Side 2 forced transition at x/c =  1.0001   67
+
+  10   rms: 0.3590E+00   max: -.9080E+01   C at   67  2   RLX: 0.055
+       a = 12.000      CL =  1.2990
+      Cm = -0.1510     CD =  0.13557   =>   CDf =  0.00370    CDp =  0.13187
+
+ Side 1  free  transition at x/c =  0.1842   55
+ Side 2 forced transition at x/c =  1.0001   67
+
+  11   rms: 0.3323E+00   max: -.8506E+01   C at   67  2   RLX: 0.059
+       a = 12.000      CL =  1.2984
+      Cm = -0.1508     CD =  0.13545   =>   CDf =  0.00371    CDp =  0.13174
+
+ Side 1  free  transition at x/c =  0.1842   55
+ Side 2 forced transition at x/c =  1.0001   67
+
+  12   rms: 0.3094E+00   max: -.7973E+01   C at   67  2   RLX: 0.063
+       a = 12.000      CL =  1.2986
+      Cm = -0.1508     CD =  0.13539   =>   CDf =  0.00371    CDp =  0.13168
+
+ Side 1  free  transition at x/c =  0.1842   55
+ Side 2 forced transition at x/c =  1.0001   67
+
+  13   rms: 0.2874E+00   max: -.7434E+01   C at   67  2   RLX: 0.067
+       a = 12.000      CL =  1.2993
+      Cm = -0.1508     CD =  0.13538   =>   CDf =  0.00372    CDp =  0.13166
+
+ Side 1  free  transition at x/c =  0.1841   55
+ Side 2 forced transition at x/c =  1.0001   67
+
+  14   rms: 0.2651E+00   max: -.6868E+01   C at   67  2   RLX: 0.073
+       a = 12.000      CL =  1.3006
+      Cm = -0.1510     CD =  0.13540   =>   CDf =  0.00372    CDp =  0.13168
+
+ Side 1  free  transition at x/c =  0.1840   55
+ Side 2 forced transition at x/c =  1.0001   67
+
+  15   rms: 0.2420E+00   max: -.6268E+01   C at   67  2   RLX: 0.080
+       a = 12.000      CL =  1.3023
+      Cm = -0.1512     CD =  0.13546   =>   CDf =  0.00372    CDp =  0.13174
+
+ Side 1  free  transition at x/c =  0.1840   55
+ Side 2 forced transition at x/c =  1.0001   67
+
+  16   rms: 0.2179E+00   max: -.5635E+01   C at   67  2   RLX: 0.089
+       a = 12.000      CL =  1.3043
+      Cm = -0.1515     CD =  0.13555   =>   CDf =  0.00373    CDp =  0.13183
+
+ Side 1  free  transition at x/c =  0.1839   55
+ Side 2 forced transition at x/c =  1.0001   67
+
+  17   rms: 0.1930E+00   max: -.4978E+01   C at   67  2   RLX: 0.100
+       a = 12.000      CL =  1.3066
+      Cm = -0.1518     CD =  0.13567   =>   CDf =  0.00363    CDp =  0.13204
+
+ Side 1  free  transition at x/c =  0.1839   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+  18   rms: 0.1710E+00   max: -.4304E+01   C at   66  2   RLX: 0.116
+       a = 12.000      CL =  1.3092
+      Cm = -0.1522     CD =  0.13581   =>   CDf =  0.00373    CDp =  0.13209
+
+ Side 1  free  transition at x/c =  0.1838   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+  19   rms: 0.1416E+00   max: -.3617E+01   C at   66  2   RLX: 0.138
+       a = 12.000      CL =  1.3121
+      Cm = -0.1526     CD =  0.13598   =>   CDf =  0.00373    CDp =  0.13226
+
+ Side 1  free  transition at x/c =  0.1837   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+  20   rms: 0.1153E+00   max: -.2923E+01   C at   66  2   RLX: 0.171
+       a = 12.000      CL =  1.3153
+      Cm = -0.1531     CD =  0.13618   =>   CDf =  0.00373    CDp =  0.13246
+
+ Side 1  free  transition at x/c =  0.1836   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+  21   rms: 0.8907E-01   max: -.2231E+01   C at   66  2   RLX: 0.224
+       a = 12.000      CL =  1.3189
+      Cm = -0.1536     CD =  0.13642   =>   CDf =  0.00373    CDp =  0.13269
+
+ Side 1  free  transition at x/c =  0.1835   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+  22   rms: 0.6303E-01   max: -.1549E+01   C at   66  2   RLX: 0.323
+       a = 12.000      CL =  1.3229
+      Cm = -0.1542     CD =  0.13671   =>   CDf =  0.00373    CDp =  0.13297
+
+ Side 1  free  transition at x/c =  0.1834   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+  23   rms: 0.3776E-01   max: -.8977E+00   C at   66  2   RLX: 0.557
+       a = 12.000      CL =  1.3277
+      Cm = -0.1549     CD =  0.13706   =>   CDf =  0.00373    CDp =  0.13333
+
+ Side 1  free  transition at x/c =  0.1833   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+  24   rms: 0.1419E-01   max: -.3143E+00   C at   66  2
+       a = 12.000      CL =  1.3314
+      Cm = -0.1555     CD =  0.13737   =>   CDf =  0.00374    CDp =  0.13363
+
+ Side 1  free  transition at x/c =  0.1832   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+  25   rms: 0.1947E-03   max: -.3333E-02   C at   66  2
+       a = 12.000      CL =  1.3314
+      Cm = -0.1555     CD =  0.13736   =>   CDf =  0.00374    CDp =  0.13363
+ VISCAL:  Convergence failed
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.1832   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+   1   rms: 0.1704E+00   max: 0.4080E+00   C at   66  2   RLX: 0.430
+       a = 13.000      CL =  1.3866
+      Cm = -0.1540     CD =  0.13369   =>   CDf =  0.00377    CDp =  0.12991
+
+ Side 1  free  transition at x/c =  0.1844   56
+ Side 2 forced transition at x/c =  1.0001   66
+
+   2   rms: 0.8330E-01   max: 0.2048E+00   C at   66  2
+       a = 13.000      CL =  1.4522
+      Cm = -0.1532     CD =  0.13263   =>   CDf =  0.00367    CDp =  0.12896
+
+ Side 1  free  transition at x/c =  0.1841   57
+ Side 2 forced transition at x/c =  1.0001   65
+
+   3   rms: 0.4844E-02   max: 0.3464E-01   D at   60  1
+       a = 13.000      CL =  1.4531
+      Cm = -0.1532     CD =  0.13313   =>   CDf =  0.00393    CDp =  0.12920
+
+ Side 1  free  transition at x/c =  0.1838   57
+ Side 2 forced transition at x/c =  1.0001   65
+
+   4   rms: 0.2068E-03   max: 0.2210E-02   D at    4  2
+       a = 13.000      CL =  1.4531
+      Cm = -0.1532     CD =  0.13315   =>   CDf =  0.00392    CDp =  0.12923
+
+ Side 1  free  transition at x/c =  0.1838   57
+ Side 2 forced transition at x/c =  1.0001   65
+
+   5   rms: 0.5605E-05   max: 0.2646E-04   D at   80  2
+       a = 13.000      CL =  1.4531
+      Cm = -0.1532     CD =  0.13314   =>   CDf =  0.00392    CDp =  0.12923
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.1838   57
+ Side 2 forced transition at x/c =  1.0001   65
+
+   1   rms: 0.1547E+00   max: 0.2950E+00   C at   65  2   RLX: 0.426
+       a = 14.000      CL =  1.5033
+      Cm = -0.1518     CD =  0.13059   =>   CDf =  0.00376    CDp =  0.12684
+
+ Side 1  free  transition at x/c =  0.1837   58
+ Side 2 forced transition at x/c =  1.0001   64
+
+   2   rms: 0.9030E-01   max: 0.1666E+00   C at   64  2
+       a = 14.000      CL =  1.5765
+      Cm = -0.1494     CD =  0.12719   =>   CDf =  0.00382    CDp =  0.12338
+
+ Side 1  free  transition at x/c =  0.1833   59
+ Side 2 forced transition at x/c =  1.0001   63
+
+   3   rms: 0.3970E-02   max: -.2384E-01   D at    3  1
+       a = 14.000      CL =  1.5780
+      Cm = Got result {'DD': 0.01877, 'Dmin': 0.01892, 'LL': -1.0708}
+Completed successfully in 2.20 seconds. [{'DD': 0.01877, 'Dmin': 0.01892, 'LL': -1.0708}]
+-0.1494     CD =  0.12792   =>   CDf =  0.00413    CDp =  0.12379
+
+ Side 1  free  transition at x/c =  0.1830   59
+ Side 2 forced transition at x/c =  1.0001   63
+
+   4   rms: 0.2021E-03   max: 0.1774E-02   D at    4  2
+       a = 14.000      CL =  1.5780
+      Cm = -0.1494     CD =  0.12799   =>   CDf =  0.00412    CDp =  0.12387
+
+ Side 1  free  transition at x/c =  0.1830   59
+ Side 2 forced transition at x/c =  1.0001   63
+
+   5   rms: 0.6801E-05   max: -.4645E-04   C at   63  2
+       a = 14.000      CL =  1.5780
+      Cm = -0.1494     CD =  0.12799   =>   CDf =  0.00412    CDp =  0.12387
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+ Side 1  free  transition at x/c =  0.1830   59
+ Side 2 forced transition at x/c =  1.0001   63
+
+   1   rms: 0.1604E+00   max: 0.2631E+00   C at   63  2   RLX: 0.431
+       a = 15.000      CL =  1.6323
+      Cm = -0.1471     CD =  0.12447   =>   CDf =  0.00393    CDp =  0.12053
+
+ Side 1  free  transition at x/c =  0.1826   60
+ Side 2 forced transition at x/c =  1.0001   62
+
+   2   rms: 0.1068E+00   max: 0.1676E+00   C at   62  2
+       a = 15.000      CL =  1.7218
+      Cm = -0.1423     CD =  0.11745   =>   CDf =  0.00401    CDp =  0.11344
+
+ Side 1  free  transition at x/c =  0.1824   61
+ Side 2 forced transition at x/c =  1.0001   61
+
+   3   rms: 0.2618E-01   max: -.1371E+00   D at   69  1
+       a = 15.000      CL =  1.7435
+      Cm = -0.1404     CD =  0.11445   =>   CDf =  0.00441    CDp =  0.11004
+
+ Side 1  free  transition at x/c =  0.1828   61
+ Side 2 forced transition at x/c =  1.0001   61
+
+   4   rms: 0.2995E-02   max: -.1836E-01   D at   70  1
+       a = 15.000      CL =  1.7459
+      Cm = -0.1404     CD =  0.11503   =>   CDf =  0.00448    CDp =  0.11055
+
+ Side 1  free  transition at x/c =  0.1827   61
+ Side 2 forced transition at x/c =  1.0001   61
+
+   5   rms: 0.1837E-03   max: -.1221E-02   D at   81  2
+       a = 15.000      CL =  1.7460
+      Cm = -0.1404     CD =  0.11511   =>   CDf =  0.00449    CDp =  0.11062
+
+ Side 1  free  transition at x/c =  0.1827   61
+ Side 2 forced transition at x/c =  1.0001   61
+
+   6   rms: 0.6886E-05   max: 0.5993E-04   C at   61  2
+       a = 15.000      CL =  1.7460
+      Cm = -0.1404     CD =  0.11511   =>   CDf =  0.00449    CDp =  0.11063
+
+ Point added to stored polar  1
+ Point written to save file  000145M0.1.log                                  
+ Dump file unspecified or not available
+
+.OPERva   c>  
+ XFOIL   c>  

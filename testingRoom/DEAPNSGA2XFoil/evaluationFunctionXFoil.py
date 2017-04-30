@@ -25,7 +25,7 @@ import numpy as np
 import XFoilGame
 
 #Go to directory
-os.chdir("/home/simonx/Documents/Udacity/Projects/capstone/PESMOC_XFoil/Archive")
+os.chdir("/home/simonx/Documents/Udacity/Projects/capstone/PESM_NSGA2_CST_XFoil/Archive")
 
 
 #For acquisition function
@@ -41,6 +41,7 @@ from sklearn.gaussian_process import GaussianProcessRegressor
 
 
 def TwoDXFoilGame(job_id, params):
+
     #print individual
     LEU = params['LEU']
     U1 = params['U1']
@@ -56,8 +57,9 @@ def TwoDXFoilGame(job_id, params):
     testgen = XFG.newGame(actions)
 
     return {
-        "LL": testgen[0],
-        "DD": testgen[1],
+        "DD": testgen[0],
+        "LL": testgen[1],
+        "Dmin": testgen[2],
     }
 
 def main(job_id, params):
@@ -69,3 +71,9 @@ def main(job_id, params):
         return np.nan
 
 #TwoDXFoilGame([0.06699999999999999, 0.028999999999999998])
+'''
+params = [0.5, 0.5, 0.5, 0.2, -0.1, 0.5, 0.3, 0.2]
+
+XFG = XFoilGame.XFoilGame()
+testgen = XFG.newGame(params)
+'''

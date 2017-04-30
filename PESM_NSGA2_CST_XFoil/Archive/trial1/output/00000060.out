@@ -1,0 +1,24 @@
+Job launching after 0.26 seconds in submission.
+Running python job.
+Changed into dir /home/simonx/Documents/Udacity/Projects/capstone/PESM_NSGA2_CST_XFoil
+Importing evaluationFunctionXFoil.py
+Running evaluationFunctionXFoil.main()
+0.04
+0.1
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/spearmint-0.1-py2.7-linux-x86_64.egg/spearmint/launcher.py", line 245, in launch
+    result = python_launcher(job)
+  File "/usr/local/lib/python2.7/dist-packages/spearmint-0.1-py2.7-linux-x86_64.egg/spearmint/launcher.py", line 330, in python_launcher
+    result = module.main(job['id'], params)
+  File "/home/simonx/Documents/Udacity/Projects/capstone/PESM_NSGA2_CST_XFoil/evaluationFunctionXFoil.py", line 31, in main
+    return TwoDXFoilGame(job_id, params)
+  File "/home/simonx/Documents/Udacity/Projects/capstone/PESM_NSGA2_CST_XFoil/evaluationFunctionXFoil.py", line 21, in TwoDXFoilGame
+    testgen = XFG.newGame(actions)
+  File "/home/simonx/Documents/Udacity/Projects/capstone/PESM_NSGA2_CST_XFoil/XFoilGame.py", line 59, in newGame
+    self.Xfoil(name,self.Ncrit,self.Re, self.M, self.NoIter)
+  File "/home/simonx/Documents/Udacity/Projects/capstone/PESM_NSGA2_CST_XFoil/XFoilGame.py", line 113, in Xfoil
+    resp = ps.stdout.read()
+KeyboardInterrupt
+Problem executing the function
+Job failed in 4188.66 seconds.
+(<type 'exceptions.KeyboardInterrupt'>, KeyboardInterrupt(), <traceback object at 0x7efc9d0dc200>)
